@@ -1,0 +1,24 @@
+{
+  "name": "tr.gov.meb.kayseri",
+  "version": "1.0.0",
+  "description": "Günün anlam ve önemine uygun  duvar kağıdı değişir. Tarihte bugün ve özlü söz gösterilir.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alpaygunes/Tarihte-Bugun-v2.git"
+  },
+  "keywords": [
+    "Tarihte",
+    "bugün"
+  ],
+  "author": "alpaygunes@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alpaygunes/Tarihte-Bugun-v2/issues"
+  },
+  "homepage": "https://github.com/alpaygunes/Tarihte-Bugun-v2#readme"
+}
