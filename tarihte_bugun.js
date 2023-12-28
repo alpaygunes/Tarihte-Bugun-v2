@@ -1,71 +1,57 @@
 'use strict';
 const path  = require('path');
-const fs    = require('fs'); 
- 
+const fs    = require('fs');
+const {makeWallpeaperImage} = require('./make_wallpeaper_image.js')
 
-module.exports.TarihteBugun = class TarihteBugun{ 
+
+module.exports.TarihteBugun = class TarihteBugun {
 
     target_folder
-    ilkokul_resimleri =[]
-    ortaokul_resimleri =[]
-    lise_resimleri =[]
+    gunun_dosyalari = {}
 
-    async start(){
-        await this.gununDizininiTempeTasi()
-        this.gununDosyalariniAyikla()
+    async start() {
+        this.gunun_dosyalari = await this.gununDosyalariniAyikla()
+        let resimler = this.gunun_dosyalari.resimler
+        let random_resim    = resimler[Math.floor(Math.random() * resimler.length)];
+        let jsons = this.gunun_dosyalari.jsons
+        let json_file     = jsons[0]
+        const data = fs.readFileSync(json_file);
+        let datas = JSON.parse(data)
+        let random_data   = datas[Math.floor(Math.random() * datas.length)];  
+        makeWallpeaperImage(random_resim,random_data)
     }
-    
-    okulTurunuGetir(){
+
+    okulTurunuGetir() {
         return 'ilkokul'
     }
 
     // tarih değerine göre dizinin yolu belirlyelim
-    yollariBelirle(){
-        var date        = new Date();
-        var month       = date.getMonth();
-        var day         = date.getDate(); 
-        let guncel_dizin    = path.join(month.toString(), day.toString()) 
-        let srcDir      = path.join(__dirname, 'data', guncel_dizin)
-        let destDir     = path.join(this.target_folder, guncel_dizin)
-        return {srcDir,destDir}
+    yollariBelirle() {
+        var date = new Date();
+        var month = date.getMonth();
+        var day = date.getDate();
+        let guncel_dizin = path.join(month.toString(), day.toString())
+        let srcDir = path.join(__dirname, 'data', guncel_dizin)
+        // let destDir = path.join(this.target_folder, guncel_dizin)
+        return srcDir
     }
-    async  gununDizininiTempeTasi() { 
-        let {srcDir,destDir} = this.yollariBelirle()
+
+    async gununDosyalariniAyikla() {
+        let srcDir = this.yollariBelirle()
         let okul_turu = this.okulTurunuGetir()
-        // okul türü dizinini kopyala
-        if (!fs.existsSync(path.join(destDir, okul_turu ))) { 
-            fs.cpSync(path.join(srcDir, okul_turu ), path.join(destDir, okul_turu), { recursive: true }, (err) => {
-                if (err) throw err; 
-            });
-        }else{
-            console.log('fs.copexistsSyncySync dizin zaten var !')
-        }
-        if (!fs.existsSync(path.join(destDir, 'genel'))) { 
-            fs.cpSync(path.join(srcDir, 'genel'), path.join(destDir, 'genel'), { recursive: true }, (err) => {
-                if (err) throw err; 
-            });
-        }else{
-            console.log('fs.copexistsSyncySync destDir dizin zaten var !')
-        }
-    }
-    
-    
-    async gununDosyalariniAyikla() {   
-        let gunun_dosyalari = {}
-        let {destDir} = this.yollariBelirle() 
-        let okul_turu = this.okulTurunuGetir();
- 
-        let dizinler = fs.readdirSync(path.join(destDir,okul_turu))
-        dizinler.forEach(dizin=>{ 
-            console.log("------",dizin)
-            let dosyalar = fs.readdirSync(path.join(destDir,okul_turu,dizin))
-            dosyalar.forEach(dosya=>{  
-                console.log(dosya)
+        let dizinler = fs.readdirSync(path.join(srcDir, okul_turu))
+        let varolan_dosyalar = {}
+        dizinler.forEach(dizin => {
+            varolan_dosyalar[dizin] = []
+            let dosyalar = fs.readdirSync(path.join(srcDir, okul_turu, dizin))
+            dosyalar.forEach(dosya => {
+                varolan_dosyalar[dizin].push(path.join(srcDir, okul_turu, dizin, dosya))
             })
         })
-        console.log(gunun_dosyalari)
-     
+        return varolan_dosyalar
     }
+
+
 }
 
 
