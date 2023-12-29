@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/alpaygunes/Tarihte-Bugun-v2/issues"
   },
-  "homepage": "https://github.com/alpaygunes/Tarihte-Bugun-v2#readme"
+  "homepage": "https://github.com/alpaygunes/Tarihte-Bugun-v2#readme",
+  "dependencies": {
+    "@napi-rs/canvas": "^0.1.44"
+  }
 }
