@@ -2,7 +2,7 @@ const { app, BrowserWindow, ipcMain, Tray, Menu } = require('electron')
 const process = require("process");
 const url = require("url")
 const path = require("path")
-const fs = require('node:fs');
+const fs = require('fs');
 const { TarihteBugun } = require('./tarihte_bugun')
 const os = require("os")
 
@@ -30,12 +30,12 @@ app.whenReady().then(() => {
 const pencereOlustur = () => {
     anaPencere = new BrowserWindow({
         width: 800,
-        height: 600,
+        height: 400,
         webPreferences: {
             nodeIntegration: true,
             contextIsolation: false,
         },
-        frame: true
+        frame: false
     })
     anaPencere.loadURL(
         url.format({

@@ -1,5 +1,5 @@
 const { app, screen } = require('electron')
-const { createCanvas, GlobalFonts,  loadImage } = require('./node_modules/@napi-rs/canvas') 
+const { createCanvas, GlobalFonts,  loadImage } = require('@napi-rs/canvas') 
 const fs = require('fs')
 const path = require('path');
  
