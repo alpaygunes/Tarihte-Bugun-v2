@@ -72,7 +72,7 @@ async function mesajKutusunuOlustusu(scrn_width, scrn_height, random_json,okul_t
     //---------------------------------------- title 
     y += 18
     if (random_json.title){
-        let title  = random_json.title + " Failed to send GpuControl.CreateCommandBuffer."
+        let title  = random_json.title
         satirlar = satirlaraBol(ctx, title, msg_canvas.width*width_kullanima_orani);
         ctx.font    = "bold 20px Alkatra";
         if(satirlar>2){
@@ -104,7 +104,7 @@ async function mesajKutusunuOlustusu(scrn_width, scrn_height, random_json,okul_t
     
     //---------------------------------------- txt yi ekleyelim
     if (random_json.txt){
-        let txt  = random_json.txt + "ContextResult::kTransientFailure:  Failed to send GpuControl.CreateCommandBuffer."
+        let txt  = random_json.txt
         satirlar = satirlaraBol(ctx, txt, msg_canvas.width*width_kullanima_orani );
         ctx.font    = "18px Alkatra";
         satirlar.forEach(satir => {

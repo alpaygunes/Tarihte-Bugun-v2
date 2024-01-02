@@ -1,0 +1,36 @@
+[
+    {
+        "footer": "Günün Sözü",
+        "title": null,
+        "txt": "Hayatta en hakiki mürşit ilimdir",
+        "bottom": "Mustafa Kemal Atatürk"
+    },
+    {
+        "footer": "Tarihte Bugün",
+        "title": "1942 - II. Dünya Savaşı: Manila, Japon kuvvetlerince işgal edildi.",
+        "txt": "Manila (Takalotça: Maynila), Filipinler'in başkenti ve Metro Manila bölgesinde bulunan belediyelerden biridir. Şehir ülkenin en büyük adası olan Luzon'da Manila Bay'ın doğu kıyısında bulunur."
+    },
+    {
+        "footer": "Günün Doğrusu",
+        "title": null,
+        "dogru_yanlis": {
+            "dogru":"Hâlâ",
+            "yanlis":"Hayla"
+        }
+    },
+    {
+        "footer": "Günün Değeri",
+        "title": "Prof. Dr. Aziz Sancar",
+        "txt": "8 Eylül 1946 tarihinde Mardin'in Savur ilçesinde doğan Aziz Sancar, 1997 yılından beri ABD'deki Kuzey Karolina Üniversitesi'nde görev yapmaktadır."
+    },
+    {
+        "footer": "Günün Kelimesi",
+        "title": "Laçka",
+        "txt": "Gemi halatının gevşetilerek boşa bırakılması. Mecaz :düzeni bozulmuş, verimsiz duruma gelmiş, gevşemiş."
+    },
+    {
+        "footer": "Günün Atasözü",
+        "title": "sakla samanı, gelir zamanı",
+        "txt": "“En değersiz şeyi bile atmamalı, bir yana koymalı, günün birinde gerekebilir, işe yarar” anlamında söylenir."
+    }
+]

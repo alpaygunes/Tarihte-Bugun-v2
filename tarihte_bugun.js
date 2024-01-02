@@ -5,23 +5,38 @@ const path  = require('path');
 const fs    = require('fs');
 const {makeWallpeaperImage} = require('./make_wallpeaper_image.js')
 const {setWallpeaper} = require('./set_wallpeaper.js')
+let zatenViewYuklendi = false
 
 
 module.exports.TarihteBugun = class TarihteBugun {  
     gunun_dosyalari = {} 
     okul_turu
     async start() {
+        const ID = process.env.MAIN_WINDOW_ID * 1;
+        const mainWindow = BrowserWindow.fromId(ID)
         //okul türü kayıtlı değilse işlemi kes. view de ayar penceresini aç
         this.okul_turu = this.okulTurunuGetir()
         if (!this.okul_turu) return; 
         
         this.gunun_dosyalari = await this.gununDosyalariniAyikla()
-        let resimler = this.gunun_dosyalari.resimler
-        let random_resim    = resimler[Math.floor(Math.random() * resimler.length)];
-        let jsons = this.gunun_dosyalari.jsons
-        let random_json_file     = jsons[Math.floor(Math.random() * jsons.length)]
-        const data = fs.readFileSync(random_json_file);
-        let json_data = JSON.parse(data)
+        if (!Object.keys(this.gunun_dosyalari).length) {
+            if(zatenViewYuklendi){
+                mainWindow.webContents.send("gunun_dosyalari_yok", true) 
+            }else{
+                mainWindow.webContents.on('dom-ready', function () {
+                    mainWindow.webContents.send("gunun_dosyalari_yok", true) 
+                    zatenViewYuklendi = true
+                }); 
+            }
+            return false  
+        }
+
+        let resimler            = this.gunun_dosyalari.resimler
+        let random_resim        = resimler[Math.floor(Math.random() * resimler.length)];
+        let jsons               = this.gunun_dosyalari.jsons
+        let random_json_file    = jsons[Math.floor(Math.random() * jsons.length)]
+        const data              = fs.readFileSync(random_json_file);
+        let json_data           = JSON.parse(data)
         let random_json_data   = json_data[Math.floor(Math.random() * json_data.length)];
 
         let prefix = Math.floor(Math.random() * 99999);
@@ -40,6 +55,7 @@ module.exports.TarihteBugun = class TarihteBugun {
             return  JSON.parse(ayarlar).okul_turu
         }else{
             mainWindow.webContents.on('did-finish-load', function () {
+                mainWindow.show()
                 mainWindow.webContents.send("okultipi_sec", true) 
             });  
             return false        
@@ -61,6 +77,10 @@ module.exports.TarihteBugun = class TarihteBugun {
         let okul_turu   = this.okulTurunuGetir()
         let varolan_dosyalar = {}
 
+        // gunun dosyalari var mi ?
+        if(!fs.existsSync(path.join(srcDir, okul_turu))){
+            return varolan_dosyalar
+        }
         // okul turune ozel
         let dizinler    = fs.readdirSync(path.join(srcDir, okul_turu))
         dizinler.forEach(dizin => {

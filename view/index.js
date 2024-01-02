@@ -50,3 +50,7 @@ ipcRenderer.on("okultipi_sec", () => {
     messsageBox.style.backgroundColor = "rgba(93, 93, 93, 0.719)";
 })
 
+ipcRenderer.on("gunun_dosyalari_yok", () => { 
+    alert("Bu güne ait data bulunamadı.")
+})
+

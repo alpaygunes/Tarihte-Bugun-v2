@@ -10,23 +10,40 @@ var schedule = require('node-schedule');
 let anaPencere
 let tray = null
 let tarihteBugun
+const gotTheLock = app.requestSingleInstanceLock() 
 
-// app yüklendikten sonra pencereyi oluşturalım 
-app.whenReady().then(() => {
-    // Sistem tepsisi ayarları
-    tray = new Tray(path.join(__dirname, 'assets/icon.png'))
-    tray.setToolTip('Bilgi Ekranı.')
-    const contextMenu = Menu.buildFromTemplate([
-        { label: 'Göster', type: 'normal',click: () => anaPencere.show() },
-        { label: 'Çıkış', type: 'normal',click: () => app.quit() },
-    ])
-    tray.setContextMenu(contextMenu)
+// yalnızca bir defa
+if (!gotTheLock) {
+    app.quit()
+} else {
+    app.on('second-instance', (event, commandLine, workingDirectory) => {
+        // Someone tried to run a second instance, we should focus our window.
+        if (anaPencere) {
+            if (anaPencere.isMinimized()) anaPencere.restore()
+            anaPencere.focus()
+        }
+    })
 
-    baslangicaEkle()
-    pencereOlustur()
-    tarihteBugun = new TarihteBugun()
-    tarihteBugun.start()
-})
+    // Create anaPencere, load the rest of the app, etc...
+    // app yüklendikten sonra pencereyi oluşturalım 
+    app.whenReady().then(() => {
+        // Sistem tepsisi ayarları
+        tray = new Tray(path.join(__dirname, 'assets/icon.png'))
+        tray.setToolTip('Bilgi Ekranı.')
+        const contextMenu = Menu.buildFromTemplate([
+            { label: 'Göster', type: 'normal', click: () => anaPencere.show() },
+            { label: 'Çıkış', type: 'normal', click: () => app.quit() },
+        ])
+        tray.setContextMenu(contextMenu)
+
+        baslangicaEkle()
+        pencereOlustur()
+        tarihteBugun = new TarihteBugun()
+        tarihteBugun.start()
+    })
+}
+
+
 
 // Pencere oluşturma metodu
 const pencereOlustur = () => {
@@ -48,14 +65,23 @@ const pencereOlustur = () => {
             slashes: true,
         })
     )
-    process.env.MAIN_WINDOW_ID = anaPencere.id;  
+    process.env.MAIN_WINDOW_ID = anaPencere.id;
+    var isDev = process.env.APP_DEV ? (process.env.APP_DEV.trim() == "true") : false;
+    if (!isDev){
+        anaPencere.hide();
+    }
 }
 
 // her saat başı çalış
-var j = schedule.scheduleJob('* */20 * * *', function(){  
+var j = schedule.scheduleJob('* */20 * * *', function () {
     tarihteBugun.start()
     console.log('The world is going to end today.');
 });
+
+
+
+
+
 
 function baslangicaEkle() {
     let string = ("[Desktop Entry]\n\
@@ -73,7 +99,7 @@ Type=Application\
 }
 
 // Gizle
-ipcMain.on("hide", (err, data) => { 
+ipcMain.on("hide", (err, data) => {
     anaPencere.hide();
 })
 
@@ -81,8 +107,8 @@ ipcMain.on("hide", (err, data) => {
 // okul türünü değiştir
 ipcMain.on("change:type", async (err, type) => {
     okul_turu = type
-    const storage_path  = app.getPath("userData")
-    const user_data     = JSON.stringify({ "okul_turu": okul_turu })
+    const storage_path = app.getPath("userData")
+    const user_data = JSON.stringify({ "okul_turu": okul_turu })
     fs.writeFileSync(path.join(storage_path, '/user-data.json'), user_data)
     tarihteBugun.start()
 })
