@@ -16,6 +16,7 @@ const gotTheLock = app.requestSingleInstanceLock()
 if (!gotTheLock) {
     app.quit()
 } else {
+    tarihteBugun = new TarihteBugun()
     app.on('second-instance', (event, commandLine, workingDirectory) => {
         // Someone tried to run a second instance, we should focus our window.
         if (anaPencere) {
@@ -38,7 +39,7 @@ if (!gotTheLock) {
         tray.setContextMenu(contextMenu)
 
         baslangicaEkle()
-        tarihteBugun = new TarihteBugun()
+        //tarihteBugun = new TarihteBugun()
         tarihteBugun.start()
     })
 }
