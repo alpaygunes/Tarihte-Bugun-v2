@@ -26,7 +26,8 @@ if (!gotTheLock) {
 
     // Create anaPencere, load the rest of the app, etc...
     // app yüklendikten sonra pencereyi oluşturalım 
-    app.whenReady().then(() => {
+    app.whenReady().then(() => { 
+        pencereOlustur()
         // Sistem tepsisi ayarları
         tray = new Tray(path.join(__dirname, 'assets/icon.png'))
         tray.setToolTip('Bilgi Ekranı.')
@@ -37,7 +38,6 @@ if (!gotTheLock) {
         tray.setContextMenu(contextMenu)
 
         baslangicaEkle()
-        pencereOlustur()
         tarihteBugun = new TarihteBugun()
         tarihteBugun.start()
     })
