@@ -44,13 +44,12 @@ module.exports.TarihteBugun = class TarihteBugun {
         keys.shift()
         let mesaj_turu = keys[Math.floor(keys.length * Math.random())]
         let mesaj     = this.gunun_mesajlari[mesaj_turu];
-        console.log({mesaj_turu,mesaj})
+        let mesaj_json =({mesaj_turu,mesaj})
 
-
-        let random_json_data = {}
+ 
         //let prefix = Math.floor(Math.random() * 99999);
         this.target_path = path.join("/var/tmp/", "bilgi_penceresi.jpg");
-        await makeWallpeaperImage(random_resim, random_json_data, this.target_path, this.okul_turu)
+        await makeWallpeaperImage(random_resim, mesaj_json, this.target_path, this.okul_turu)
         setWallpeaper(this.target_path)
     }
 
