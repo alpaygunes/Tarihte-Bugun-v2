@@ -41,31 +41,206 @@ async function mesajKutusunuOlustusu(scrn_width, scrn_height, mesaj_json,okul_tu
     let image_path = path.join(__dirname, '/assets/'+okul_turu+'.png')
     const background = await loadImage(image_path);
     ctx.drawImage(background, 0, 0, msg_canvas.width, msg_canvas.height);
-    let x
-    let y = 120
+    let x = 0
+    let y = 30
     let satirlar =[]
     let satir_arasi = 30
     let width_kullanima_orani = .9
+    let font_footer = "bold 30px Alkatra"
+    let font_title  = "bold 25px Alkatra"
+    let font_desc   = "bold 20px Alkatra"
 
 
-
-    // (10) ['game', 'preference', 'proverb', 'reason', 'solution', 'specialSay', 'spelling', 'suggestion', 'value', 'word']
-
+    ctx.textAlign = "start";
+    ctx.textAlign = "center";
+    x = msg_canvas.width/2
     if (mesaj_json.mesaj_turu == 'game'){
-        console.log(game)
+        footer              = "GÜNÜN OYUNU"
+        ctx.font            = font_footer; 
+        ctx.fillText(footer, x, y); 
+
+        ctx.font            = font_title;  
+        let titles = satirlaraBol(ctx, mesaj_json.mesaj.title, msg_canvas.width );
+        titles.forEach(title => {
+            satir_width    = ctx.measureText(title); 
+            y +=satir_arasi
+            ctx.fillText(title, x, );
+        });
+       
+
+        ctx.font            = font_desc; 
+        y +=satir_arasi
+        let descs = satirlaraBol(ctx, mesaj_json.mesaj.desc, msg_canvas.width );
+        descs.forEach(desc => {
+            satir_width    = ctx.measureText(desc); 
+            y +=satir_arasi
+            ctx.fillText(desc, x, y); 
+        });
+        
     }else if (mesaj_json.mesaj_turu == 'proverb'){
-        console.log(mesaj_json)
+        footer              = "ATASÖZÜ"
+        ctx.font            = font_footer; 
+        ctx.fillText(footer, x, y);
+
+        ctx.font            = font_title;  
+        let titles = satirlaraBol(ctx, mesaj_json.mesaj.title, msg_canvas.width );
+        titles.forEach(title => {
+            satir_width    = ctx.measureText(title); 
+            y +=satir_arasi
+            ctx.fillText(title, x, );
+        });
+       
+
+        ctx.font            = font_desc; 
+        y +=satir_arasi
+        let descs = satirlaraBol(ctx, mesaj_json.mesaj.desc, msg_canvas.width );
+        descs.forEach(desc => {
+            satir_width    = ctx.measureText(desc); 
+            y +=satir_arasi
+            ctx.fillText(desc, x, y); 
+        });
     }else if (mesaj_json.mesaj_turu == 'reason'){
-        console.log(mesaj_json)
+        let mesaj           = mesaj_json.mesaj[Math.floor(Math.random() * mesaj_json.mesaj.length)]
+        footer              = "GÜNÜN NEDENİ"
+        ctx.font            = font_footer; 
+        ctx.fillText(footer, x, y);
+        ctx.font            = font_title;  
+        let titles = satirlaraBol(ctx, mesaj.title, msg_canvas.width );
+        titles.forEach(title => {
+            satir_width    = ctx.measureText(title); 
+            y +=satir_arasi
+            ctx.fillText(title, x, );
+        });
+       
+
+        ctx.font            = font_desc; 
+        y +=satir_arasi
+        let descs = satirlaraBol(ctx, mesaj.desc, msg_canvas.width );
+        descs.forEach(desc => {
+            satir_width    = ctx.measureText(desc); 
+            y +=satir_arasi
+            ctx.fillText(desc, x, y); 
+        });
     }else if (mesaj_json.mesaj_turu == 'solution'){
-        console.log(mesaj_json)
+        footer              = "GÜNÜN ÇÖZÜMÜ"
+        ctx.font            = font_footer; 
+        ctx.fillText(footer, x, y);
+        ctx.font            = font_title;  
+        let titles = satirlaraBol(ctx, mesaj_json.mesaj.title, msg_canvas.width );
+        titles.forEach(title => {
+            satir_width    = ctx.measureText(title); 
+            y +=satir_arasi
+            ctx.fillText(title, x, );
+        });
+       
+
+        ctx.font            = font_desc; 
+        y +=satir_arasi
+        let descs = satirlaraBol(ctx, mesaj_json.mesaj.desc, msg_canvas.width );
+        descs.forEach(desc => {
+            satir_width    = ctx.measureText(desc); 
+            y +=satir_arasi
+            ctx.fillText(desc, x, y); 
+        });
+    }else if (mesaj_json.mesaj_turu == 'preference'){
+        footer              = "preference"
+        ctx.font            = font_footer; 
+        ctx.fillText(footer, x, y);
+        ctx.font            = font_title;  
+        y +=satir_arasi
+        ctx.fillText(mesaj_json.mesaj.correct, x, y);
+        y +=satir_arasi
+        ctx.fillText(mesaj_json.mesaj.wrong, x, y);
     }else if (mesaj_json.mesaj_turu == 'specialSay'){
-        console.log(mesaj_json)
+        footer              = "GÜNÜN SÖZÜ"
+        ctx.font            = font_footer; 
+        ctx.fillText(footer, x, y); 
+
+        ctx.font            = font_desc; 
+        y +=satir_arasi
+        let says = satirlaraBol(ctx, mesaj_json.mesaj.say, msg_canvas.width );
+        says.forEach(say => { 
+            y +=satir_arasi
+            ctx.fillText(say, x, y); 
+        });
+
+        ctx.font            = font_title;  
+        let titles = satirlaraBol(ctx, mesaj_json.mesaj.whoSaid, msg_canvas.width );
+        titles.forEach(title => { 
+            y +=satir_arasi
+            ctx.fillText(title, x, );
+        });
+
     }else if (mesaj_json.mesaj_turu == 'suggestion'){
-        console.log(mesaj_json)
+        footer              = "GÜNÜN ÖNERİSİ"
+        ctx.font            = font_footer; 
+        ctx.fillText(footer, x, y);
+        
+        ctx.font            = font_title;  
+        let titles = satirlaraBol(ctx, mesaj_json.mesaj.title, msg_canvas.width );
+        titles.forEach(title => { 
+            y +=satir_arasi
+            ctx.fillText(title, x, );
+        });
+       
+
+        ctx.font            = font_desc; 
+        y +=satir_arasi
+        let descs = satirlaraBol(ctx, mesaj_json.mesaj.desc, msg_canvas.width );
+        descs.forEach(desc => { 
+            y +=satir_arasi
+            ctx.fillText(desc, x, y); 
+        });
     }else if (mesaj_json.mesaj_turu == 'value'){
-        console.log(mesaj_json)
+        footer              = "GÜNÜN BİLGİSİ"
+        ctx.font            = font_footer; 
+        ctx.fillText(footer, x, y);
+
+        ctx.font            = font_title;  
+        let names = satirlaraBol(ctx, mesaj_json.mesaj.name, msg_canvas.width );
+        names.forEach(name => { 
+            y +=satir_arasi
+            ctx.fillText(name, x, y);
+        });
+       
+
+        ctx.font            = font_desc; 
+        y +=satir_arasi
+        let descs = satirlaraBol(ctx, mesaj_json.mesaj.desc, msg_canvas.width );
+        descs.forEach(desc => { 
+            y +=satir_arasi
+            ctx.fillText(desc, x, y); 
+        }); 
     }else if (mesaj_json.mesaj_turu == 'word'){
+        footer              = "GÜNÜN KELİMESİ"
+        ctx.font            = font_footer; 
+        ctx.fillText(footer, x, y);
+
+        ctx.font            = font_title;  
+        let titles = satirlaraBol(ctx, mesaj_json.mesaj.title, msg_canvas.width );
+        titles.forEach(title => { 
+            y +=satir_arasi
+            ctx.fillText(title, x, y);
+        });
+       
+
+        ctx.font            = font_desc; 
+        y +=satir_arasi
+        let descs = satirlaraBol(ctx, mesaj_json.mesaj.desc, msg_canvas.width );
+        descs.forEach(desc => { 
+            y +=satir_arasi
+            ctx.fillText(desc, x, y); 
+        });
+    }else if (mesaj_json.mesaj_turu == 'spelling'){
+        footer              = "GÜNÜN DOĞRUSU"
+        ctx.font            = font_footer;  
+        ctx.fillText(footer, x, y);  
+        ctx.font            = font_title;  
+        y +=satir_arasi
+        ctx.fillText(mesaj_json.mesaj.correct, x, y);
+        y +=satir_arasi
+        ctx.fillText(mesaj_json.mesaj.wrong, x, y);
+    }else{
         console.log(mesaj_json)
     }
 

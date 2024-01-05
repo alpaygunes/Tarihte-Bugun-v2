@@ -120,8 +120,7 @@ module.exports.TarihteBugun = class TarihteBugun {
         let month   = ("0" + (date.getMonth() + 1)).slice(-2)
         let day     = ("0" + (date.getDate() + 1)).slice(-2)
         let where   = day+"."+month+".2021"
-        let sql_string = 'SELECT * FROM calendar WHERE date =\''+where+'\''
-        console.log(sql_string)
+        let sql_string = 'SELECT * FROM calendar WHERE date =\''+where+'\'' 
 
         let db = new sqlite3.Database(path.join(__dirname, 'data/takvim_v27'), sqlite3.OPEN_READONLY, (err) => {
             if (err) {
