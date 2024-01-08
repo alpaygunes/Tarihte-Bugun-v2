@@ -42,8 +42,7 @@ async function mesajKutusunuOlustusu(scrn_width, scrn_height, mesaj_json,okul_tu
     const background = await loadImage(image_path);
     ctx.drawImage(background, 0, 0, msg_canvas.width, msg_canvas.height);
     let x = 0
-    let y = kutu_width*.13
-    let satirlar =[]
+    let y = kutu_width*.13 
     let satir_arasi = kutu_width*.03 
     let font_footer = "bold 60px Alkatra"
     let font_title  = "bold 50px Alkatra"
@@ -53,13 +52,15 @@ async function mesajKutusunuOlustusu(scrn_width, scrn_height, mesaj_json,okul_tu
     ctx.textAlign = "start";
     ctx.textAlign = "center";
     x = msg_canvas.width/2
+    let mesaj           = mesaj_json.mesaj[Math.floor(Math.random() * mesaj_json.mesaj.length)]
+    // ---------------------------------------------   "GÜNÜN OYUNU"
     if (mesaj_json.mesaj_turu == 'game'){
         footer              = "GÜNÜN OYUNU"
         ctx.font            = font_footer; 
         ctx.fillText(footer, x, y); 
         y *=1.2
         ctx.font            = font_title;  
-        let titles = satirlaraBol(ctx, mesaj_json.mesaj.title, msg_canvas.width );
+        let titles = satirlaraBol(ctx, mesaj.title, msg_canvas.width );
         titles.forEach(title => {
             satir_width    = ctx.measureText(title); 
             y +=satir_arasi
@@ -69,20 +70,20 @@ async function mesajKutusunuOlustusu(scrn_width, scrn_height, mesaj_json,okul_tu
 
         ctx.font            = font_desc; 
         y +=satir_arasi
-        let descs = satirlaraBol(ctx, mesaj_json.mesaj.desc, msg_canvas.width );
+        let descs = satirlaraBol(ctx, mesaj.desc, msg_canvas.width );
         descs.forEach(desc => {
             satir_width    = ctx.measureText(desc); 
             y +=satir_arasi
             ctx.fillText(desc, x, y); 
         });
-        
+    // ---------------------------------------------   "GÜNÜN ATASÖZÜ"
     }else if (mesaj_json.mesaj_turu == 'proverb'){
         footer              = "GÜNÜN ATASÖZÜ"
         ctx.font            = font_footer; 
         ctx.fillText(footer, x, y);
         y *=1.2
         ctx.font            = font_title;  
-        let titles = satirlaraBol(ctx, mesaj_json.mesaj.title, msg_canvas.width );
+        let titles = satirlaraBol(ctx, mesaj.title, msg_canvas.width );
         titles.forEach(title => {
             satir_width    = ctx.measureText(title); 
             y +=satir_arasi
@@ -92,14 +93,14 @@ async function mesajKutusunuOlustusu(scrn_width, scrn_height, mesaj_json,okul_tu
 
         ctx.font            = font_desc; 
         y +=satir_arasi
-        let descs = satirlaraBol(ctx, mesaj_json.mesaj.desc, msg_canvas.width );
+        let descs = satirlaraBol(ctx, mesaj.desc, msg_canvas.width );
         descs.forEach(desc => {
             satir_width    = ctx.measureText(desc); 
             y +=satir_arasi
             ctx.fillText(desc, x, y); 
         });
-    }else if (mesaj_json.mesaj_turu == 'reason'){
-        let mesaj           = mesaj_json.mesaj[Math.floor(Math.random() * mesaj_json.mesaj.length)]
+    // ---------------------------------------------   "GÜNÜN NEDENİ"
+    }else if (mesaj_json.mesaj_turu == 'reason'){ 
         footer              = "GÜNÜN NEDENİ"
         ctx.font            = font_footer; 
         ctx.fillText(footer, x, y);
@@ -121,13 +122,14 @@ async function mesajKutusunuOlustusu(scrn_width, scrn_height, mesaj_json,okul_tu
             y +=satir_arasi
             ctx.fillText(desc, x, y); 
         });
+    // ---------------------------------------------   "GÜNÜN ÇÖZÜMÜ"
     }else if (mesaj_json.mesaj_turu == 'solution'){
         footer              = "GÜNÜN ÇÖZÜMÜ"
         ctx.font            = font_footer; 
         ctx.fillText(footer, x, y);
         y *=1.2
         ctx.font            = font_title;  
-        let titles = satirlaraBol(ctx, mesaj_json.mesaj.title, msg_canvas.width );
+        let titles = satirlaraBol(ctx, mesaj.title, msg_canvas.width );
         titles.forEach(title => {
             satir_width    = ctx.measureText(title); 
             y +=satir_arasi
@@ -137,12 +139,13 @@ async function mesajKutusunuOlustusu(scrn_width, scrn_height, mesaj_json,okul_tu
 
         ctx.font            = font_desc; 
         y +=satir_arasi
-        let descs = satirlaraBol(ctx, mesaj_json.mesaj.desc, msg_canvas.width );
+        let descs = satirlaraBol(ctx, mesaj.desc, msg_canvas.width );
         descs.forEach(desc => {
             satir_width    = ctx.measureText(desc); 
             y +=satir_arasi
             ctx.fillText(desc, x, y); 
         });
+    // ---------------------------------------------   "GÜNÜN TERCİHİ"
     }else if (mesaj_json.mesaj_turu == 'preference'){
         // dogru yanlış işaretleri
         const d_y_canvas = createCanvas(64, 64)
@@ -157,19 +160,19 @@ async function mesajKutusunuOlustusu(scrn_width, scrn_height, mesaj_json,okul_tu
         ctx.fillText(footer, x, y);
         y +=3*satir_arasi
         ctx.font            = font_title;   
-        ctx.fillText(mesaj_json.mesaj.correct, x, y);
-        let doguru_uzunlugu = ctx.measureText(mesaj_json.mesaj.correct)
+        ctx.fillText(mesaj.correct, x, y);
+        let doguru_uzunlugu = ctx.measureText(mesaj.correct)
         d_y_ctx.drawImage(dogru_bg, x-doguru_uzunlugu.width, y-satir_arasi);
         ctx.drawImage(d_y_canvas, 0, 0);
 
 
         y +=2*satir_arasi
-        ctx.fillText(mesaj_json.mesaj.wrong, x, y);
+        ctx.fillText(mesaj.wrong, x, y);
         d_y_ctx.clearRect(0, 0, d_y_canvas.width, d_y_canvas.height);
-        let yanlis_uzunlugu = ctx.measureText(mesaj_json.mesaj.wrong)
+        let yanlis_uzunlugu = ctx.measureText(mesaj.wrong)
         d_y_ctx.drawImage(yanlis_bg, x-yanlis_uzunlugu.width, y-satir_arasi);
         ctx.drawImage(d_y_canvas, 0, 0); 
-        
+    // ---------------------------------------------   "GÜNÜN SÖZÜ"
     }else if (mesaj_json.mesaj_turu == 'specialSay'){
         footer              = "GÜNÜN SÖZÜ"
         ctx.font            = font_footer; 
@@ -177,26 +180,26 @@ async function mesajKutusunuOlustusu(scrn_width, scrn_height, mesaj_json,okul_tu
         y *=1.2
         ctx.font            = font_desc; 
         y +=satir_arasi
-        let says = satirlaraBol(ctx, mesaj_json.mesaj.say, msg_canvas.width );
+        let says = satirlaraBol(ctx, mesaj.say, msg_canvas.width );
         says.forEach(say => { 
             y +=satir_arasi
             ctx.fillText(say, x, y); 
         });
 
         ctx.font            = font_title;  
-        let titles = satirlaraBol(ctx, mesaj_json.mesaj.whoSaid, msg_canvas.width );
+        let titles = satirlaraBol(ctx, mesaj.whoSaid, msg_canvas.width );
         titles.forEach(title => { 
             y +=satir_arasi
             ctx.fillText(title, x, y);
         });
-
+    // ---------------------------------------------   "GÜNÜN ÖNERİSİ"
     }else if (mesaj_json.mesaj_turu == 'suggestion'){
         footer              = "GÜNÜN ÖNERİSİ"
         ctx.font            = font_footer; 
         ctx.fillText(footer, x, y);
         y *=1.2
         ctx.font            = font_title;  
-        let titles = satirlaraBol(ctx, mesaj_json.mesaj.title, msg_canvas.width );
+        let titles = satirlaraBol(ctx, mesaj.title, msg_canvas.width );
         titles.forEach(title => { 
             y +=satir_arasi
             ctx.fillText(title, x, y);
@@ -205,51 +208,52 @@ async function mesajKutusunuOlustusu(scrn_width, scrn_height, mesaj_json,okul_tu
 
         ctx.font            = font_desc; 
         y +=satir_arasi
-        let descs = satirlaraBol(ctx, mesaj_json.mesaj.desc, msg_canvas.width );
+        let descs = satirlaraBol(ctx, mesaj.desc, msg_canvas.width );
         descs.forEach(desc => { 
             y +=satir_arasi
             ctx.fillText(desc, x, y); 
         });
+    // ---------------------------------------------   "GÜNÜN BİLGİSİ"
     }else if (mesaj_json.mesaj_turu == 'value'){
         footer              = "GÜNÜN BİLGİSİ"
         ctx.font            = font_footer; 
         ctx.fillText(footer, x, y);
         y *=1.2
         ctx.font            = font_title;  
-        let names = satirlaraBol(ctx, mesaj_json.mesaj.name, msg_canvas.width );
+        let names = satirlaraBol(ctx, mesaj.name, msg_canvas.width );
         names.forEach(name => { 
             y +=satir_arasi
             ctx.fillText(name, x, y);
         });
        
-
         ctx.font            = font_desc; 
         y +=satir_arasi
-        let descs = satirlaraBol(ctx, mesaj_json.mesaj.desc, msg_canvas.width );
+        let descs = satirlaraBol(ctx, mesaj.desc, msg_canvas.width );
         descs.forEach(desc => { 
             y +=satir_arasi
             ctx.fillText(desc, x, y); 
         }); 
+    // ---------------------------------------------   "GÜNÜN KELİMESİ"
     }else if (mesaj_json.mesaj_turu == 'word'){
         footer              = "GÜNÜN KELİMESİ"
         ctx.font            = font_footer; 
         ctx.fillText(footer, x, y);
         y *=1.5
         ctx.font            = font_title;  
-        let titles = satirlaraBol(ctx, mesaj_json.mesaj.title, msg_canvas.width );
+        let titles = satirlaraBol(ctx, mesaj.title, msg_canvas.width );
         titles.forEach(title => { 
             y +=satir_arasi
             ctx.fillText(title, x, y);
         });
        
-
         ctx.font            = font_desc; 
         y +=satir_arasi
-        let descs = satirlaraBol(ctx, mesaj_json.mesaj.desc, msg_canvas.width );
+        let descs = satirlaraBol(ctx, mesaj.desc, msg_canvas.width );
         descs.forEach(desc => { 
             y +=satir_arasi
             ctx.fillText(desc, x, y); 
         });
+    // ---------------------------------------------   "GÜNÜN DOĞRUSU"
     }else if (mesaj_json.mesaj_turu == 'spelling'){
         // dogru yanlış işaretleri
         const d_y_canvas = createCanvas(64, 64)
@@ -265,15 +269,15 @@ async function mesajKutusunuOlustusu(scrn_width, scrn_height, mesaj_json,okul_tu
 
         y *= 2  
         ctx.font            = font_title;  
-        ctx.fillText(mesaj_json.mesaj.correct, x, y);
-        let doguru_uzunlugu = ctx.measureText(mesaj_json.mesaj.correct)
+        ctx.fillText(mesaj.correct, x, y);
+        let doguru_uzunlugu = ctx.measureText(mesaj.correct)
         d_y_ctx.drawImage(dogru_bg, x-doguru_uzunlugu.width, y-satir_arasi);
         ctx.drawImage(d_y_canvas, 0, 0); 
 
         y +=2*satir_arasi 
-        ctx.fillText(mesaj_json.mesaj.wrong, x, y);
+        ctx.fillText(mesaj.wrong, x, y);
         d_y_ctx.clearRect(0, 0, d_y_canvas.width, d_y_canvas.height);
-        let yanlis_uzunlugu = ctx.measureText(mesaj_json.mesaj.wrong)
+        let yanlis_uzunlugu = ctx.measureText(mesaj.wrong)
         d_y_ctx.drawImage(yanlis_bg, x-yanlis_uzunlugu.width, y-satir_arasi);
         ctx.drawImage(d_y_canvas, 0, 0); 
     }else{

@@ -5,8 +5,7 @@ const path = require('path');
 const fs = require('fs');
 const { makeWallpeaperImage } = require('./make_wallpeaper_image.js')
 const { setWallpeaper } = require('./set_wallpeaper.js');
-const { rejects } = require('assert');
-const sqlite3 = require('sqlite3').verbose();
+const { rejects } = require('assert'); 
 let zatenViewYuklendi = false
 
 
@@ -116,30 +115,7 @@ module.exports.TarihteBugun = class TarihteBugun {
     }
 
     gununMesajlari() {
-        let date    = new Date();
-        let month   = ("0" + (date.getMonth() + 1)).slice(-2)
-        let day     = ("0" + (date.getDate() + 1)).slice(-2)
-        let where   = day+"."+month+".2021"
-        let sql_string = 'SELECT * FROM calendar WHERE date =\''+where+'\'' 
-
-        let db = new sqlite3.Database(path.join(__dirname, 'data/takvim_v27'), sqlite3.OPEN_READONLY, (err) => {
-            if (err) {
-                console.error(err.message);
-            }
-            console.log('Connected to the chinook database.');
-        });
-
-        let json = new Promise((resolve,rejects)=>{
-            db.serialize(() => {
-                db.each(sql_string, (err, row) => {
-                    if (err) {
-                        console.error(err.message);
-                        rejects(err.message)
-                    } 
-                   resolve(row.json) 
-                });
-            });
-        })
+        const json = fs.readFileSync(path.join(__dirname, 'data/data.json'))
         return json
     }
 }

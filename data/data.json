@@ -1,0 +1,154 @@
+{
+    "date": "24.01.2021",
+    "game": [
+        {
+            "desc": "Yere büyükçe bir kâğıt serin. Çocuğunuzu ya\nda aile bireylerinden birini bu kâğıdın üzerine\nyatırarak kenarlardan siluetini çizin. Çiziminizin\ndetaylarını (saç, kaş, göz, burun) çocuğunuzla ya\nda aile bireyleriyle tamamlayın.",
+            "title": ""
+        },
+        {
+            "desc": "Kâğıda istediğiniz bir şeyi çizin. Kâğıdı, çizdiğiniz tarafı görünmeyecek şekilde katlayın ya da arkasını çevirin. Çocuğunuza çiziminizle ilgili bir ipucu verin. Örneğin; hayvan mı, insan mı? Bilirse, çizme ve sorma sırası ona geçsin ",
+            "title": ""
+        },
+        {
+            "desc": "Oyuncakların gölgelerini, ışık kaynağı\nkullanarak (fener, taşınabilir lamba) büyük bir\nbeyaz kâğıt üzerine düşürün. Çocuğunuzdan\nkalemle bu gölgelerin üzerinden gitmesini\nisteyin. Sonra çizdiği şekli, istediği gibi\nboyasın.",
+            "title": ""
+        }
+    ],
+    "preference": [
+        {
+            "correct": "Düzeltilmiş, yenilenmiş",
+            "wrong": "Revize"
+        },
+        {
+            "correct": "Öğretici",
+            "wrong": "Formatör"
+        },
+        {
+            "correct": "Verim ",
+            "wrong": "Randıman "
+        }
+    ],
+    "proverb": [
+        {
+            "desc": "İki insanın tanışıp kaynaşması ve\naralarında bir dostluk bağı oluşması için\nözel bir kurala, yola, yönteme gerek\nyoktur; kısa bir yolculuk, küçük bir ikram\nbile bu yakınlığı sağlayabilir.",
+            "title": "Yedi adım yolun, bir yudum\nsuyun hakkı vardır:"
+        },
+        {
+            "desc": "Bir gencin yetişip olgunlaşması,\nçevresinde yetişmiş, olgunlaşmış kişilerin\nbulunmasıyla onların koruyup eğitmesiyle\ngerçekleşir.",
+            "title": "Ağaç, ağaç içinde büyür."
+        },
+        {
+            "desc": "Bazen bir yerden başka bir yere gitmek,\nmekân değiştirmek huzur sağlar.",
+            "title": "Tebdilimekânda ferahlık vardır:"
+        }
+    ],
+    "reason": [
+        {
+            "desc": "Yarasalar, geceleri ortaya çıkan memelilerdir. Kendilerine özgü doğal radar sistemleriyle ses dalgası yayarak\nyollarını bulurlar. Yarasaların kör olduğuyla ilgili yaygın bir kanı vardır ancak bu doğru değildir. Sadece gece\navlanan canlılar olduklarından, avlanma ve yön bulma için geliştirdikleri ses dalgası yayma yöntemi, görme\nduyusuna göre onlar için çok daha avantajlıdır. Geceleri avlanmaları sebebiyle yarasaların, gündüz dinlenmek\niçin korunaklı alanlara ihtiyaçları vardır. Gündüzleri karanlık ve nemli olan mağara ortamı, yarasaların\ndinlenmeleri ve korunmaları için idealdir. Ayrıca nem, yarasalar için hayati önem taşır çünkü yarasaların\nkanatları nem olmadığında kurur ve bu durum ölümle sonuçlanır.",
+            "title": "Yarasalar neden mağaralarda yaşar?"
+        },
+        {
+            "desc": "Yüzeyinde kayaç bulunmayan büyük gaz kütleleri hâlinde bulunan gezegenlere “gaz devleri” ya da “gaz yapıda\ngezegenler” denir. Güneş Sistemimizdeki Jüpiter, Satürn, Uranüs ve Neptün gezegenleri gaz devleridir. Gaz\ndevleri gezegenlerden Uranüs ve Neptün, Güneş’e çok uzak olduklarından, yapılarındaki gazlar donarak buz\nhâlinde bulunur. Bu sebeple, bu iki gezegene “buz devleri” de denir. Uranüs’ün mavi-yeşil görünmesinin\nnedeni, atmosferinde bulunan metandır. 600 nanometre dalga boyundaki kırmızı ışığı soğuran metan, ışık\ntayfını oluşturan diğer dalga boyundaki ışınları yansıtır. Atmosferinin bileşimi Uranüs’ünkine benzer olan\nNeptün’ün rengi ise parlak mavidir. Neptün’ün parlak mavi renkte görünmesine, atmosferindeki henüz ne\nolduğu tespit edilemeyen bir maddenin\nneden olduğu düşünülmektedir.",
+            "title": "Buz devleri gezegenlerin renkleri neden birbirinden farklıdır?"
+        },
+        {
+            "desc": "Buz, 0°C’de erir. Hava sıcaklığı bu derecenin altındayken buzun erime noktasını düşürmek için buzu\nbaşka bir maddeyle karıştırmak gerekir. Tuz, buzun erime noktasını düşüren bir maddedir. Eriyince oluşan\ntuzlu su da 0°C sıcaklık altında donmadan kalabilmektedir. Bu yüzden gerek buzlanmayı sonlandırmak\ngerekse buzlanmanın oluşmasını engellemek için kışın yollara tuz dökülür.",
+            "title": "Neden kışın yollara tuz dökülür?"
+        },
+        {
+            "desc": "Dünya’nın merkezine ulaşmak için, 6371 km boyunca içeri doğru yol almak gerekir. Dünya’nın merkezine\ndoğru ilerlerken hem basınç hem de sıcaklık dayanamayacağımız kadar (yaklaşık 6000 dereceye kadar)\nyükselir. Bu sebeple Dünya’nın merkezine gitmemiz mümkün değildir. Hatta bir robot göndermemiz bile\nmümkün olamaz çünkü üreteceğimiz robot ya basınç sebebiyle parçalanır ya da sıcaklık sebebiyle yanar.\nEn iyisi, Jules Verne’in Arzın Merkezine Seyahat’ini okumakla yetinmek. :)",
+            "title": "Neden Dünya’nın merkezine gidemiyoruz?"
+        },
+        {
+            "desc": "Uçağın kalkışı ve inişi sırasında kulak zarlarının iki tarafı arasındaki basınç farklılığını dengeleyemeyen\nbebekler, zarın gerilmesiyle yaşadıkları rahatsızlığı, kabindeki tüm yolculara haykırarak bildirir. Kulak\nyolunun sonunda, kulağın iç bölümlerini dış dünyadan tamamen izole hâle getiren kulak zarı bulunur.\nZarın hemen arkası, içi havayla dolu bir odacık olan orta kulak bölümüdür. Östaki borusu, orta kulağı\nburnumuzun arkasında bulunan üst yutağa bağlar. Dış ve orta kulak arasında bir basınç farkı oluştuğunda,\nöstaki borusu açılarak bu dengesizliğin üstesinden gelir. Örneğin, uçak yükselirken zarın dışında basınç\ndüşer. Zar dışarı doğru bombelenir ve kapalı konumdaki östaki borusunun açılması tetiklenir. Boru\naçıldığında, orta kulaktaki havanın bir kısmı üst yutağa aktarılır ve basınç dengelenir. İniş sırasında ise\nbunun tam tersi gerçekleşir. Esnerken ve yutkunurken gerçekleşen kas hareketleri, borunun açılmasına\nyardımcı olur. Basınç dengelenmesi esnasında, östaki borusu işlevini yerine getirdiğinde, kafamızın içinde\nbir ses duyar ve rahatlarız. Bebeklerin östaki borusu yetişkinlerinkinden daha dardır ve ihtiyaç hâlinde\nboruyu açan dört kas, bebeklerde henüz yeterince gelişmemiştir. Bu yüzden bebekler, kulaklarında oluşan\nbasınç farklılığıyla başa çıkmakta zorlanırlar.",
+            "title": "Bebekler uçakta neden ağlar?"
+        }
+    ],
+    "solution": [
+        {
+            "desc": "• Kurduğunuz ilişkilerle çocuğunuza, affetme\nkonusunda örnek olun.\n• Çocuğunuz, arkadaşlarıyla ilgili sorun\nyaşadığında, hissettiği kırgınlığı küslüğe\ndönüştürmeden çözmesi için ona önerilerde\nbulunun.\n• Çocuğunuzla olan ilişkinizde “Sana küstüm.”\nya da “Seni affetmeyeceğim.” gibi ifadeler\nkullanmayın.",
+            "title": "Çocuğunuza Affetmeyi Öğretmek için:"
+        },
+        {
+            "desc": "• Onu kendi ilgi alanlarını keşfedecek kadar\nözgür bırakın.\n• Belli bir alana ilgi ve heves gösterdiğinde\ndestekleyin.\n• Merak duygusunu besleyin ve ona keşfedeceği\nyeni pencereler açın.\n• Ona masallar anlatın, birlikte kitap okuyun.",
+            "title": "Çocuğunuzu Özgün Bir Birey Olarak\nYetiştirmek için:"
+        },
+        {
+            "desc": "• Öfkesinin kaynağını bulmaya çalışın.\n• Onunla, öfkelendiğinde yaptığı davranış\nhakkında konuşun.\n• Öfke anında siz de öfkeye kapılmak yerine, ona\nşefkat gösterin.\n• Sakinleşmesini beklerken sarılarak fiziksel\ntemasta bulunun.\n• Çocuğunuzun iyi davranışlarını övün.",
+            "title": "Çocuğunuzun Öfke Kontrolü için:"
+        }
+    ],
+    "specialSay": [
+        {
+            "say": "İnsan kendi saadetinin mimarıdır.\n",
+            "whoSaid": "(Thoreau)"
+        },
+        {
+            "say": " Türk milletinin geleceği, bugünkü çocuklarının doğru görüşü ve yorulmak bilmeyen çalışma azmi ile büyük ve parlak olacaktır. ",
+            "whoSaid": "(M. K. Atatürk)"
+        },
+        {
+            "say": "Ben matematiğe hayatımı adadım,\nkarşılığında bana hayatımı geri verdi.",
+            "whoSaid": "(Cahit Arf) "
+        }
+    ],
+    "spelling": [
+        {
+            "correct": "Memnun",
+            "wrong": "Menmun"
+        },
+        {
+            "correct": "Meşgul",
+            "wrong": "Meşkul"
+        },
+        {
+            "correct": "İtham",
+            "wrong": "İtam "
+        }
+    ],
+    "suggestion": [
+        {
+            "desc": "En son ne zaman yeni bir şey öğrendiniz?\nAnne babasının yeni beceriler kazandığını\ngören çocuk, onları kendine örnek alır. Kendisi\nde öğrenmeye motive olur ve becerilerini\ngeliştirmek ister. Halk oyunları, dikiş, spor,\nyabancı dil öğrenme gibi yeni beceriler\nedinerek çocuğunuza örnek olabilirsiniz.\nUnutmayın ki öğrenme, bitmeyen ve yaşı\nolmayan bir eylemdir.",
+            "title": ""
+        },
+        {
+            "desc": "Çocuğunuzla “zaman geçirmek” ile “kaliteli zaman geçirmek” farklı şeylerdir. Kaliteli zaman; kısa dahi olsa çocukla geçirilen, anne babanın aktif dikkat ve katılımını gerektiren keyifli zamanları niteler. Bu zaman dilimi sohbet etmek, eğlenmek, birlikte yemek pişirmek, deney yapmak, oyun oynamak ve çocuğu aktif bir şekilde dinlemek gibi etkinliklerden oluşur. ",
+            "title": ""
+        },
+        {
+            "desc": "Çocuğunuz size herhangi bir şeyi\n“Yapamıyorum!” dediğinde, onu nazik\nve yapıcı bir şekilde yanıtlamanın birkaç\nyolu vardır. Öncelikle, ondan gerçekten\nyapamayacağı bir şey isteyip istemediğinizi\ngözden geçirin. Ardından, sürekli mi\n“Yapamıyorum.” diyor yoksa açlık, yorgunluk\ndurumlarında ya da üzüntülü zamanlarında mı\nbunu dile getiriyor, anlamaya çalışın. Bunun\ndışındaki durumlarda ona yardım etmeyi teklif\nedebilirsiniz. Çabalarına odaklanın ve her\nihtiyacı olduğunda yanında olacağınızı ona\nhatırlatın.",
+            "title": ""
+        }
+    ],
+    "value": [
+        {
+            "date": "",
+            "desc": "Denizli’nin şifalı termal suyunun oluşturduğu\neşsiz güzellikteki travertenleri ve çevresindeki\nantik kentleriyle dikkat çeken, “beyaz cennet”\nolarak bilinen ve UNESCO’nun Dünya Miras\nListesi’nde yer alan doğal alan.",
+            "name": "Pamukkale-Hierapolis Antik Kenti-Denizli"
+        },
+        {
+            "date": "",
+            "desc": "Geleneksel Türk sanatlarının en önemlilerinden\nbiri olan, kitreyle yoğunlaştırılmış su üstünde,\nözel hazırlanmış boyalarla oluşturulan\ndesenlerin kâğıt üzerine geçirilmesi yoluyla\nyapılan bir süsleme sanatı.",
+            "name": "Ebru Sanatı"
+        },
+        {
+            "date": "",
+            "desc": "Mehmet Akif Ersoy’un Kurtuluş Savaşı yıllarında Ankara’da ikâmet ettiği, İstiklal Marşı başta olmak üzere çok sayıda şiirini yazdığı, bugün müzeye dönüştürülmüş, iki katlı bir Ankara evi. ",
+            "name": "Mehmet Akif Ersoy Edebiyat Müze Kütüphanesi-Ankara "
+        }
+    ],
+    "word": [
+        {
+            "desc": "Deprem bilimci.",
+            "title": "Sismolog:"
+        },
+        {
+            "desc": " 1) Bilgi ve kültür. 2) Eğitim ve öğretim sistemi.",
+            "title": " Maarif: "
+        },
+        {
+            "desc": "1) Bırakılmış, terk edilmiş.2) Kullanılmayan.",
+            "title": "Metruk: "
+        }
+    ]
+}
