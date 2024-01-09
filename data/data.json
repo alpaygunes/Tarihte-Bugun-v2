@@ -2,15 +2,59 @@
     "date": "24.01.2021",
     "expression": [
         {
+            "desc": "Öfkeli, kızgın olduğu anlaşılmak.",
+            "title": "Suratı sirke satmak:\n"
+        },
+        {
             "desc": "Birlikte hareket etmek.",
             "title": "Tek vücut olmak:\n"
         },
         {
             "desc": "Bir tehlikeden sakınmaya\nçalışırken daha büyük bir tehlike\nile karşılaşmak.",
             "title": "Yağmurdan kaçarken doluya tutulmak:"
+        },
+        {
+            "desc": "Değişik gibi gösterilen iki şeyin,\ngerçekte aynı olması.",
+            "title": "Ha Hoca Ali ha Ali Hoca:\n"
         }
     ],
     "game": [
+        {
+            "desc": "Bir oyun parkuru kurmaya ne dersiniz? İçinden\ngeçilebilecek büyüklükte olan iki koliyi birbirine\nyapıştırın ve bir tünel oluşturun. Tünelden\nçıktığında altından geçmesi için sandalyelerin\narasına ip gererek ip parkuru yapın. İki bacağının\narasına top yerleştirerek ve başının üstüne kitap\nkoyarak yürüme oyunları ekleyin. Finalde 4-5\nparçalı oyuncağı birleştirme, bilmece çözme gibi\nseri bir yarışma yapabilirsiniz.",
+            "title": ""
+        },
+        {
+            "desc": "Bir kâğıda, dergilerden çıkarttığınız insan\nya da hayvan başı resimlerini yapıştırın.\nÇocuğunuzdan, yapıştırdığınız varlıkların\nvücudunun diğer bölümlerini tamamlamasını\nisteyin. Bu etkinlikle vücudun bölümlerini\nçocuğunuz sıkılmadan ona tanıtabilirsiniz.",
+            "title": ""
+        },
+        {
+            "desc": "Bir mumla beyaz bir kâğıda şekil ya da resim\nçizin. Çizilen resim mumun şeffaflığından\ndolayı görünmeyecektir. Daha sonra parmak\nboyasıyla kâğıdın bütün yüzeyini boyayın.\nKâğıtta ne görüyorsunuz?",
+            "title": ""
+        },
+        {
+            "desc": "Genişçe bir tahtanın üzerine eşit aralıklarla\nkareler çizin ve karelerin köşelerine çiviler\nçakın. Böylece bir çivili tahta elde edeceksiniz.\nTahtanın üzerindeki çivilere elinizdeki paket\nlastiklerini geçirerek kare, çeşitli şekillerde\nüçgen, dikdörtgen yapabilir, kendi geometri\ntahtanızı hazırlayabilirsiniz.",
+            "title": ""
+        },
+        {
+            "desc": "Gözlerinizi, uzun ve yeteri kadar kalın bir bezle\nbağlayarak, çocuğunuzla birlikte “yakalamaca”\noynayın. Çevrede kırılıp size zarar verebilecek\nnesnelerin olmamasına dikkat edin.",
+            "title": ""
+        },
+        {
+            "desc": "Ailece doğa yürüyüşüne çıkın. Çıkarken\nresim defteri ve boya kalemlerinizi almayı\nunutmayın. Uygun bir yerde oturarak\nçevrenizde gördüklerinizin resmini yapın.\nResminizi, yaprakları ve çiçekleri kâğıdınıza\nyapıştırarak da oluşturabilirsiniz.",
+            "title": ""
+        },
+        {
+            "desc": "Çocuğunuza kendi tişörtlerinizden birini\ngiyindirin. Tişörtün içine ön ve arkaya gelecek\nşekilde yastıklar yerleştirin. Kendinize de\naynısını yapın. İki dubaya dönüştünüz.\nBirbirinize yavaşça çarpın. Bakalım kim önce\ndüşecek!",
+            "title": ""
+        },
+        {
+            "desc": "Yere büyükçe bir kâğıt serin. Çocuğunuzu ya\nda aile bireylerinden birini bu kâğıdın üzerine\nyatırarak kenarlardan siluetini çizin. Çiziminizin\ndetaylarını (saç, kaş, göz, burun) çocuğunuzla ya\nda aile bireyleriyle tamamlayın.",
+            "title": ""
+        },
+        {
+            "desc": "Makarna, çocukların çok sevdiği bir yiyecektir.\nAynı zamanda bir oyun materyali olarak da\nkullanılabilir. Makarnaları parmak boyasıyla\nboyayın. Makarnalar kuruduktan sonra\nipe dizin ve kendi kolyenizi, bilekliğinizi\ntasarlayın. Kelebek makarnaları kâğıda\nyapıştırıp boyayabilir ve kâğıdın üzerine\nkalemle kelebeğin devamını çizebilirsiniz.",
+            "title": ""
+        },
         {
             "desc": "Nefes çalışmalarının, çocukların dil gelişimine\nolumlu katkısı olduğunu biliyor muydunuz?\nHaydi! Şimdi çocuğunuzla elinize birer balon\nalın. Güçlü bir şekilde üfleyerek balonlarınızı\nşişirin ve doya doya oynayın.",
             "title": ""
@@ -40,7 +84,7 @@
             "title": ""
         },
         {
-            "desc": "Çamaşır sepetine çocuğunuzu oturtun. Halının dışında kalan kaygan zeminde, sepeti çekerek sürün. Zemin sizin deniziniz, sepet de sandalınız olsun. Oklava veya uzun saplı tahta kaşıklarla kürek çekmesini sağlayabilir, bir kâğıdı rulo yaparak gemi kaptanınıza bir dürbün hediye edebilirsiniz. ",
+            "desc": "Çamaşır sepetine çocuğunuzu oturtun. Halının dışında kalan kaygan zeminde, sepeti çekerek sürün. Zemin sizin deniziniz, sepet de sandalınız olsun. Oklava veya uzun saplı tahta kaşıklarla kürek çekmesini sağlayabilir, bir kâğıdı rulo yaparak gemi kaptanınıza bir dürbün hediye edebilirsiniz.",
             "title": ""
         },
         {
@@ -106,6 +150,42 @@
     ],
     "preference": [
         {
+            "correct": "Kurgu",
+            "wrong": "Montaj"
+        },
+        {
+            "correct": "Uygulanabilirlik",
+            "wrong": "Fizibilite"
+        },
+        {
+            "correct": "Çarpıcı",
+            "wrong": "Sansasyonel"
+        },
+        {
+            "correct": "Mecaz",
+            "wrong": "Metafor"
+        },
+        {
+            "correct": "Özel",
+            "wrong": "Spesiyal"
+        },
+        {
+            "correct": "Hayalci",
+            "wrong": "Ütopist"
+        },
+        {
+            "correct": "Erkendoğan",
+            "wrong": "Prematüre"
+        },
+        {
+            "correct": "Düzeltilmiş, yenilenmiş",
+            "wrong": "Revize"
+        },
+        {
+            "correct": "Dönem, devir",
+            "wrong": "Periyot"
+        },
+        {
             "correct": " Uyum, uyarlanmış",
             "wrong": "Adapte"
         },
@@ -116,10 +196,6 @@
         {
             "correct": "Binyıl",
             "wrong": "Milenyum"
-        },
-        {
-            "desc": "Kişi gençliğinde çalışıp para\nbiriktirmelidir ki ihtiyarlığında\nçalışamadığı zaman onunla rahat rahat\ngeçinebilsin.",
-            "title": "Gençlikte taş taşı, kocalıkta ye aşı:"
         },
         {
             "correct": "Onay, onaylamak",
@@ -139,10 +215,10 @@
         },
         {
             "correct": "Egzersiz",
-            "wrong": "Egzersiz "
+            "wrong": "Egzersiz"
         },
         {
-            "correct": "Gerçeklik ",
+            "correct": "Gerçeklik",
             "wrong": "Realite"
         },
         {
@@ -208,6 +284,46 @@
     ],
     "proverb": [
         {
+            "desc": "Tek başına yaşayan bir kimse,\nsorumluluğunda başkaları olmadığı için\nrahat hareket eder.",
+            "title": "Bir abam (postum) var atarım,\nnerede olsam yatarım:\n"
+        },
+        {
+            "desc": "Gönül alıcı, okşayıcı sözlerle karşımızdakinin\nfikri değiştirebilir.",
+            "title": "Tatlı dil yılanı deliğinden çıkarır:\n"
+        },
+        {
+            "desc": "Kişi gençliğinde çalışıp para\nbiriktirmelidir ki ihtiyarlığında\nçalışamadığı zaman onunla rahat rahat\ngeçinebilsin.",
+            "title": "Gençlikte taş taşı, kocalıkta ye aşı:"
+        },
+        {
+            "desc": "Sıkıntı ve güçlük çekmeden iyi ve\ngüzel sonuçlara ulaşılmaz.",
+            "title": "Zahmetsiz rahmet olmaz:\n"
+        },
+        {
+            "desc": "Bir işe girişirken her yönünü iyice araştır.",
+            "title": "Dibi görünmeyen sudan geçme:\n"
+        },
+        {
+            "desc": "Güneşsiz evde hastalık eksik olmaz.",
+            "title": "Güneş girmeyen eve doktor girer:\n"
+        },
+        {
+            "desc": "Lodos genellikle yağmur getirir.",
+            "title": "Lodosun gözü yaşlı olur:"
+        },
+        {
+            "desc": "İki insanın tanışıp kaynaşması ve\naralarında bir dostluk bağı oluşması için\nözel bir kurala, yola, yönteme gerek\nyoktur; kısa bir yolculuk, küçük bir ikram\nbile bu yakınlığı sağlayabilir.",
+            "title": "Yedi adım yolun, bir yudum\nsuyun hakkı vardır:"
+        },
+        {
+            "desc": "Matematiğe önemli katkıları bulunan, 10. yüzyılda yaşamış İslam âlimleri, matematik üzerinde\nuğraşırlarken çözmeye çalıştıkları değişkenler için “şey” sözcüğünü kullanmışlardır. Bilimi Avrupa\ndillerine çevirmeye çalışan İspanyol âlimler ise “şey” sözcüğünü ifade ederken, dillerinde “ş” harfi\nolmaması nedeniyle zorlanmışlardır. Buna çözüm ararlarken de Yunan dilinden “kai” bağlacını ya da\n“chi” harfini ödünç almışlardır. Bağlacın da harfin de Yunan alfabesindeki biçimi x’i andırmaktadır. İşte\nbilinmeyen x’in hikâyesi budur.",
+            "title": "Neden matematikte bilinmeyen sayı yerine “x” kullanılır?"
+        },
+        {
+            "desc": "Hint kültüründe karabiber, zencefil ve zerdeçal yemeklerin vazgeçilmez baharatları arasındadır. Bu\nbaharatlarda bulunan etken madde, vücutta kansere yol açan çeşitli faktörler üzerinde önleyici etkiye\nsahiptir. Bu yüzden yemeklerinde sık sık bu baharatları kullanan Hintlilerin, kansere yakalanma riskleri\ndiğer ülkelerdeki insanlara göre düşüktür.",
+            "title": "Hintliler neden kansere daha az yakalanırlar?"
+        },
+        {
             "desc": "Bir düzen, ayrıntıların değişmesiyle\ndeğil, temelin bozulmasıyla yıkılır.",
             "title": "Ağaç kökünden yıkılır:"
         },
@@ -220,10 +336,6 @@
             "title": "El vergisi, gönül sevgisi:"
         },
         {
-            "desc": "Kişi gençliğinde çalışıp para\nbiriktirmelidir ki ihtiyarlığında\nçalışamadığı zaman onunla rahat rahat\ngeçinebilsin.",
-            "title": "Gençlikte taş taşı, kocalıkta ye aşı:"
-        },
-        {
             "desc": "Hastalık, birden ve çok zorlu gelir\nama yavaş yavaş iyileşilir.",
             "title": "Hastalık kantarla girer, miskalle çıkar:"
         },
@@ -233,11 +345,11 @@
         },
         {
             "desc": "Bilmediği şeyi bir bilene soran, en zor\nişlerin bile üstesinden gelir; sormayan ise\ngüçlükler içinde yuvarlanır gider.",
-            "title": "Danışan dağı aşmış, danışmayanın yolu şaşmış: "
+            "title": "Danışan dağı aşmış,danışmayanın yolu şaşmış:"
         },
         {
             "desc": "Hayvanlar koklaşarak tanıştıkları gibi\ninsanlar da konuşarak tanışırlar ve\nkonuştukça birbirlerini daha iyi anlarlar.",
-            "title": "Hayvan koklaşa koklaşa, insan konuşa konuşa: "
+            "title": "Hayvan koklaşa koklaşa,insan konuşa konuşa:"
         },
         {
             "desc": "Karakteri ve kişiliğiyle güzel insanlar\nher yerde ilgi çekerler, her zaman\nonların sözü kabul edilir.",
@@ -294,6 +406,66 @@
     ],
     "reason": [
         {
+            "desc": "Bir eşyanın antika olarak tanımlanması için o eşyanın eski çağlardan kalmış olması ve nadir bulunması\ngerekir. Bir eşyadan çok sayıda varsa, o eşyaya her yerde rastlanıyorsa, o antika olarak kabul edilmez.\nAntikayı bu kadar değerli yapan nadir olmasıdır. Antikalar, sanat tarihçilerinin ve koleksiyoncuların\ndikkatini çeker. Bazı antika eserlerin koruma altına alınması gerekir. Örneğin, sanat eserleri ya da tarihsel\nbir kişiye ait olan eşyalar böyle eserlerdir.",
+            "title": "Antika neden değerlidir?"
+        },
+        {
+            "desc": "Köstebekler, gözleri körelmiş memelilerdir. Burunları çok hassas olan köstebekler, ön ayaklarıyla\nkazdıkları toprağı burunlarıyla iterek toprak içinde ilerler. Dokunma duyuları da gelişmiş olan\nköstebekler, sadece yiyecek ihtiyacı duymaları hâlinde toprağın üzerine çıkar. Gözleri çok fazla\ngelişmediği için kolay bir şekilde av olabilirler. Bu nedenle toprağın altında yaşarlar.",
+            "title": "Köstebekler neden toprak altında yaşar?"
+        },
+        {
+            "desc": "Gökyüzündeki bir cismin görülmesini sağlayan şey -diğer tüm nesnelerde olduğu gibi- o nesneden\nbize ulaşan ışıktır. Bu nesnelerden bize ulaşan ışığın miktarı arttıkça görülmeleri kolaylaşır. Yıldızlar\netraflarına saçtıkları ışığı kendileri üretirken, gezegenler ve daha küçük gök cisimleri yıldızlardan\nkendilerine ulaşan ışığı yansıtır. Ay’ın Dünya’ya yansıttığı ışığın miktarı, yıldızlardan ulaşan\nışığın miktarının yaklaşık 100.000 katına kadar çıkabilir. Ay, Güneş’ten çok ışık alabildiği bir konumda ise\nkendi yüzeyinden yansıttığı bu ışık, Dünya’dan gündüz vakitlerinde de görülmesini sağlayabilir.",
+            "title": "Ay’ın gündüz vakti gökyüzünde görünmesinin sebebi nedir?"
+        },
+        {
+            "desc": "Uçakların genellikle beyaz olmasının başlıca nedeni, sıcaklık artışına neden olabilecek güneş ışınlarını\nyansıtarak uçağın plastik, karbon fiber ya da fiberglas gibi kompozit malzemeden yapılan bölümlerinin\nzarar görmesini engellemektir. Beyaz renk aynı zamanda uçağın yüzeyindeki çatlak, kırık, göçük gibi\nhasarların daha kolay fark edilmesini, böylelikle güvenlik açısından daha hızlı önlem alınmasını sağlar.",
+            "title": "Uçakların çoğu neden beyazdır?"
+        },
+        {
+            "desc": "Toprağın içinde pek çok canlı varlık bulunur. Bu canlılar arasında aktinomiset bakterileri de vardır. Toprak\nnemliyken gelişen bu bakteriler, toprak kuruduğunda sporlar üreterek çoğalır. Yağmur yağdığında ise bu\nsporlar havalanır. Yağmur durduğu zaman havadaki bu sporların kokusu burnumuza ulaşır. İnsanların\nortak olarak tarif ettiği toprak kokusu budur.",
+            "title": "Yağmur yağdıktan sonra toprak neden kokar?"
+        },
+        {
+            "desc": "Doğa bilimleri; doğayı ilgilendiren gözlemlenebilir, ölçülebilir, üzerinde deney yapılabilir konuları\ninceleyen, olgulara dayalı bilimlerdir. Fizik, kimya, biyoloji doğa bilimlerine örnek olarak verilebilir\nçünkü bu bilimlerde insan zihni dışında var olan gerçekliğe, yani somut olarak var olana odaklanılır.\nMatematikte ise kavramlara, yani insan zihninde soyut olarak var olanlara odaklanma söz konusudur.\nBir örnekle netleştirelim: 2 sayısı sadece zihnimizdedir, bu sayının doğadaki karşılığı iki adet cisimdir.\nMatematikte ilişkiler deney ve gözlemle değil, formüle dayalı olarak tanımlanır.",
+            "title": "Matematik neden doğa bilimi değildir?"
+        },
+        {
+            "desc": "Einstein tarafından 1905 yılında ortaya atılan “Özel Görelilik Kuramı”nın sonuçlarından biri de ışık\nhızının, bir limit hız olması ve bu hızın aşılamamasıdır. Özel Görelilik Kuramı öncesinde, birbiriyle\netkileşen iki cismin, aralarındaki uzaklıktan bağımsız birbirlerini anlık etkilediği düşünülüyordu. Örneğin,\nbirbirleri arasında elektromanyetik kuvvetler olan iki parçacığı ele alalım. İki parçacık arasındaki mesafe\ndeğiştiği zaman, aralarındaki etkileşimin kuvveti de değişecektir. Özel görelilik kuramı öncesi bakış\naçısına göre kuvvetteki bu değişim, mesafe değiştiği anda olur. Olayların meydana geldiği uzaydan\nbağımsız ve mutlak olarak düşünülen zaman, farklı gözlemciler tarafından aynı şekilde ölçülebilir. Özel\nGörelilik Kuramı, bu bakış açısını tamamen değiştirmiştir. Buna göre etkileşimin şiddetindeki değişmeler\nanlık olarak meydana gelmez, aradaki mesafeye bağlı olarak bir gecikme yaşanır. Özel Görelilik Kuramı’na\ngöre etkileşimler, etkileşim yayılma hızıyla uzayda yayılır. Etkileşimlerin sonsuz bir hızla anlık olarak\ndeğil de sonlu bir hızla yayılmasının en önemli sonuçlarından biri de etkileşimin yayılma hızının\naşılamayacak bir limit hız olmasının gerekmesidir. Bundan dolayı bir parçacık, etkileşimin yayılma hızını\naşabilirse kuramın izin verdiğinden daha çabuk etkileşime girmesi mümkün olur ve bu da bir çelişki\nyaratır. Özel Görelilik Kuramı’na göre ışık hızının aşılamamasının sebebi ise\netkileşimin yayılma hızının ışık hızı olmasıdır.",
+            "title": "Işık hızı neden aşılamaz?"
+        },
+        {
+            "desc": "Anket, belirli bir konu ile ilgili yapılan kamuoyu yoklamasıdır.\nAnketler, insanların memnuniyetlerini ve şikâyetlerini ölçebileceği gibi, bir konuda bilinç ve\nfarkındalık araştırması yapılırken de kullanılır. Anketlerden gelen bilgi, istatistik hesaplamalarıyla\nniceliğe dönüştürülür ve durum değerlendirmesi yapılır. Bu durum değerlendirmesi sonucunda ise\naraştırmacılar, izleyecekleri yollar hakkında fikir sahibi olurlar.",
+            "title": "Neden anket yapılır?"
+        },
+        {
+            "desc": "Parfümün ilk biçimi tütsüdür. Tütsü, bundan 4000 yıl önce Mezopotamya’da dinî törenlerde kullanılmaya\nbaşlanmıştır yani parfümün icadının törensel temelleri vardır. Parfümün günümüzdeki biçimi olan sıvı\nhâli ise Antik Yunan’a dayanmaktadır. Daha sonra Arapların damıtma sistemini geliştirmesiyle parfüm\nuygulanabilir olmuştur. 16. yüzyıl Fransa’sında günümüzdeki hâlini almış, o dönemde, kötü kokuları\nmaskelemek için kullanılmıştır.",
+            "title": "Parfüm neden icat edildi?"
+        },
+        {
+            "desc": "Sınavlar, gelecekle ilgili belirsizlik içeren durumlardır. Sınavlara yeterince hazırlanıldığında bile bir\naksiliğin söz konusu olma olasılığı bulunur. Belirsizlik anlarında ne kadar çok olasılık varsa o kadar\nyüksek düzeyde kaygı hissedilir. Sınav kaygısı, bu kaygıyı yaşayan insanın yaşam kalitesini\ndüşürmediği sürece normaldir.",
+            "title": "Sınavlar neden kaygı yaratır?"
+        },
+        {
+            "desc": "Işık, bir maddeyle karşılaştığında (cam, tahta, plastik…) ya maddeyle etkileşir ya da maddenin içinden\nherhangi bir etkileşime uğramadan geçer. Görünür ışığın enerjisi, bazı maddeler ile etkileşmek için yeterli\ndeğildir. Cam, bu maddelerden biridir. Bu nedenle ışık camın içerisinden bir etkileşime uğramadan geçer\nve gözümüze camdan ışık ulaşmadığı için cam şeffaf görülür.",
+            "title": "Cam neden şeffaftır?"
+        },
+        {
+            "desc": "Spor, kaslarımızı güçlendirerek iskelet ve kas sistemimizin sağlıklı olmasını sağlar. Metabolizmamızı\nhızlandırarak sağlıklı kilo aralığında olmamıza yardımcı olur. Fiziksel etkileri dışında, olumlu psikolojik\netkileri de vardır. Spor yapmak, mutluluk hormonu salgılamamızı sağlar. Kaygıyı ve stresi azaltır. Spor\nyaparak daha enerjik, daha dinç ve daha sağlıklı oluruz.",
+            "title": "Neden spor yapmalıyız?"
+        },
+        {
+            "desc": "“Influenza” olarak bilinen grip virüsünün farklı alt tipleri vardır. Bu farklı alt tipleri sürekli mutasyon\ngeçirerek değişime uğrar yani olduğumuz griplerin hiçbiri, bir önce geçirdiğimiz griple tamamen aynı\ndeğildir. Grip aşıları bizi daha önceki griplerin virüslerinden koruyabilir, farklı mutasyonları daha hafif\nsemptomlarla atlatmamızı sağlayabilir. Yine de her sene belli dönemlerde gribe yakalanabiliriz.",
+            "title": "Neden her sene grip salgını olur?"
+        },
+        {
+            "desc": "Yarasalar, geceleri ortaya çıkan memelilerdir. Kendilerine özgü doğal radar sistemleriyle ses dalgası yayarak\nyollarını bulurlar. Yarasaların kör olduğuyla ilgili yaygın bir kanı vardır ancak bu doğru değildir. Sadece gece\navlanan canlılar olduklarından, avlanma ve yön bulma için geliştirdikleri ses dalgası yayma yöntemi, görme\nduyusuna göre onlar için çok daha avantajlıdır. Geceleri avlanmaları sebebiyle yarasaların, gündüz dinlenmek\niçin korunaklı alanlara ihtiyaçları vardır. Gündüzleri karanlık ve nemli olan mağara ortamı, yarasaların\ndinlenmeleri ve korunmaları için idealdir. Ayrıca nem, yarasalar için hayati önem taşır çünkü yarasaların\nkanatları nem olmadığında kurur ve bu durum ölümle sonuçlanır.",
+            "title": "Yarasalar neden mağaralarda yaşar?"
+        },
+        {
+            "desc": "Yüzeyinde kayaç bulunmayan büyük gaz kütleleri hâlinde bulunan gezegenlere “gaz devleri” ya da “gaz yapıda\ngezegenler” denir. Güneş Sistemimizdeki Jüpiter, Satürn, Uranüs ve Neptün gezegenleri gaz devleridir. Gaz\ndevleri gezegenlerden Uranüs ve Neptün, Güneş’e çok uzak olduklarından, yapılarındaki gazlar donarak buz\nhâlinde bulunur. Bu sebeple, bu iki gezegene “buz devleri” de denir. Uranüs’ün mavi-yeşil görünmesinin\nnedeni, atmosferinde bulunan metandır. 600 nanometre dalga boyundaki kırmızı ışığı soğuran metan, ışık\ntayfını oluşturan diğer dalga boyundaki ışınları yansıtır. Atmosferinin bileşimi Uranüs’ünkine benzer olan\nNeptün’ün rengi ise parlak mavidir. Neptün’ün parlak mavi renkte görünmesine, atmosferindeki henüz ne\nolduğu tespit edilemeyen bir maddenin\nneden olduğu düşünülmektedir.",
+            "title": "Buz devleri gezegenlerin renkleri neden birbirinden farklıdır?"
+        },
+        {
             "desc": "Saatin 60 dakikaya bölünmesinin temelinde, Babillerin Sümerlerden aldıkları 60’lık sayı sistemini\nkullanmaları vardır. Gecenin ve gündüzün on ikişer saate bölünmesi ve 1 saatin 60 dakika olmasının\ntemelinde, bu sayıları kalansız olarak bölen sayıların 10’a ve 100’e göre daha fazla olması bulunmaktadır.\n10 sadece 2’ye, 5’e ve kendisine bölünürken 12 ise 2’ye, 3’e, 4’e, 6’ya ve kendisine bölünür. 60’ın böleni de\n100’ün böleninden daha fazladır. Bu şekilde günlerin ve dakikaların küsuratsız bir biçimde\nbölünme olasılıkları artar.",
             "title": "1 saat neden 60 dakikadır?"
         },
@@ -346,12 +518,12 @@
             "title": "Neden gökyüzündeki en parlak gezegen Venüs’tür?"
         },
         {
-            "desc": "Bayraklar, milletlerin bağımsızlık mücadelerinin simgesi olan değerlerdir. Bayrağımızın simgesi ile ilgili farklı görüşler vardır. Bunlardan biri, gece vakti ay ve yıldızın savaş meydanında akan kanlar üzerine yansımasının resmedilmesi olduğudur. Diğer bir görüşe göre de hilal İslamiyeti, yıldız ise Türklüğü temsil etmektedir. Yıldızın eşitliği, demokrasiyi ve özgürlüğü simgelediği görüşünde olanlar da bulunmaktadır. ",
+            "desc": "Bayraklar, milletlerin bağımsızlık mücadelerinin simgesi olan değerlerdir. Bayrağımızın simgesi ile ilgili farklı görüşler vardır. Bunlardan biri, gece vakti ay ve yıldızın savaş meydanında akan kanlar üzerine yansımasının resmedilmesi olduğudur. Diğer bir görüşe göre de hilal İslamiyeti, yıldız ise Türklüğü temsil etmektedir. Yıldızın eşitliği, demokrasiyi ve özgürlüğü simgelediği görüşünde olanlar da bulunmaktadır.",
             "title": "Bayrağımızın simgesi neden ay ve yıldızdır?"
         },
         {
             "desc": "Kokarcalar her zaman kötü kokmaz. Sadece tedirgin oldukları, can güvenliklerinin tehlikeye girdiği\nzamanlarda kötü bir koku salgılar. Bu kötü kokunun kaynağı, salgı bezlerinde ürettikleri “mocapton”\nisimli bir maddedir. Kokarcalar, kokularını 2-3 metre uzağa kadar yayabilirler. Bu sayede onları tehdit\neden canlıları ortamdan uzaklaştırmaya çalışırlar.",
-            "title": "Kokarcalar neden kötü koku salgılar? "
+            "title": "Kokarcalar neden kötü koku salgılar?"
         },
         {
             "desc": "Yüz kızarmasının vücudumuzun “savaş ya da kaç” mekanizmasıyla ilgili olduğu düşünülmektedir. Tehlikeli bir durumda kaslarımız olabildiğince hızlı harekete geçebilmek için enerjiye ihtiyaç duyar. Bu durumda vücudun doğal uyarıcısı olan adrenalin, nefes alıp verme ve kalp atış hızını artırır, kan damarlarını genişleterek kaslarımıza daha fazla oksijen gitmesini sağlar. Diğer yandan çevremizden mümkün olduğunca fazla bilgi toplayabilmek için göz bebeklerimiz büyür. Böylelikle herhangi bir tehdide karşı hazırlıklı hâle geliriz. Adrenalin artışının bir sonucu olarak yüz derimizin altındaki kan damarları da genişler. Bu da yüzümüze normalden daha fazla kan akışı olmasına ve yüzümüzün kızarmasına yol açar.",
@@ -448,95 +620,171 @@
     ],
     "solution": [
         {
-            "desc": "• Problemi tanımlayın.\n• Problemin nedenlerini belirleyin.\n• Problemle ilgili bilgi toplayın.\n• Çözüm önerileri oluşturun.\n• Uygun çözümü çocuğunuzla birlikte belirleyin.\n• Uygularken ne gibi güçlükler çıkabileceğini ve\nbunlarla nasıl baş edilebileceğini tartışın.\n• Çözümü uygulayın ve değerlendirin.\nSorunları görmezden gelmemek ve çözmek için\nçaba sarf etmek, ona ileriki yaşantısında fayda\nsağlayacaktır.",
-            "title": "Çocuğunuzun Sorunlarla Baş Etmesine\nYardımcı Olmak için:"
+            "desc": "• Öğüt vermek yerine davranışlarınızla\nçocuğunuza model olun.\n• Görgü kurallarına uyması gerektiğini onun\nanlayabileceği düzeyde anlatın.\n• Görgü kurallarıyla ilgili olumlu davranış\ngerçekleştirdiğinde ona bu konuda ne\nhissettiğini sorun.\n• Sabah uyandığında “Günaydın.” demeyi, girdiği\nher ortamda önce selam vermesi gerektiğini,\nhapşıran birine “İyi yaşa.” demeyi öğretin.",
+            "title": "Çocuğunuza Görgü Kurallarını\nÖğretmek için:"
         },
         {
-            "desc": "• Soruna değil, çözüme odaklanın.\n• İçinizden 10’a kadar sayın ve kendinize\nsakinleşmek için zaman tanıyın.\n• Yüzünüzü ve ensenizi yıkayın.\n• Duygunuzu kontrol etmekte çok\nzorlanıyorsanız, mümkünse ortamınızı değiştirin.\nÖfke kontrolünü sağlarken temiz hava almak iyi\ngelebilir.\n• Öfkenizi kontrol etmekle ilgili genel bir sorun\nyaşıyorsanız, profesyonel destek almaktan\nçekinmemelisiniz.",
-            "title": "Öfke Kontrolü için:"
+            "desc": "• Öncelikle çocuğunuzun bu durumun farkına\nvarmasını sağlayın.\n• Çocuğunuza, engel gruplarına yönelik yaşına\nuygun anlayabileceği şekilde bilgi verin.\n• Özel gereksinimli insanların hakları konusunda\nbilgi vererek, bu haklara saygı duyduğunuzu ona\nmodel olarak gösterin.\n• Çocuğunuzun özel gereksinimli bir çocuk ile\narkadaş olmasını sağlayın.",
+            "title": "Çocuğunuzun Özel Gereksinimli Bireylere\nYönelik Olumlu Tutumlar Geliştirmesi için:"
         },
         {
-            "desc": "• Çocuğunuzun kendi problemlerini çözmesine\nimkân tanıyın. Örneğin, çocuğunuz okulda\nproblem yaşadığında okula gidip arkadaşları ve\nöğretmeniyle konuşup sorunu çözmek yerine,\nonun bu durumla kendi başına baş etmesine\nyardımcı olun.\n• Çocuğunuz liseye geldiğinde ona, “Hiçbir işini\nkendi yapmıyor, ne zaman büyüyecek bu çocuk!”\ndememek için ona küçük yaşlarda yapabileceği\nsorumluluklar verin. Örneğin, üç yaşındaki\nbir çocuktan oyuncaklarını toplamasını\nbekleyebilirsiniz ama ayakkabısını bağlamasını\nbekleyemezsiniz.",
-            "title": "Çocuğa Sorumluluk Kazandırmak için:"
+            "say": "Denemekten vazgeçmekten başka bir\nbaşarısızlık yoktur.\n",
+            "whoSaid": "(Elbert Hubbard)"
         },
         {
-            "desc": "• Onun hayallerini dinleyin.\n• Farklı meslekler hakkında bilgi almasını\nsağlayacak fırsatlar oluşturun.\n• Çocuğunuzu iş yerinize götürebilme şansınız\nvarsa, işiniz ve mesleğiniz hakkında bilgi\nedinebilmesi için sizinle birkaç saat iş ortamında\nzaman geçirmesini sağlayın.",
-            "title": "Çocuğunuzun Meslek Seçimine Yardımcı\nOlmak için:\n"
+            "desc": "• Çocuğunuza hoşgörülü ve anlayışlı olmayı,\ninsanlarla olumlu ilişkiler kurmayı öğretin.\n• Sizin, çocuğunuz için olumlu bir model olmanız\ngerektiği gerçeğini aklınızdan çıkarmayın.\n• Bilgisayarda oynadığı oyunları kontrol edip\nşiddet içerikli oyunlar oynamadığından ve şiddet\niçeren videolar izlemediğinden emin olun.\n• Çocuğunuza ilk çocukluk yıllarından itibaren\nsilah, tüfek ve bıçak gibi şiddete yönlendiren\noyuncaklar almayın.",
+            "title": "Çocuğunuzun Şiddet Eğilimli Olmaması için:"
         },
         {
-            "desc": "sizi üzüyorsa ve yanlış yaptığınızı\ndüşünüyorsanız, ondan özür dilemekten\nçekinmeyin.\n• Çocuk, anne babanın görülen birçok özelliğini\naldığı gibi görülmeyen özelliklerini de alır.\nİnsanları birlikte gözlemleme fırsatı\nsağlayın. Örneğin, parkta yere çöp atan birini\ngördüğünüzde bunun üzerine konuşun, atanı\nuyarın ya da çöpü yerden kaldırarak doğru\ndavranışı gösterin.",
-            "title": "Çocuklarınıza Doğru Davranışları\nÖğretmek için:"
+            "desc": " Sorunun ne olduğunu öğrenmek için öncelikle\nçocuğunuzla konuşun.\n Anlatmak istemezse ısrarcı olmayın ve ne\nzaman isterse dinlemeye hazır olduğunuzu\nbelirtin.\n Çocuğunuzu, sorunlarını öğretmeniyle çözmesi\niçin teşvik edin. Sorun çözülmezse ve konunun\nciddi olduğunu düşünüyorsanız öğretmeniyle\niletişime geçin.\n Çocuğunuzun rehber öğretmeniyle her zaman\niletişim içinde olun.",
+            "title": "Çocuğunuzun Sınıf İçinde Bir Sorun\nYaşadığını Düşündüğünüzde:"
         },
         {
-            "desc": "• Çocuğun farklılığını kabul edin.\n• Çocuk, dünyaya farklı bir pencereden bakar.\nÇevresinde gördüklerine, kokulara ve seslere\noldukça duyarlıdır. Birçok şeyi daha ayrıntılı\nalgılamak, onlar için çok zor olabilir.\n• Çocuk olmanın kendine özgü güçlüklerinin\nolabileceğini fark edin.\n• Özel üstün yetekli çocuğunuz için öğretmenleri\nve rehber öğretmeniyle birlikte kararlar\nalmak, daha sağlıklı bir yol haritası izlemenizi\nsağlayacaktır.",
-            "title": "Özel Üstün Yetenekli Çocuğunuz için:\n"
+            "desc": " Öncelikle kurallara uyarak ona örnek olun.\n Söz konusu kurala neden uyması gerektiğini\nçocuğunuzun yaş düzeyine uygun olarak anlatın.\n Koyduğunuz kuralı çocuğunuzun anlayıp\nanlamadığından emin olun.\n Çocuğunuzun bir konu hakkında koyduğunuz\nkuralı yerine getirip getirmediğinin takipçisi\nolun. Kurallara uymuyorsa kızmayın, nedenini\naraştırıp sorunu çözün.\n Anne baba olarak tutarlı olun. Birinizin “hayır”\ndediğine, diğeriniz “evet” demeyin.",
+            "title": "Çocuğunuza İstediğiniz Yönde Davranış\nKazandırmak için:"
         },
         {
-            "desc": "• Çocuklarınızla doğa yürüyüşleri yapın.\n• Çocuğunuzu izcilik, dağcılık gibi doğayla iç içe\nolacağı sporlara yönlendirin.\n• Doğanın bozulması hâlinde neler olabileceğini\nanlatın.\n• Doğadan ilham alınarak bulunmuş\nicatlar üzerine bir araştırma yapıp sohbet\nkonusu oluşturun. Örneğin, “Bugün sıklıkla\nkullandığımız ve çocuk ayakkabılarının ayrılmaz\nbir parçası olan cırt cırt, pıtrak otundan ilham\nalınarak icat edilmiştir.” diyebilirsiniz.",
-            "title": "Çocuğunuza İnsanlar Açısından Doğanın\nÖnemini Anlatmak için:\n"
+            "desc": " Öncelikle çocuğunuzu sabırla dinleyerek\nonun niçin okula gitmek istemediğini anlamaya\nçalışın.\n Yaşadığı kaygının, korkunun kaynağını\nöğrenmeye ve bu sorunları birlikte gidermeye\nuğraşın.\n Çocuğunuza okul hayatıyla ilgili yanıltıcı\nbilgiler vermekten kaçının.\n Okula gitmemek için sizi zorlasa da okula\ngitme ve devamlılık sağlama konusunda kararlı\nve tutarlı olun.",
+            "title": "Çocuğunuzun Okul Korkusunu Yenmek için:"
         },
         {
-            "desc": "• Çocuğunuzla sohbet edin. Okulda en\nçok ne yaparken keyif aldığını veya en çok\nhangi konularda zorlandığını sorun. Bu\ntarz sohbetleriniz, çocuğunuzun kendini\nkeşfetmesine yardımcı olacaktır.\n• İlgi alanlarının zamanla değişebileceğinin\ndoğal bir durum olduğunu bilin. Bu konuda ona\nkarşı anlayışlı olun.\n• Farklı meslekleri icra eden kişiler ile\nçocuğunuzu bir araya getirip sohbet imkânı\nsağlayın.",
-            "title": "Çocuğunuzun Kariyer Gelişimine Yardımcı Olmak için: "
+            "desc": " Uykusunu almasını sağlayın.\n Okula göndermeden önce mutlaka kahvaltı\nyaptırın.\n Saç ve tırnak temizliği gibi kişisel bakımına\nözen gösterin.\n Temiz ve özenli giyinmesini sağlayın.\n Göz ve genel sağlık muayenelerini düzenli\nolarak yaptırın.",
+            "title": "Çocuğunuzun Okulda Fiziksel Olarak\nKendini İyi Hissetmesi için:"
         },
         {
-            "desc": "• Onunla bir çocuk gibi oyun oynayın ve\nmümkün olduğu kadar içinde bulunduğunuz\nanda kalın.\n• Doğa yürüyüşlerine çıkarak çevreyi keşfedin ya\nda sokak hayvanlarını besleyin.\n• Birlikte kitap okuyun veya bozuk bir eşyayı\ntamir etmeye çalışın. Çocuğunuzla zaman\ngeçirmenin, sizin ve onun için ne kadar önemli\nolduğunu konuşun.",
-            "title": "Çocuğunuzla Keyifli Vakit Geçirmek için:"
-        },
-        {
-            "desc": "• Çocuğunuz, istemediğiniz yönde bir davranış\nsergilerse onu cezalandırmayın.\n• Davranışlarını kararlılıkla takip edin. Benzer\ndurumlarda aynı tepkileri verin.\n• Çocuklarda var olan bir davranışı değiştirmek,\nzaman ve dikkat ister. Bu nedenle sabırlı ve\nanlayışlı olun.\n• Doğru davranışı hatırlatıp çocuğunuzu bu\ndavranışa zorlamadan yönlendirin.",
-            "title": "Çocuğunuzun İstenmeyen Davranışı ile Baş Edebilmek için:"
-        },
-        {
-            "desc": "• Yemeklerde tabağına yiyebileceği ölçülerde\nyemek koyun. Eğer doymazsa tekrar alabileceğini\nsöyleyin.\n• Yiyecek israfının nelere sebep olabileceğiyle\nilgili sohbet edin\n• İhtiyacı olmayan bir şeyi sadece almış olmak\niçin almayın.\n• Gereksiz yanan ışıkları söndürün ve\nsöndürürken nedenini de anlatın.\n• Ellerinizi yıkarken ve dişlerinizi fırçalarken\nmusluğu açık tutmamaya gayret edin.",
-            "title": "Çocuğunuza İsraf Etmemeyi Öğretmek için:"
-        },
-        {
-            "desc": "K• Okula gidiş ve dönüş saatlerini bilin.\n• Çocuğunuzun nerede ve kiminle vakit\ngeçirdiğini öğrenin.\n• Okula devam konusunda sorun yaşamasının\nveya okuldan kaçmasının nedenini (Örneğin;\narkadaş baskısı, okul korkusu, başarısızlık vb.)\naraştırın.\n• Okulundan devam durumu ile ilgili düzenli\nbilgi alın.",
-            "title": "Çocuğunuzun Okula Devamını\nSağlamak için:"
-        },
-        {
-            "desc": "• Akrabalığın ne demek olduğunu anlatın.\n• Çocuğunuzu yakın ve uzak tüm akrabalarıyla\ntanıştırın.\n• Birlikte zaman zaman akraba ziyaretleri yapın,\nbazen de onları evinizde misafir edin.\n• Eski aile fotoğraflarına bakmak, birlikte bir soy\nağacı yapmak, akrabalarınızla olan anılarınızdan\nbahsetmek gibi çocuğa eğlenceli gelebilecek\nfaaliyetler yapın.",
-            "title": "Çocuğunuzun Akrabalık İlişkilerini\nGüçlendirmek için:"
-        },
-        {
-            "desc": "• Kurduğunuz ilişkilerle çocuğunuza, affetme\nkonusunda örnek olun.\n• Çocuğunuz, arkadaşlarıyla ilgili sorun\nyaşadığında, hissettiği kırgınlığı küslüğe\ndönüştürmeden çözmesi için ona önerilerde\nbulunun.\n• Çocuğunuzla olan ilişkinizde “Sana küstüm.”\nya da “Seni affetmeyeceğim.” gibi ifadeler\nkullanmayın.",
+            "desc": " Kurduğunuz ilişkilerle çocuğunuza, affetme\nkonusunda örnek olun.\n Çocuğunuz, arkadaşlarıyla ilgili sorun\nyaşadığında, hissettiği kırgınlığı küslüğe\ndönüştürmeden çözmesi için ona önerilerde\nbulunun.\n Çocuğunuzla olan ilişkinizde “Sana küstüm.”\nya da “Seni affetmeyeceğim.” gibi ifadeler\nkullanmayın.",
             "title": "Çocuğunuza Affetmeyi Öğretmek için:"
         },
         {
-            "desc": "• Onu kendi ilgi alanlarını keşfedecek kadar\nözgür bırakın.\n• Belli bir alana ilgi ve heves gösterdiğinde\ndestekleyin.\n• Merak duygusunu besleyin ve ona keşfedeceği\nyeni pencereler açın.\n• Ona masallar anlatın, birlikte kitap okuyun.",
+            "desc": " Çocuğunuzun davranışlarının sizi\nsinirlendirmek için olmadığını bilin.\n Çalışırken sıklıkla ara vermesini sağlayın.\n Öğretmeni ile iş birliği içinde olun, çocuğunuza\nsınıf içinde sorumluluk verilmesini sağlayın.\n Sahip olduğu enerjiyi harcayabilmesi\niçin çocuğunuzu spora yönlendirin, birlikte\nyürüyüş yapın, doğada daha fazla vakit\ngeçirin.",
+            "title": "Dikkat Eksikliği ve Hiperaktivite Bozukluğu\nOlan Çocuklar için:"
+        },
+        {
+            "desc": " Problemi tanımlayın.\n Problemin nedenlerini belirleyin.\n Problemle ilgili bilgi toplayın.\n Çözüm önerileri oluşturun.\n Uygun çözümü çocuğunuzla birlikte belirleyin.\n Uygularken ne gibi güçlükler çıkabileceğini ve\nbunlarla nasıl baş edilebileceğini tartışın.\n Çözümü uygulayın ve değerlendirin.\nSorunları görmezden gelmemek ve çözmek için\nçaba sarf etmek, ona ileriki yaşantısında fayda\nsağlayacaktır.",
+            "title": "Çocuğunuzun Sorunlarla Baş Etmesine\nYardımcı Olmak için:"
+        },
+        {
+            "desc": " Soruna değil, çözüme odaklanın.\n İçinizden 10’a kadar sayın ve kendinize\nsakinleşmek için zaman tanıyın.\n Yüzünüzü ve ensenizi yıkayın.\n Duygunuzu kontrol etmekte çok\nzorlanıyorsanız, mümkünse ortamınızı değiştirin.\nÖfke kontrolünü sağlarken temiz hava almak iyi\ngelebilir.\n Öfkenizi kontrol etmekle ilgili genel bir sorun\nyaşıyorsanız, profesyonel destek almaktan\nçekinmemelisiniz.",
+            "title": "Öfke Kontrolü için:"
+        },
+        {
+            "desc": " Çocuğunuzun kendi problemlerini çözmesine\nimkân tanıyın. Örneğin, çocuğunuz okulda\nproblem yaşadığında okula gidip arkadaşları ve\nöğretmeniyle konuşup sorunu çözmek yerine,\nonun bu durumla kendi başına baş etmesine\nyardımcı olun.\n Çocuğunuz liseye geldiğinde ona, “Hiçbir işini\nkendi yapmıyor, ne zaman büyüyecek bu çocuk!”\ndememek için ona küçük yaşlarda yapabileceği\nsorumluluklar verin. Örneğin, üç yaşındaki\nbir çocuktan oyuncaklarını toplamasını\nbekleyebilirsiniz ama ayakkabısını bağlamasını\nbekleyemezsiniz.",
+            "title": "Çocuğa Sorumluluk Kazandırmak için:"
+        },
+        {
+            "desc": " Onun hayallerini dinleyin.\n Farklı meslekler hakkında bilgi almasını\nsağlayacak fırsatlar oluşturun.\n Çocuğunuzu iş yerinize götürebilme şansınız\nvarsa, işiniz ve mesleğiniz hakkında bilgi\nedinebilmesi için sizinle birkaç saat iş ortamında\nzaman geçirmesini sağlayın.",
+            "title": "Çocuğunuzun Meslek Seçimine Yardımcı\nOlmak için:\n"
+        },
+        {
+            "desc": "sizi üzüyorsa ve yanlış yaptığınızı\ndüşünüyorsanız, ondan özür dilemekten\nçekinmeyin.\n Çocuk, anne babanın görülen birçok özelliğini\naldığı gibi görülmeyen özelliklerini de alır.\nİnsanları birlikte gözlemleme fırsatı\nsağlayın. Örneğin, parkta yere çöp atan birini\ngördüğünüzde bunun üzerine konuşun, atanı\nuyarın ya da çöpü yerden kaldırarak doğru\ndavranışı gösterin.",
+            "title": "Çocuklarınıza Doğru Davranışları\nÖğretmek için:"
+        },
+        {
+            "desc": " Çocuğun farklılığını kabul edin.\n Çocuk, dünyaya farklı bir pencereden bakar.\nÇevresinde gördüklerine, kokulara ve seslere\noldukça duyarlıdır. Birçok şeyi daha ayrıntılı\nalgılamak, onlar için çok zor olabilir.\n Çocuk olmanın kendine özgü güçlüklerinin\nolabileceğini fark edin.\n Özel üstün yetekli çocuğunuz için öğretmenleri\nve rehber öğretmeniyle birlikte kararlar\nalmak, daha sağlıklı bir yol haritası izlemenizi\nsağlayacaktır.",
+            "title": "Özel Üstün Yetenekli Çocuğunuz için:\n"
+        },
+        {
+            "desc": " Çocuklarınızla doğa yürüyüşleri yapın.\n Çocuğunuzu izcilik, dağcılık gibi doğayla iç içe\nolacağı sporlara yönlendirin.\n Doğanın bozulması hâlinde neler olabileceğini\nanlatın.\n Doğadan ilham alınarak bulunmuş\nicatlar üzerine bir araştırma yapıp sohbet\nkonusu oluşturun. Örneğin, “Bugün sıklıkla\nkullandığımız ve çocuk ayakkabılarının ayrılmaz\nbir parçası olan cırt cırt, pıtrak otundan ilham\nalınarak icat edilmiştir.” diyebilirsiniz.",
+            "title": "Çocuğunuza İnsanlar Açısından Doğanın\nÖnemini Anlatmak için:\n"
+        },
+        {
+            "desc": " Çocuğunuzla sohbet edin. Okulda en\nçok ne yaparken keyif aldığını veya en çok\nhangi konularda zorlandığını sorun. Bu\ntarz sohbetleriniz, çocuğunuzun kendini\nkeşfetmesine yardımcı olacaktır.\n İlgi alanlarının zamanla değişebileceğinin\ndoğal bir durum olduğunu bilin. Bu konuda ona\nkarşı anlayışlı olun.\n Farklı meslekleri icra eden kişiler ile\nçocuğunuzu bir araya getirip sohbet imkânı\nsağlayın.",
+            "title": "Çocuğunuzun Kariyer Gelişimine Yardımcı Olmak için:"
+        },
+        {
+            "desc": " Onunla bir çocuk gibi oyun oynayın ve\nmümkün olduğu kadar içinde bulunduğunuz\nanda kalın.\n Doğa yürüyüşlerine çıkarak çevreyi keşfedin ya\nda sokak hayvanlarını besleyin.\n Birlikte kitap okuyun veya bozuk bir eşyayı\ntamir etmeye çalışın. Çocuğunuzla zaman\ngeçirmenin, sizin ve onun için ne kadar önemli\nolduğunu konuşun.",
+            "title": "Çocuğunuzla Keyifli Vakit Geçirmek için:"
+        },
+        {
+            "desc": " Çocuğunuz, istemediğiniz yönde bir davranış\nsergilerse onu cezalandırmayın.\n Davranışlarını kararlılıkla takip edin. Benzer\ndurumlarda aynı tepkileri verin.\n Çocuklarda var olan bir davranışı değiştirmek,\nzaman ve dikkat ister. Bu nedenle sabırlı ve\nanlayışlı olun.\n Doğru davranışı hatırlatıp çocuğunuzu bu\ndavranışa zorlamadan yönlendirin.",
+            "title": "Çocuğunuzun İstenmeyen Davranışı ile Baş Edebilmek için:"
+        },
+        {
+            "desc": " Yemeklerde tabağına yiyebileceği ölçülerde\nyemek koyun. Eğer doymazsa tekrar alabileceğini\nsöyleyin.\n Yiyecek israfının nelere sebep olabileceğiyle\nilgili sohbet edin\n İhtiyacı olmayan bir şeyi sadece almış olmak\niçin almayın.\n Gereksiz yanan ışıkları söndürün ve\nsöndürürken nedenini de anlatın.\n Ellerinizi yıkarken ve dişlerinizi fırçalarken\nmusluğu açık tutmamaya gayret edin.",
+            "title": "Çocuğunuza İsraf Etmemeyi Öğretmek için:"
+        },
+        {
+            "desc": "K Okula gidiş ve dönüş saatlerini bilin.\n Çocuğunuzun nerede ve kiminle vakit\ngeçirdiğini öğrenin.\n Okula devam konusunda sorun yaşamasının\nveya okuldan kaçmasının nedenini (Örneğin;\narkadaş baskısı, okul korkusu, başarısızlık vb.)\naraştırın.\n Okulundan devam durumu ile ilgili düzenli\nbilgi alın.",
+            "title": "Çocuğunuzun Okula Devamını\nSağlamak için:"
+        },
+        {
+            "desc": " Akrabalığın ne demek olduğunu anlatın.\n Çocuğunuzu yakın ve uzak tüm akrabalarıyla\ntanıştırın.\n Birlikte zaman zaman akraba ziyaretleri yapın,\nbazen de onları evinizde misafir edin.\n Eski aile fotoğraflarına bakmak, birlikte bir soy\nağacı yapmak, akrabalarınızla olan anılarınızdan\nbahsetmek gibi çocuğa eğlenceli gelebilecek\nfaaliyetler yapın.",
+            "title": "Çocuğunuzun Akrabalık İlişkilerini\nGüçlendirmek için:"
+        },
+        {
+            "desc": " Kurduğunuz ilişkilerle çocuğunuza, affetme\nkonusunda örnek olun.\n Çocuğunuz, arkadaşlarıyla ilgili sorun\nyaşadığında, hissettiği kırgınlığı küslüğe\ndönüştürmeden çözmesi için ona önerilerde\nbulunun.\n Çocuğunuzla olan ilişkinizde “Sana küstüm.”\nya da “Seni affetmeyeceğim.” gibi ifadeler\nkullanmayın.",
+            "title": "Çocuğunuza Affetmeyi Öğretmek için:"
+        },
+        {
+            "desc": " Onu kendi ilgi alanlarını keşfedecek kadar\nözgür bırakın.\n Belli bir alana ilgi ve heves gösterdiğinde\ndestekleyin.\n Merak duygusunu besleyin ve ona keşfedeceği\nyeni pencereler açın.\n Ona masallar anlatın, birlikte kitap okuyun.",
             "title": "Çocuğunuzu Özgün Bir Birey Olarak\nYetiştirmek için:"
         },
         {
-            "desc": "• Öfkesinin kaynağını bulmaya çalışın.\n• Onunla, öfkelendiğinde yaptığı davranış\nhakkında konuşun.\n• Öfke anında siz de öfkeye kapılmak yerine, ona\nşefkat gösterin.\n• Sakinleşmesini beklerken sarılarak fiziksel\ntemasta bulunun.\n• Çocuğunuzun iyi davranışlarını övün.",
+            "desc": " Öfkesinin kaynağını bulmaya çalışın.\n Onunla, öfkelendiğinde yaptığı davranış\nhakkında konuşun.\n Öfke anında siz de öfkeye kapılmak yerine, ona\nşefkat gösterin.\n Sakinleşmesini beklerken sarılarak fiziksel\ntemasta bulunun.\n Çocuğunuzun iyi davranışlarını övün.",
             "title": "Çocuğunuzun Öfke Kontrolü için:"
         },
         {
-            "desc": "• Başkalarıyla iyi ilişkiler kurması için fırsatlar\nsunun.\n• Çocuğunuza sorumluluk duygusu kazandırın.\n• Empati kurabilmesini sağlayın.\n• Nezaket kurallarını öğretin.\n• Toplumla iç içe olduğunuz ve bir rol model\nolarak kendi davranışlarınızı gösterebileceğiniz\nimkânlar sağlayın.",
+            "desc": " Başkalarıyla iyi ilişkiler kurması için fırsatlar\nsunun.\n Çocuğunuza sorumluluk duygusu kazandırın.\n Empati kurabilmesini sağlayın.\n Nezaket kurallarını öğretin.\n Toplumla iç içe olduğunuz ve bir rol model\nolarak kendi davranışlarınızı gösterebileceğiniz\nimkânlar sağlayın.",
             "title": "Çocuğunuzun Toplumsal Kurallara Saygılı Bir Birey Olması için:"
         },
         {
-            "desc": "• Eğer çocuğunuz okula yürüyerek gidiyor ve siz\nona eşlik ediyorsanız, onu sınıfın içine kadar\ngötürmeyin.\n• Güvenli mesafeden vedalaşarak çocuğunuzu\nsınıfına gönderin.\n• Çocuğun okul bahçesine arkadaşlarıyla birlikte\ngirmesi ve sınıfa çıkması ona kendisini iyi\nhissettirecektir.",
+            "desc": " Eğer çocuğunuz okula yürüyerek gidiyor ve siz\nona eşlik ediyorsanız, onu sınıfın içine kadar\ngötürmeyin.\n Güvenli mesafeden vedalaşarak çocuğunuzu\nsınıfına gönderin.\n Çocuğun okul bahçesine arkadaşlarıyla birlikte\ngirmesi ve sınıfa çıkması ona kendisini iyi\nhissettirecektir.",
             "title": "Çocuğunuzun Okula Ulaşımı Konusunda:"
         },
         {
-            "desc": "• Evcilik, dalya ya da kulaktan kulağa gibi rekabete\ndayalı olmayan oyunlar oynayabilirsiniz.\n• Çocuğunuzun grup aktivitelerine katılmasını\nsağlayabilirsiniz.\n• Arkadaşlarıyla birlikte bir yardım grubu\nkurmaları, bir mahalle gazetesi çıkarmaları için\nonları yönlendirebilirsiniz.\n• Mahalleden birkaç arkadaşıyla her hafta aynı\ngün buluştukları bir okuma grubu kurmalarını\nönerebilirsiniz.",
+            "desc": " Evcilik, dalya ya da kulaktan kulağa gibi rekabete\ndayalı olmayan oyunlar oynayabilirsiniz.\n Çocuğunuzun grup aktivitelerine katılmasını\nsağlayabilirsiniz.\n Arkadaşlarıyla birlikte bir yardım grubu\nkurmaları, bir mahalle gazetesi çıkarmaları için\nonları yönlendirebilirsiniz.\n Mahalleden birkaç arkadaşıyla her hafta aynı\ngün buluştukları bir okuma grubu kurmalarını\nönerebilirsiniz.",
             "title": "Çocuğunuza İş Birliğini Öğretmek için:"
         },
         {
-            "desc": "• Çocuğunuz okuldan eve gelince ona okulda\nneler yaptığını sorun ve ilgiyle dinleyin.\n• Sizin için basit, sıradan veya anlamsız olan\nbir olayın onun için çok anlamlı ve önemli\nolabileceğini göz ardı etmeyin.\n• Konuşmaya teşvik etmek için ona gününün\nnasıl geçtiğini sorun.\n• Çocuğunuza gününüzün nasıl geçtiğini anlatın.\n• Gün içerisinde yaşadığınız bir olayı ya da\ndurumu detaylarıyla anlatın ve yorumlamasını\nisteyin.",
+            "desc": " Çocuğunuz okuldan eve gelince ona okulda\nneler yaptığını sorun ve ilgiyle dinleyin.\n Sizin için basit, sıradan veya anlamsız olan\nbir olayın onun için çok anlamlı ve önemli\nolabileceğini göz ardı etmeyin.\n Konuşmaya teşvik etmek için ona gününün\nnasıl geçtiğini sorun.\n Çocuğunuza gününüzün nasıl geçtiğini anlatın.\n Gün içerisinde yaşadığınız bir olayı ya da\ndurumu detaylarıyla anlatın ve yorumlamasını\nisteyin.",
             "title": "Aile İçi Etkileşimin Güçlenmesi için:"
         },
         {
-            "desc": "• Zaman zaman okulun rehberlik öğretmeninden\nrandevu alarak çocuğunuzla olan iletişiminizi,\nçocuğunuzun okuldaki ilişkilerini ve gelişimini\nkonuşun.\n• Çocuğunuzla birlikte vakit geçirin ve\nnelerden hoşlanıp nelerden hoşlanmadığını,\nhangi durumlarda ne tür tepkiler verdiğini\ngözlemleyin.\n• Çocuğunuzun hayallerini ve oyun oynarken\nkurduğu cümleleri ilgiyle dinleyin.",
+            "desc": " Zaman zaman okulun rehberlik öğretmeninden\nrandevu alarak çocuğunuzla olan iletişiminizi,\nçocuğunuzun okuldaki ilişkilerini ve gelişimini\nkonuşun.\n Çocuğunuzla birlikte vakit geçirin ve\nnelerden hoşlanıp nelerden hoşlanmadığını,\nhangi durumlarda ne tür tepkiler verdiğini\ngözlemleyin.\n Çocuğunuzun hayallerini ve oyun oynarken\nkurduğu cümleleri ilgiyle dinleyin.",
             "title": "Çocuğunuzu Daha İyi Tanımak için:"
         },
         {
-            "desc": "• Birlikte bir ağaç dikin.\n• Çiçek yetiştirin.\n• İmkânlarınız dâhilinde, sebze veya meyve\nyetiştirin.\n• Yetiştirdiğiniz bitkilerin bakımını çocuğunuzun\nyapmasını sağlayın. Bu sayede hem doğa\nsevgisini öğrenir hem de sorumluluk duygusu\ngelişir.",
+            "desc": " Birlikte bir ağaç dikin.\n Çiçek yetiştirin.\n İmkânlarınız dâhilinde, sebze veya meyve\nyetiştirin.\n Yetiştirdiğiniz bitkilerin bakımını çocuğunuzun\nyapmasını sağlayın. Bu sayede hem doğa\nsevgisini öğrenir hem de sorumluluk duygusu\ngelişir.",
             "title": "Çocuğunuza Doğa Sevgisini Öğretmek için:"
+        },
+        {
+            "desc": " Güvenli olan sokak, park ya da boş alanlarda\noynamasını teşvik edin.\n Arkadaşlarıyla futbol, voleybol vb. oyunlar\noynaması için çocuğunuza zaman zaman izin\nverin.\n Çocuğunuzun sevdiği bir spor dalında\nuzmanlaşması için onu bir spor kulübüne ya da\nbir spor kursuna yazdırın.\n Beslenmesine ve uyku düzenine dikkat edin.",
+            "title": "Çocuğunuzun Fiziksel Açıdan Sağlıklı Bir Yetişkin Olması için:"
         }
     ],
     "specialSay": [
+        {
+            "say": "İnsanoğlu, alışkanlıklarının çocuğudur.\n",
+            "whoSaid": "(İbn Haldun)"
+        },
+        {
+            "say": "Çocukları izledim, onları yakından\ninceledim ve çocuklar bana, onlara nasıl\nöğreteceğimi öğrettiler.\n",
+            "whoSaid": "(Maria Montessori)"
+        },
+        {
+            "say": "Şımartılmış küçükler,\nbüyüdükleri zaman hayattan şamar yer!\n",
+            "whoSaid": "(Raif Necdet Kestelli)"
+        },
+        {
+            "say": "Köhne fikirler paslanmış çivilere benzer,\nsöküp atmak çok güçtür.\n",
+            "whoSaid": "(Cenap Şahabettin)"
+        },
+        {
+            "say": "Bir dakikaya birçok gün sığar.\n",
+            "whoSaid": "(William Shakespeare)"
+        },
+        {
+            "say": "Yapmaya giden yol, olmaktan geçer.\n",
+            "whoSaid": "(Lao-Tzu)"
+        },
+        {
+            "say": "İnsan kendi saadetinin mimarıdır.\n",
+            "whoSaid": "(Thoreau)"
+        },
+        {
+            "say": "Vicdansız bilim, ruhun yıkımından\nbaşka bir şey değildir.\n",
+            "whoSaid": "(François Rabelais)"
+        },
         {
             "say": "Çocuğa nasıl davranırsak, çocuk da\ndünyaya öyle davranır.\n",
             "whoSaid": "(Pam Leo)"
@@ -566,15 +814,11 @@
             "whoSaid": "(Uluğ Bey)"
         },
         {
-            "say": "Masal dinlememiş çocuklar büyüyünce kedi resmini bile cetvelle çizer. ",
+            "say": "Masal dinlememiş çocuklar büyüyüncekedi resmini bile cetvelle çizer.",
             "whoSaid": "(Cemal Süreya)"
         },
         {
-            "desc": "• Güvenli olan sokak, park ya da boş alanlarda\noynamasını teşvik edin.\n• Arkadaşlarıyla futbol, voleybol vb. oyunlar\noynaması için çocuğunuza zaman zaman izin\nverin.\n• Çocuğunuzun sevdiği bir spor dalında\nuzmanlaşması için onu bir spor kulübüne ya da\nbir spor kursuna yazdırın.\n• Beslenmesine ve uyku düzenine dikkat edin.",
-            "title": "Çocuğunuzun Fiziksel Açıdan Sağlıklı Bir Yetişkin Olması için: "
-        },
-        {
-            "say": "Ön yargı cehaletin çocuğudur. ",
+            "say": "Ön yargı cehaletin çocuğudur.",
             "whoSaid": "(William Hazlitt)"
         },
         {
@@ -636,6 +880,46 @@
     ],
     "spelling": [
         {
+            "correct": "Hoparlör",
+            "wrong": "Hoporlör"
+        },
+        {
+            "correct": "Kılavuz",
+            "wrong": "Klavuz"
+        },
+        {
+            "correct": "Müspet",
+            "wrong": "Müsbet"
+        },
+        {
+            "correct": "Değişim",
+            "wrong": "Deyişim"
+        },
+        {
+            "correct": "Çiftlik",
+            "wrong": "Çiflik"
+        },
+        {
+            "correct": "Çiftlik",
+            "wrong": "Çiflik"
+        },
+        {
+            "correct": "Kilitlemek",
+            "wrong": "Kitlemek"
+        },
+        {
+            "correct": "Supap",
+            "wrong": "Subap"
+        },
+        {
+            "correct": "Memnun",
+            "wrong": "Menmun"
+        },
+        {
+            "correct": "Müteahhit",
+            "wrong": "Mütahit"
+        },
+        {
             "correct": "Tahterevalli",
             "wrong": "Tahtarevalli"
         },
@@ -664,12 +948,12 @@
             "wrong": "Laylon"
         },
         {
-            "correct": "Fites ",
-            "wrong": "Alıştırma "
+            "correct": "Fites",
+            "wrong": "Alıştırma"
         },
         {
-            "correct": "Palyaço ",
-            "wrong": "Palyanço "
+            "correct": "Palyaço",
+            "wrong": "Palyanço"
         },
         {
             "correct": "Tasvir",
@@ -730,17 +1014,44 @@
     ],
     "suggestion": [
         {
-            "desc": "Çocuğunuza kendi odasını toplama\nalışkanlığı kazandırmak için önce odasını\nbirlikte toplayın. Basit ve anlaşılır şekilde\nçocuğunuza, odasındaki hangi oyuncakların\nhangi kutuya, hangi eşyaların hangi çekmece\nya da rafa konulması gerektiğini göstererek\nanlatın. Çocuk odasının yerleşimini sade, göz\nyormayacak şekilde ve çocuğun rahatına göre\ntasarlayın. Daha sonra çocuğunuzun odasını\nkendi başına toplamasını isteyebilirsiniz.",
+            "desc": "Yapılan araştırmalar, çocukların asitli içecek\ntüketiminin dikkat eksikliğini ve agresif\ndavranışları artırdığını gösteriyor. Çocuklarınız\nyemekte içecek tüketmek istediklerinde\nöncelikle “su” teklif edebilirsiniz. Su dışında\nbir şey içmek istiyorlarsa süt, ayran, kefir,\nıhlamur, ev yapımı limonata ve ev yapımı\nmeyve suları iyi birer seçenek olabilir.\nYemek dışında da çocuklarınızın günlük su\nihtiyaçlarını karşıladıklarından ve yeterince su\ntükettiklerinden de emin olmalısınız.",
             "title": ""
         },
         {
-            "desc": "1) Orta ve Güney Anadolu’nun birçok\nbölgesinde bir türkü ezgisi. 2) Bu ezgiyle\nsöylenen, konusu acıklı türkü.",
-            "title": "Bozlak:"
+            "desc": "Çocuklar heyecanlıdır, oyunları sırasında\nyüksek sesler çıkarabilirler. Çocuğunuzun sesi,\noyun sırasındaki neşesinin, keyifli olduğunun\nbir ifadesidir aslında. Çocuklara söylenen “Çıt\nbile çıkarmayacaksın!” gibi ifadeler oldukça\nyanlıştır. Onlardan uzun süre sessiz kalmasını\nistemeyin. Oyunları sırasında seslerinin\ntonlarını ayarlayabilmeleri için onlarla daha\nsessiz nasıl oynayabilecekleri hakkında\nkonuşabilirsiniz.",
+            "title": ""
         },
         {
-            "date": "",
-            "desc": "Geleneksel Bursa mutfağında önemli bir yeri\nolan, kahvaltı başta olmak üzere her öğünde\ntüketilen, “tarhana kokusu” adı verilen\nbaharatların kullanıldığı; zeytinyağı, tereyağı,\nnohut, fasulye ilave edilerek pişirilen çorba.",
-            "name": "Kazan Tarhanası-Bursa"
+            "desc": "Çocuklar önce dinleyendir fakat uyarılar çok\nsık olduğunda dinlemeyen, duymayan olurlar.\nÇocuğunuzu “uyarı sağırı” yapmamak için onu\nher durumda uyarmayın, bazı şeyleri keşfedip\ndeneyimlemesine fırsat tanıyın. Onu sürekli\nsözel olarak uyarmak yerine bazen küçük\nbir not bırakarak bazen de mektup yazarak\nkendinizi ifade edebilirsiniz. Çocuğunuzu\nuyarırken “Çantanı yere atma!” gibi olumsuz\nbir dil kullanmak yerine “Çantanı yerden\nalır mısın?” gibi olumlu bir dil kullanmayı\ndeneyebilirsiniz.",
+            "title": ""
+        },
+        {
+            "desc": "Her çocuk, farklı bir mizaçla doğar. Çocuğun\nmizacını tanımak, onun sağlıklı gelişimi için\nçok önemlidir. Çocuğun deneyimi ve dünyayla\nkurduğu ilişki arttıkça, kişiliği de yıllar içinde\ngelişir. Anne babaların çocuklarını tanımaları\nve onlara saygı duymaları, çocuklarının\nmizacını dikkate alarak gelişimine yardımcı\nolmaları gerekir. Bu süreçte kararlı, anlayışlı ve\nsabırlı olmak, çocukların ilgi ve ihtiyaçlarının\nfarkına varmak doğru bir yaklaşım olacaktır.",
+            "title": ""
+        },
+        {
+            "desc": "Çocuğunuzla yaşayabileceğiniz çatışma\ndurumlarını azaltmak için bazı önlemler\nalabilirsiniz. Yemeğe oturmadan önce\n“Az sonra sofraya oturacağız.”, parktan\nayrılmadan kısa bir süre önce “Birazdan eve\ngideceğiz.”, yatağa gitmeden önce “Birazdan\noyun saati bitecek ve uyku saati başlayacak.”\ndiyebilirsiniz. Bu gibi hatırlatmalar, onu bir\nsonraki duruma hazırlar ve olası çatışmaları\nönler.",
+            "title": ""
+        },
+        {
+            "desc": "Bir çocuğun gözüyle “kıyaslanmak” ne\ndemektir? Sürekli başkalarıyla kıyaslanan\nçocuk, kendisini başkalarının gözüyle görmeye\nalışacak ve başkalarının onu görmek istediği\ngibi olmaya gayret edecektir. Bu durum,\nçocuğunuzu başkalarına bağımlı hâle getirir.\nHer insan birbirinden farklıdır ve değerlidir.\nTek ve değerli olan, çocuklarınızı olduğu gibi\nkabul edin ve başkalarıyla asla kıyaslamayın.",
+            "title": ""
+        },
+        {
+            "desc": "Çocuklar sizi sürekli izler. Bu nedenle ne\nsöylediğiniz ve neyi, nasıl yaptığınız çok\nönemlidir. Olaylar karşısında onun nasıl\ndavranmasını istiyorsanız, siz de istediğiniz\ntutuma uygun davranın. Çocuğunuzun “lütfen”\nsözcüğünü kullanarak kibar konuşmasını\nistiyorsanız, önce siz söyleyin. Yüksek sesle\nbağırarak konuşmasını istemiyorsanız, önce siz\nalçak sesle konuşun. Çocuğumuzu eleştirmek\nve sürekli düzeltmek yerine önce kendimize\ndönmek, kendimizi eleştirmek ve düzeltmek\nçok daha etkili olacaktır.",
+            "title": ""
+        },
+        {
+            "desc": "En son ne zaman yeni bir şey öğrendiniz?\nAnne babasının yeni beceriler kazandığını\ngören çocuk, onları kendine örnek alır. Kendisi\nde öğrenmeye motive olur ve becerilerini\ngeliştirmek ister. Halk oyunları, dikiş, spor,\nyabancı dil öğrenme gibi yeni beceriler\nedinerek çocuğunuza örnek olabilirsiniz.\nUnutmayın ki öğrenme, bitmeyen ve yaşı\nolmayan bir eylemdir.",
+            "title": ""
+        },
+        {
+            "desc": "Çocuklarınıza, ihtiyacı olan insanlara yardım\netmeyi öğretin. Bir insana yardım etmek\niçin mutlaka onu tanımak gerekmediğini ve\ninsanın insana ihtiyacı olduğundan birlikte\nyaşanması gerektiğini anlatın. Çocuklarınıza\nyardımlaşmayı öğretmek için birlikte\nçevrenizdeki yardımlaşma derneklerine veya\nvakıflara gidebilir, bu derneklerin ne için\nkurulduğunu anlatabilir, imkânınız varsa\nburalarda gönüllü olarak çalışabilirsiniz.\nKardeş okul projeleri, kitap, kıyafet ve oyuncak\nyardımı gibi etkinliklerde çocuğunuzla görev\nalabilirsiniz.",
+            "title": ""
+        },
+        {
+            "desc": "Çocuğunuza kendi odasını toplama\nalışkanlığı kazandırmak için önce odasını\nbirlikte toplayın. Basit ve anlaşılır şekilde\nçocuğunuza, odasındaki hangi oyuncakların\nhangi kutuya, hangi eşyaların hangi çekmece\nya da rafa konulması gerektiğini göstererek\nanlatın. Çocuk odasının yerleşimini sade, göz\nyormayacak şekilde ve çocuğun rahatına göre\ntasarlayın. Daha sonra çocuğunuzun odasını\nkendi başına toplamasını isteyebilirsiniz.",
+            "title": ""
         },
         {
             "desc": "Çocuğunuz üzüldüğünde, onun üzüntüsünü\npaylaşın ve nedenini anlamaya çalışın. Böyle\nanlarda ona, “Bunda üzülecek ne var, üzülme!”\nyerine, “Seni anlıyorum.” gibi, onu anladığınızı\nbelirten konuşmalar yapın. Çocuğunuzla, onu\nüzen konular hakkında konuştukça olumsuz\nduyguları azalacak ve olumsuz durumların\nüstesinden gelebilmek için zamanla kendine\nhas bir davranış biçimi geliştirecektir.",
@@ -767,11 +1078,11 @@
             "title": ""
         },
         {
-            "desc": "İlk yardım, çocuklu aileler için de çocuk sahibi olmayanlar için de son derece önemlidir. Bir ilk yardım kursuna giderek olası bir durumda ne yapacağınızı bilmek hayat kurtarıcı olabilir. Bunun için bir araştırma yapın ve bir ilk yardım kursuna yazılın. Buraya eğer çocuğunuzun yaşı uygunsa birlikte gidebilir, çocuğunuzla birlikte internetten ilk yardım videoları izleyebilirsiniz. ",
+            "desc": "İlk yardım, çocuklu aileler için de çocuk sahibi olmayanlar için de son derece önemlidir. Bir ilk yardım kursuna giderek olası bir durumda ne yapacağınızı bilmek hayat kurtarıcı olabilir. Bunun için bir araştırma yapın ve bir ilk yardım kursuna yazılın. Buraya eğer çocuğunuzun yaşı uygunsa birlikte gidebilir, çocuğunuzla birlikte internetten ilk yardım videoları izleyebilirsiniz.",
             "title": ""
         },
         {
-            "desc": "Çocuğunuza çevreyi temiz tutmanın önemini öğretin. “Herkes evinin önünü temizlediğinde tüm şehir temiz olur.” sözünün ne anlama geldiğini anlatın. Çevreyi korumanın gelecek nesillere karşı bir sorumluluk olduğunu hatırlatın. Doğanın bizim için ne kadar önemli olduğunu anlatın ve doğayı korumanın önemine dikkat çekin. Doğaya zarar vermenin aslında insanlara ve tüm canlılara zarar vermek anlamına geldiğini örneklerle açıklayın. ",
+            "desc": "Çocuğunuza çevreyi temiz tutmanın önemini öğretin. “Herkes evinin önünü temizlediğinde tüm şehir temiz olur.” sözünün ne anlama geldiğini anlatın. Çevreyi korumanın gelecek nesillere karşı bir sorumluluk olduğunu hatırlatın. Doğanın bizim için ne kadar önemli olduğunu anlatın ve doğayı korumanın önemine dikkat çekin. Doğaya zarar vermenin aslında insanlara ve tüm canlılara zarar vermek anlamına geldiğini örneklerle açıklayın.",
             "title": ""
         },
         {
@@ -834,13 +1145,63 @@
     "value": [
         {
             "date": "",
+            "desc": "Eski zamanlarda ipek kumaşlar ve kadifelerle\nbirlikte kullanılan, evlerin en güzel köşelerinde\nyer alan bir aile fotoğrafının etrafını ya da askere\ngiden nişanlının resmini süsleyen, günümüzde\nise unutulmaya yüz tutmuş bir sanat.",
+            "name": "İpek Kozası İşlemesi-Yalova"
+        },
+        {
+            "date": "",
+            "desc": "Hamurun oklavayla açılarak sac üzerinde\ngevreyene kadar hafifçe pişirilmesiyle elde\nedilen, üst üste katman hâlinde dizilen,\nkullanılacağı zaman üzerine su serpilip, biraz\nbekletilerek yumuşaması sağlanan dayanıklı\nekmek.",
+            "name": "Yufka Ekmek"
+        },
+        {
+            "date": "",
+            "desc": "UNESCO Dünya Miras Listesi’nde yer alan Mimar\nSinan’ın ustalık eseri, dünya mimarlık tarihinin\nbaşyapıtlarından, II. Selim’in emriyle yapılan,\nihtişamlı görüntüsü, dört zarif minaresi ve\nmuhteşem kubbesi ile eşsiz bir yapı.M25",
+            "name": "Selimiye Camisi-Edirne"
+        },
+        {
+            "date": "",
+            "desc": "Geleneksel Bursa mutfağında önemli bir yeri\nolan, kahvaltı başta olmak üzere her öğünde\ntüketilen, “tarhana kokusu” adı verilen\nbaharatların kullanıldığı; zeytinyağı, tereyağı,\nnohut, fasulye ilave edilerek pişirilen çorba.",
+            "name": "Kazan Tarhanası-Bursa"
+        },
+        {
+            "date": "",
+            "desc": "Stilize edilmiş bitkisel ve geometrik motiflerin\nköşe ve göbek meydana getirecek ve aynı\nzamanda zemin kısmı boş kalacak şekilde halı\nyüzeyine dağıtıldığı; lacivert, kırmızı ve beyaz\nrenklerden oluşan el halısı.",
+            "name": "Taşpınar El Halısı-Aksaray"
+        },
+        {
+            "date": "",
+            "desc": "Kahramanmaraş ve ilçelerinde tamamı el\nişçiliğiyle yaygın olarak yapılan, teknik açıdan\nönce kumaşın sökülmesi sonra sökülen kumaşın\nişlenmesiyle oluşan, tersi ve düzü aynı görünen,\nkültürümüzü yansıtan yöresel bir Türk nakışı.",
+            "name": "Maraş File Nakışı"
+        },
+        {
+            "date": "",
+            "desc": "Tatlı, tuzlu, sade, susamlı olarak yuvarlak simit\ngibi üretilen; mahlep, susam, çörekotu, rezene\nve pekmezle lezzetine lezzet katılan; Ramazan\nkahkesi ve köy kahkesi gibi çeşitleri olan\nçörekler.",
+            "name": "Kahke (Gaziantep)"
+        },
+        {
+            "date": "",
+            "desc": "Güzelyurt ilçesinde, tektonik yükselmeler ve\nHasan Dağı volkanının püskürmesinin ardından\nçöküntüye uğrayan alan üzerinde ilerleyen\nMelendiz Çayı’nın binlerce yıllık aşındırması\nsonucunda oluşan, dünyanın ikinci büyük\nkanyonu.",
+            "name": "Ihlara Vadisi-Aksaray"
+        },
+        {
+            "date": "",
+            "desc": "Denizli’nin şifalı termal suyunun oluşturduğu\neşsiz güzellikteki travertenleri ve çevresindeki\nantik kentleriyle dikkat çeken, “beyaz cennet”\nolarak bilinen ve UNESCO’nun Dünya Miras\nListesi’nde yer alan doğal alan.",
+            "name": "Pamukkale-Hierapolis Antik Kenti-Denizli"
+        },
+        {
+            "date": "",
+            "desc": "Hayatını bilime, millî kültüre adayan, 26 yaşında\n“Dünyanın en genç profesörü” unvanını alan,\n“Türk Einstein” olarak anılan Türkçe sevdalısı,\ndünyaca tanınmış Türk bilim adamı, moleküler\nbiyofizikçi, biyokimyager.",
+            "name": "Oktay Sinanoğlu (1935-2015)"
+        },
+        {
+            "date": "",
             "desc": "Toplumsal katılımın yüksek olduğu törenlerde,\nortak iş gücü ve paylaşıma dayalı olarak\ngerçekleştirilen dayanışmacı bir sosyal pratik\nolan, buğday ve etin pişirilmesiyle yapılan\nkeşkek yemeğinin etrafında gerçekleşen ritüeller.",
             "name": "Tören Keşkeği Geleneği"
         },
         {
-            "date": "(1884-1920)",
+            "date": "",
             "desc": "“Kaşağı”, “Pembe İncili Kaftan”, “Perili\nKöşk” ve “Forsa” isimli hikâyeleriyle, yerli\nhikâyeciliğimizin öncü isimlerinden,\nyazar, asker ve öğretmen.",
-            "name": "Ömer Seyfettin "
+            "name": "Ömer Seyfettin (1884-1920)"
         },
         {
             "date": "",
@@ -853,9 +1214,9 @@
             "name": "Afyon Övmesi-Afyonkarahisar"
         },
         {
-            "date": "(1864-1944)",
+            "date": "",
             "desc": "İstanbul’u tüm canlılığıyla anlatan ve sokağı\nedebiyata getiren, “Şık”, Şıpsevdi”, “Kuyruklu\nYıldız Altında Bir İzdivaç” ve “Gulyabani” gibi\nbirçok esere imza atan usta yazar ve gazeteci.",
-            "name": "Hüseyin Rahmi Gürpınar "
+            "name": "Hüseyin Rahmi Gürpınar (1864-1944)"
         },
         {
             "date": "",
@@ -869,13 +1230,13 @@
         },
         {
             "date": "",
-            "desc": "Kökeni Orta Asya Türklerine dek uzansa da Osmanlı sarayına giden Maraşlı gelinlerin çeyizlerinde yer almasıyla ünlenen ve kadife elbise, yastık, seccade, masa örtüleri üzerine yapılan yöreye has bir işleme sanatı. ",
-            "name": "Maraş İşi Sim-Sırma (Kahramanmaraş) "
+            "desc": "Kökeni Orta Asya Türklerine dek uzansa da Osmanlı sarayına giden Maraşlı gelinlerin çeyizlerinde yer almasıyla ünlenen ve kadife elbise, yastık, seccade, masa örtüleri üzerine yapılan yöreye has bir işleme sanatı.",
+            "name": "Maraş İşi Sim-Sırma (Kahramanmaraş)"
         },
         {
-            "date": "(1240-1320)",
+            "date": "",
             "desc": "“Ben gelmedim kavga için/Benim işim sevgi için/ Dostun evi gönüllerdir/Gönüller almaya geldim” diyen, Türk-İslam halk düşüncesinin en önemli yapı taşlarından biri olan Anadolu mutasavvıfı, Türkçe şiirin öncüsü, hak ve halk şairi.",
-            "name": "Yunus Emre"
+            "name": "Yunus Emre (1240-1320)"
         },
         {
             "date": "",
@@ -913,9 +1274,9 @@
             "name": "Mehmet Akif Ersoy Edebiyat Müze Kütüphanesi-Ankara"
         },
         {
-            "date": "(1884-1933)",
+            "date": "",
             "desc": "“Piyale”, “Göl Saatleri”, “Frankfurt\nSeyahatnamesi” ve “Bize Göre” eserleriyle\ngerçekleri kendi prizmasından geçirerek anlatan,\nmodern Türk şiirinin kurucusu olarak kabul\nedilen şair.",
-            "name": "Ahmet Haşim"
+            "name": "Ahmet Haşim (1884-1933)"
         },
         {
             "date": "",
@@ -945,6 +1306,42 @@
     ],
     "word": [
         {
+            "desc": "Utangaçlık.",
+            "title": "Mahcubiyet:"
+        },
+        {
+            "desc": "1) Çeşitli meslek kolları arasında tarafların\nuyması veya kaçınması gereken davranışlar\nbütünü. 2) Ahlaki, ahlakla ilgili.",
+            "title": "Etik:"
+        },
+        {
+            "desc": "Dayanma, karşı koyma gücü,\nmukavemet.",
+            "title": "Direnç:\n"
+        },
+        {
+            "desc": "Sesli olarak söylenen veya müzik\naracılığıyla çalınan serbest biçimli\nmüzik parçası.",
+            "title": "Serenat:"
+        },
+        {
+            "desc": "1) Bir düzey üstündeki yıkık, çatlak veya\naralık, rahne. 2) Dağ geçidi. 3) Boşluk,\neksiklik (mec.).",
+            "title": "Gedik:"
+        },
+        {
+            "desc": "1) Belli bir yeri olmayan, gezici, gezgin.\n2) Kolay taşınabilen, katlanarak taşınabilir\nduruma getirilebilen, portatif.",
+            "title": "Seyyar:"
+        },
+        {
+            "desc": "Zariflik.",
+            "title": "Zarafet:"
+        },
+        {
+            "desc": "İmrenme.",
+            "title": "Gıpta:"
+        },
+        {
+            "desc": "Deprem bilimci.",
+            "title": "Sismolog:"
+        },
+        {
             "desc": "Büyüklük, yücelik, ululuk.",
             "title": "İzzet:"
         },
@@ -969,8 +1366,8 @@
             "title": "Latife:"
         },
         {
-            "desc": "Bir meclis veya kurulun çözümlenmesi gereken sorunları görüşüp tartışmak için yaptığı birleşimlerden her biri, celse. ",
-            "title": "Oturum: "
+            "desc": "Bir meclis veya kurulun çözümlenmesi gereken sorunları görüşüp tartışmak için yaptığı birleşimlerden her biri, celse.",
+            "title": "Oturum:"
         },
         {
             "desc": "Sevgiliye kavuşma.",
@@ -1030,7 +1427,11 @@
         },
         {
             "desc": "1) Birine geçici olarak bırakılan ve teslim\nalınan, kişice korunması gereken eşya, kimse.\n2) Bir kimse ile birine\ngönderilen şey.",
-            "title": "Emanet: "
+            "title": "Emanet:"
+        },
+        {
+            "desc": "1) Orta ve Güney Anadolu’nun birçok\nbölgesinde bir türkü ezgisi. 2) Bu ezgiyle\nsöylenen, konusu acıklı türkü.",
+            "title": "Bozlak:"
         }
     ]
 }
