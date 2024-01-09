@@ -20,8 +20,8 @@ module.exports.makeWallpeaperImage = async function makeWallpeaperImage(image_pa
         let olcek = .4
         let kutu_w = canvas.width * olcek
         let kutu_h = canvas.height * olcek
-        let kutu_dx = (canvas.width-kutu_w)/2
-        let kutu_dy = (canvas.height-kutu_h)/2
+        let kutu_dx = canvas.width*.75 - kutu_w*.5
+        let kutu_dy = canvas.height*.25 - kutu_h*.5
         ctx.drawImage(msg_box, kutu_dx, kutu_dy, kutu_w, kutu_h);
     }
 
@@ -53,8 +53,31 @@ async function mesajKutusunuOlustusu(scrn_width, scrn_height, mesaj_json,okul_tu
     ctx.textAlign = "center";
     x = msg_canvas.width/2
     let mesaj           = mesaj_json.mesaj[Math.floor(Math.random() * mesaj_json.mesaj.length)]
+    // ---------------------------------------------   "GÜNÜN DEYİMİ"
+    if (mesaj_json.mesaj_turu == 'expression'){
+        footer              = "GÜNÜN OYUNU"
+        ctx.font            = font_footer; 
+        ctx.fillText(footer, x, y); 
+        y *=1.2
+        ctx.font            = font_title;  
+        let titles = satirlaraBol(ctx, mesaj.title, msg_canvas.width );
+        titles.forEach(title => {
+            satir_width    = ctx.measureText(title); 
+            y +=satir_arasi
+            ctx.fillText(title, x, y);
+        });
+       
+
+        ctx.font            = font_desc; 
+        y +=satir_arasi
+        let descs = satirlaraBol(ctx, mesaj.desc, msg_canvas.width );
+        descs.forEach(desc => {
+            satir_width    = ctx.measureText(desc); 
+            y +=satir_arasi
+            ctx.fillText(desc, x, y); 
+        });
     // ---------------------------------------------   "GÜNÜN OYUNU"
-    if (mesaj_json.mesaj_turu == 'game'){
+    }else if (mesaj_json.mesaj_turu == 'game'){
         footer              = "GÜNÜN OYUNU"
         ctx.font            = font_footer; 
         ctx.fillText(footer, x, y); 
