@@ -37,7 +37,7 @@ async function mesajKutusunuOlustusu(scrn_width, scrn_height, mesaj_json,okul_tu
     const msg_canvas = createCanvas(kutu_width, kutu_height)
     const ctx = msg_canvas.getContext('2d')
     GlobalFonts.registerFromPath(path.join(__dirname,'assets/Alkatra-VariableFont_wght.ttf'), 'Alkatra')
-    let msg_bg_name = "msg_bg" + Math.floor(Math.random()*2)
+    let msg_bg_name = "msg_bg" + Math.floor(Math.random()*5)
     let image_path = path.join(__dirname, '/assets/'+msg_bg_name+'.png')
     const background = await loadImage(image_path);
     ctx.drawImage(background, 0, 0, msg_canvas.width, msg_canvas.height);
