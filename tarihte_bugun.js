@@ -47,7 +47,7 @@ module.exports.TarihteBugun = class TarihteBugun {
 
  
         //let prefix = Math.floor(Math.random() * 99999); 
-        this.target_path = path.join(app.getAppPath("temp"), "bilgi_penceresi.jpg");
+        this.target_path = path.join(app.getPath("temp"), "bilgi_penceresi.jpg");
         await makeWallpeaperImage(random_resim, mesaj_json, this.target_path, this.okul_turu)
         setWallpeaper(this.target_path)
     }
@@ -112,10 +112,12 @@ module.exports.TarihteBugun = class TarihteBugun {
 
 
         return varolan_dosyalar
+        console.log("varolan_dosyalar" , varolan_dosyalar)
     }
 
     gununMesajlari() {
         const json = fs.readFileSync(path.join(__dirname, 'data/data.json'))
+        console.log("gununMesajlari" , json)
         return json
     }
 }

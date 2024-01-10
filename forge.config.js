@@ -9,7 +9,7 @@ module.exports = {
       config: {
         authors: 'Alpay GÜNEŞ - Kayseri İl Millli Eğitim Müdürlüğü', 
         icon: './assets/icon.png',
-        name: 'Bilgi Penceresi.exe',
+        name: 'Bilgi_Penceresi.exe',
       },
     },
     // {
