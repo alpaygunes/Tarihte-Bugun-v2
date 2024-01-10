@@ -1,10 +1,23 @@
 const { promisify } = require('node:util');
-const childProcess = require('node:child_process');
-const execFile = promisify(childProcess.execFile);
+const childProcess  = require('node:child_process');
+const execFile      = promisify(childProcess.execFile);
+const process       = require('process')
+
 
 module.exports.setWallpeaper = async function setWallpeaper(target_path) {
+    i if (process.platform === 'win32') {
+        const binary = path.join(__dirname, '/assets/windows-wallpaper-x86-64.exe');
+        let scale = 'fill'
+        const arguments_ = [
+            'set',
+            path.resolve(target_path),
+            '--scale',
+            scale,
+        ];
+        await execFile(binary, arguments_);
+    }
     gnome(target_path)
-    kde(target_path)
+    kde(target_path) 
 }
 
 
@@ -24,6 +37,7 @@ async function gnome(target_path) {
         return
     }
 }
+
 
 async function kde(target_path) {
     try {
