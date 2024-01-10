@@ -46,8 +46,8 @@ module.exports.TarihteBugun = class TarihteBugun {
         let mesaj_json =({mesaj_turu,mesaj})
 
  
-        //let prefix = Math.floor(Math.random() * 99999);
-        this.target_path = path.join("/var/tmp/", "bilgi_penceresi.jpg");
+        //let prefix = Math.floor(Math.random() * 99999); 
+        this.target_path = path.join(app.getAppPath("temp"), "bilgi_penceresi.jpg");
         await makeWallpeaperImage(random_resim, mesaj_json, this.target_path, this.okul_turu)
         setWallpeaper(this.target_path)
     }
@@ -72,7 +72,7 @@ module.exports.TarihteBugun = class TarihteBugun {
     // tarih değerine göre dizinin yolu belirlyelim
     yollariBelirle() {
         var date = new Date();
-        var month = date.getMonth();
+        var month = date.getMonth()+1;
         var day = date.getDate();
         let guncel_dizin = path.join(month.toString(), day.toString())
         let srcDir = path.join(__dirname, 'data', guncel_dizin)

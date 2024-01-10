@@ -1,10 +1,10 @@
 {
   "name": "tr.gov.meb.kayseri",
   "version": "1.0.0",
-  "description": "Günün anlam ve önemine uygun  duvar kağıdı değişir. Tarihte bugün ve özlü söz gösterilir.",
+  "description": "Bu uygulama belli aralıklarla duvakağıdını değiştirir aynı zamanda genel bilgiler ekrana gelir.",
   "main": "main.js",
   "scripts": {
-    "start": "APP_DEV=true  electron-forge start",
+    "start": "electron-forge start",
     "test": "echo \"Error: no test specified\" && exit 1",
     "package": "electron-forge package",
     "make": "electron-forge make"

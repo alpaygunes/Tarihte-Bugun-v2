@@ -2,6 +2,7 @@ const { promisify } = require('node:util');
 const childProcess  = require('node:child_process');
 const execFile      = promisify(childProcess.execFile);
 const process       = require('process')
+const path = require('path');
 
 
 module.exports.setWallpeaper = async function setWallpeaper(target_path) {
