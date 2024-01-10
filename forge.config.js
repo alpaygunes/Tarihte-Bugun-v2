@@ -6,20 +6,30 @@ module.exports = {
   makers: [
     {
       name: '@electron-forge/maker-squirrel',
-      config: {},
+      config: {
+        authors: 'Alpay GÜNEŞ - Kayseri İl Millli Eğitim Müdürlüğü', 
+        icon: './assets/icon.png',
+        name: 'Bilgi Penceresi.exe',
+      },
     },
-    {
-      name: '@electron-forge/maker-zip',
-      platforms: ['darwin'],
-    },
+    // {
+    //   name: '@electron-forge/maker-zip',
+    //   platforms: ['darwin'],
+    // },
     {
       name: '@electron-forge/maker-deb',
-      config: {},
+      config: {
+        options: {
+          authors: 'Alpay GÜNEŞ - Kayseri İl Millli Eğitim Müdürlüğü', 
+          icon: './assets/icon.png',
+          name: 'Bilgi Penceresi',
+        }
+      }
     },
-    {
-      name: '@electron-forge/maker-rpm',
-      config: {},
-    },
+    // {
+    //   name: '@electron-forge/maker-rpm',
+    //   config: {},
+    // },
   ],
   plugins: [
     {
