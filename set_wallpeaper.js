@@ -5,7 +5,7 @@ const process       = require('process')
 
 
 module.exports.setWallpeaper = async function setWallpeaper(target_path) {
-    i if (process.platform === 'win32') {
+    if (process.platform === 'win32') {
         const binary = path.join(__dirname, '/assets/windows-wallpaper-x86-64.exe');
         let scale = 'fill'
         const arguments_ = [
