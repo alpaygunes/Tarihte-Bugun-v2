@@ -54,7 +54,7 @@ async function mesajKutusunuOlustusu(scrn_width, scrn_height, mesaj_json,okul_tu
     x = msg_canvas.width/2
     let mesaj           = mesaj_json.mesaj[Math.floor(Math.random() * mesaj_json.mesaj.length)]
     // ---------------------------------------------   "GÜNÜN DEYİMİ"
-    console.log(mesaj_json)
+ 
     if (mesaj_json.mesaj_turu == 'expression'){
         footer              = "GÜNÜN OYUNU"
         ctx.font            = font_footer; 
@@ -305,7 +305,7 @@ async function mesajKutusunuOlustusu(scrn_width, scrn_height, mesaj_json,okul_tu
         d_y_ctx.drawImage(yanlis_bg, x-yanlis_uzunlugu.width, y-satir_arasi);
         ctx.drawImage(d_y_canvas, 0, 0); 
     }else{
-        console.log(mesaj_json)
+        console.log(mesaj_json.mesaj_turu)
     }
 
 

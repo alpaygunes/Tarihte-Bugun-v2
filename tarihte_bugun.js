@@ -111,13 +111,11 @@ module.exports.TarihteBugun = class TarihteBugun {
         }
 
 
-        return varolan_dosyalar
-        console.log("varolan_dosyalar" , varolan_dosyalar)
+        return varolan_dosyalar 
     }
 
     gununMesajlari() {
-        const json = fs.readFileSync(path.join(__dirname, 'data/data.json'))
-        console.log("gununMesajlari" , json)
+        const json = fs.readFileSync(path.join(__dirname, 'data/data.json')) 
         return json
     }
 }
