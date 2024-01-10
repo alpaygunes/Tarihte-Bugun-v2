@@ -36,7 +36,7 @@ async function mesajKutusunuOlustusu(scrn_width, scrn_height, mesaj_json,okul_tu
     const kutu_height = scrn_height 
     const msg_canvas = createCanvas(kutu_width, kutu_height)
     const ctx = msg_canvas.getContext('2d')
-    GlobalFonts.registerFromPath(path.join(__dirname,'assets/Alkatra-VariableFont_wght.ttf'), 'Alkatra')
+    //GlobalFonts.registerFromPath(path.join(__dirname,'assets/Alkatra-VariableFont_wght.ttf'), 'Alkatra')
     let msg_bg_name = "msg_bg" + Math.floor(Math.random()*5)
     let image_path = path.join(__dirname, '/assets/'+msg_bg_name+'.png')
     const background = await loadImage(image_path);
@@ -44,9 +44,9 @@ async function mesajKutusunuOlustusu(scrn_width, scrn_height, mesaj_json,okul_tu
     let x = 0
     let y = kutu_width*.13 
     let satir_arasi = kutu_width*.03 
-    let font_footer = "bold 60px Alkatra"
-    let font_title  = "bold 50px Alkatra"
-    let font_desc   = "40px Alkatra"
+    let font_footer = "bold 60px Comic Sans MS"
+    let font_title  = "bold 50px Comic Sans MS"
+    let font_desc   = "40px Comic Sans MS"
 
 
     ctx.textAlign = "start";
@@ -54,6 +54,7 @@ async function mesajKutusunuOlustusu(scrn_width, scrn_height, mesaj_json,okul_tu
     x = msg_canvas.width/2
     let mesaj           = mesaj_json.mesaj[Math.floor(Math.random() * mesaj_json.mesaj.length)]
     // ---------------------------------------------   "GÜNÜN DEYİMİ"
+    console.log(mesaj_json)
     if (mesaj_json.mesaj_turu == 'expression'){
         footer              = "GÜNÜN OYUNU"
         ctx.font            = font_footer; 

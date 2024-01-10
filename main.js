@@ -86,10 +86,10 @@ var j = schedule.scheduleJob('* */20 * * *', function () {
 
 function baslangicaEkle() {
     let string = ("[Desktop Entry]\n\
-Name= Bilgi Ekranı\n\
+Name= Bilgi Penceresi\n\
 Comment= comment_optional\n\
 Icon= app_icon\n\
-Exec= tr.gov.meb.kayseri\n\
+Exec= bilgi-penceresi\n\
 Terminal=false\n\
 Type=Application\
 ")
