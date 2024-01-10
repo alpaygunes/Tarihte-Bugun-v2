@@ -25,6 +25,10 @@ if (!gotTheLock) {
         }
     })
 
+    app.setLoginItemSettings({
+        openAtLogin: true    
+    })
+
     // Create anaPencere, load the rest of the app, etc...
     // app yüklendikten sonra pencereyi oluşturalım 
     app.whenReady().then(() => { 
@@ -38,7 +42,9 @@ if (!gotTheLock) {
         ])
         tray.setContextMenu(contextMenu)
 
-        baslangicaEkle()
+        if (process.platform === 'linux') {
+            baslangicaEkle()
+        }
         //tarihteBugun = new TarihteBugun()
         tarihteBugun.start()
     })
