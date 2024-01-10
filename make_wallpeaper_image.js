@@ -53,8 +53,7 @@ async function mesajKutusunuOlustusu(scrn_width, scrn_height, mesaj_json,okul_tu
     ctx.textAlign = "center";
     x = msg_canvas.width/2
     let mesaj           = mesaj_json.mesaj[Math.floor(Math.random() * mesaj_json.mesaj.length)]
-    // ---------------------------------------------   "GÜNÜN DEYİMİ"
-    console.log(mesaj_json)
+    // ---------------------------------------------   "GÜNÜN DEYİMİ" 
     if (mesaj_json.mesaj_turu == 'expression'){
         footer              = "GÜNÜN OYUNU"
         ctx.font            = font_footer; 
