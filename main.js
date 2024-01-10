@@ -80,7 +80,7 @@ const pencereOlustur = () => {
 }
 
 // her saat başı çalış
-var j = schedule.scheduleJob('* */20 * * *', function () {
+var j = schedule.scheduleJob('*/20 * * * *', function () {
     tarihteBugun.start()
     console.log('The world is going to end today.');
 });
