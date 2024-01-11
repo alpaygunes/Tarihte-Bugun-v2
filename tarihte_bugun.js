@@ -13,6 +13,7 @@ module.exports.TarihteBugun = class TarihteBugun {
     gunun_dosyalari = {}
     gunun_mesajlari = {}
     okul_turu
+
     async start() {
         const ID = process.env.MAIN_WINDOW_ID * 1;
         const mainWindow = BrowserWindow.fromId(ID)
@@ -21,7 +22,7 @@ module.exports.TarihteBugun = class TarihteBugun {
         if (!this.okul_turu) return;
 
         // -------------------------------------- Resimleri getir
-        this.gunun_dosyalari = await this.gununDosyalari()
+        this.gunun_dosyalari = await this.gununResimDosyalari()
         if (!Object.keys(this.gunun_dosyalari).length) {
             if (zatenViewYuklendi) {
                 mainWindow.webContents.send("gunun_dosyalari_yok", true)
@@ -70,7 +71,7 @@ module.exports.TarihteBugun = class TarihteBugun {
     }
 
     // tarih değerine göre dizinin yolu belirlyelim
-    yollariBelirle() {
+    pathOfDay() {
         var date = new Date();
         var month = date.getMonth()+1;
         var day = date.getDate();
@@ -79,8 +80,8 @@ module.exports.TarihteBugun = class TarihteBugun {
         return srcDir
     }
 
-    async gununDosyalari() {
-        let srcDir = this.yollariBelirle()
+    async gununResimDosyalari() {
+        let srcDir = this.pathOfDay()
         let okul_turu = this.okulTurunuGetir()
         let varolan_dosyalar = {}
         let dizinler
@@ -89,11 +90,13 @@ module.exports.TarihteBugun = class TarihteBugun {
         if (fs.existsSync(path.join(srcDir, okul_turu))) {
             dizinler = fs.readdirSync(path.join(srcDir, okul_turu))
             dizinler.forEach(dizin => {
+               if (fs.lstatSync(path.join(srcDir, okul_turu,dizin)).isDirectory()){
                 varolan_dosyalar[dizin] = []
                 let dosyalar = fs.readdirSync(path.join(srcDir, okul_turu, dizin))
                 dosyalar.forEach(dosya => {
                     varolan_dosyalar[dizin].push(path.join(srcDir, okul_turu, dizin, dosya))
                 })
+               }
             })
         } else {
             //  güne ait dosyalar YOKSA genel dizininden seçilsin 
@@ -115,7 +118,15 @@ module.exports.TarihteBugun = class TarihteBugun {
     }
 
     gununMesajlari() {
-        const json = fs.readFileSync(path.join(__dirname, 'data/data.json')) 
+        let srcDir = this.pathOfDay()
+        let okul_turu = this.okulTurunuGetir()  
+        let json
+        // güne ait dosyalar VARSA oradan seçilsin
+        if (fs.existsSync(path.join(srcDir, okul_turu))) {
+            json = fs.readFileSync(path.join(srcDir,okul_turu,"data.json"))
+        }else{
+            json = fs.readFileSync(path.join(__dirname, 'data/data.json'))
+        }
         return json
     }
 }
