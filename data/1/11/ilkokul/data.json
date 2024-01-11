@@ -1,0 +1,101 @@
+{
+    "date": "24.01.2021",
+    "expression": [
+        {
+            "desc": "Öfkeli, kızgın olduğu anlaşılmak.",
+            "title": "_ilkokul_Suratı sirke satmak:\n",
+            "images": [
+                "1725019.jpg",
+                "cool_cat_2-wallpaper-1920x1080.jpg"
+            ]
+        }
+    ],
+    "game": [
+         
+        {
+            "desc": "İnce bir kâğıdın altına, iç kısmı denk gelecek\nşekilde bir yaprak yerleştirin. Kurşun kalemle\nhafifçe üzerinden geçerek yaprağın izini\nçıkarmaya çalışın. Aynı çalışmayı evdeki\npütürlü yüzeye sahip nesnelerle ya da bozuk\nparayla yapmayı deneyin.",
+            "title": "_ilkokul_",
+            "images": [
+                "1725019.jpg",
+                "cool_cat_2-wallpaper-1920x1080.jpg"
+            ]
+        }
+    ],
+    "preference": [
+         
+        {
+            "correct": "_ilkokul_ Varış yeri, hedef",
+            "wrong": "Destinasyon",
+            "images": [
+                "1725019.jpg",
+                "cool_cat_2-wallpaper-1920x1080.jpg"
+            ]
+        } 
+    ],
+    "proverb": [
+        {
+            "desc": "Tek başına yaşayan bir kimse,\nsorumluluğunda başkaları olmadığı için\nrahat hareket eder.",
+            "title": "_ilkokul_Bir abam (postum) var atarım,\nnerede olsam yatarım:\n",
+            "images": [
+                "1725019.jpg",
+                "cool_cat_2-wallpaper-1920x1080.jpg"
+            ]
+        }
+    ],
+    "reason": [
+        {
+            "desc": "Bir eşyanın antika olarak tanımlanması için o eşyanın eski çağlardan kalmış olması ve nadir bulunması\ngerekir. Bir eşyadan çok sayıda varsa, o eşyaya her yerde rastlanıyorsa, o antika olarak kabul edilmez.\nAntikayı bu kadar değerli yapan nadir olmasıdır. Antikalar, sanat tarihçilerinin ve koleksiyoncuların\ndikkatini çeker. Bazı antika eserlerin koruma altına alınması gerekir. Örneğin, sanat eserleri ya da tarihsel\nbir kişiye ait olan eşyalar böyle eserlerdir.",
+            "title": "_ilkokul_Antika neden değerlidir?",
+            "images": [
+                "1725019.jpg",
+                "cool_cat_2-wallpaper-1920x1080.jpg"
+            ]
+        } 
+    ],
+    "solution": [
+        {
+            "desc": "• Öğüt vermek yerine davranışlarınızla\nçocuğunuza model olun.\n• Görgü kurallarına uyması gerektiğini onun\nanlayabileceği düzeyde anlatın.\n• Görgü kurallarıyla ilgili olumlu davranış\ngerçekleştirdiğinde ona bu konuda ne\nhissettiğini sorun.\n• Sabah uyandığında “Günaydın.” demeyi, girdiği\nher ortamda önce selam vermesi gerektiğini,\nhapşıran birine “İyi yaşa.” demeyi öğretin.",
+            "title": "_ilkokul_Çocuğunuza Görgü Kurallarını\nÖğretmek için:",
+            "images": [
+                "1725019.jpg",
+                "cool_cat_2-wallpaper-1920x1080.jpg"
+            ]
+        } 
+    ],
+    "specialSay": [
+        {
+            "say": "İnsanoğlu, alışkanlıklarının çocuğudur.\n",
+            "whoSaid": "(İbn Haldun)"
+        } 
+    ],
+    "spelling": [
+        {
+            "correct": "_ilkokul_ Hoparlör",
+            "wrong": "Hoporlör",
+            "images": [
+                "wallpaperflare.com_wallpaper (10).jpg",
+                "wallpaperflare.com_wallpaper (27).jpg"
+            ]
+        }
+    ],
+    "suggestion": [
+        {
+            "desc": "Yapılan araştırmalar, çocukların asitli içecek\ntüketiminin dikkat eksikliğini ve agresif\ndavranışları artırdığını gösteriyor. Çocuklarınız\nyemekte içecek tüketmek istediklerinde\nöncelikle “su” teklif edebilirsiniz. Su dışında\nbir şey içmek istiyorlarsa süt, ayran, kefir,\nıhlamur, ev yapımı limonata ve ev yapımı\nmeyve suları iyi birer seçenek olabilir.\nYemek dışında da çocuklarınızın günlük su\nihtiyaçlarını karşıladıklarından ve yeterince su\ntükettiklerinden de emin olmalısınız.",
+            "title": "_ilkokul_"
+        }
+        
+    ],
+    "value": [
+        {
+            "date": "",
+            "desc": "Eski zamanlarda ipek kumaşlar ve kadifelerle\nbirlikte kullanılan, evlerin en güzel köşelerinde\nyer alan bir aile fotoğrafının etrafını ya da askere\ngiden nişanlının resmini süsleyen, günümüzde\nise unutulmaya yüz tutmuş bir sanat.",
+            "name": "İpek Kozası İşlemesi-Yalova"
+        }
+    ],
+    "word": [
+        {
+            "desc": "Utangaçlık.",
+            "title": "_ilkokul_Mahcubiyet:"
+        }
+    ]
+}
