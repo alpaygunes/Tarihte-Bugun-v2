@@ -97,5 +97,12 @@
             "desc": "Utangaçlık.",
             "title": "_ilkokul_Mahcubiyet:"
         }
+    ],
+     "puzzle":[
+        {
+            "desc": "Bilmece metni buraya gelecek",
+            "answer": "CEVAP" 
+        }
+     
     ]
 }
