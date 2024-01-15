@@ -58,6 +58,7 @@ async function mesajKutusunuOlustusu(scrn_width, scrn_height, mesaj,mesaj_turu,o
     let satir_arasi = kutu_width*.03 
     let font_footer = "bold 60px Comic Sans MS"
     let font_title  = "bold 50px Comic Sans MS"
+    let font_answer  = "bold 35px Comic Sans MS"
     let font_desc   = "40px Comic Sans MS"
 
 
@@ -68,18 +69,18 @@ async function mesajKutusunuOlustusu(scrn_width, scrn_height, mesaj,mesaj_turu,o
     // ---------------------------------------------   "GÜNÜN DEYİMİ"
  
     if (mesaj_turu == 'expression'){
-        footer              = "GÜNÜN OYUNU"
-        ctx.font            = font_footer; 
-        ctx.fillText(footer, x, y); 
-        y *=1.2
-        ctx.font            = font_title;  
+        footer              = "GÜNÜN DEYİMİ"
+        ctx.font            = font_footer;  
+        ctx.fillText(footer, x,y) 
+        y                   *=1.2
+        ctx.font            = font_title;
         let titles = satirlaraBol(ctx, mesaj.title, msg_canvas.width );
         titles.forEach(title => {
             satir_width    = ctx.measureText(title); 
             y +=satir_arasi
             ctx.fillText(title, x, y);
         });
-       
+        
 
         ctx.font            = font_desc; 
         y +=satir_arasi
@@ -315,7 +316,30 @@ async function mesajKutusunuOlustusu(scrn_width, scrn_height, mesaj,mesaj_turu,o
         d_y_ctx.clearRect(0, 0, d_y_canvas.width, d_y_canvas.height);
         let yanlis_uzunlugu = ctx.measureText(mesaj.wrong)
         d_y_ctx.drawImage(yanlis_bg, x-yanlis_uzunlugu.width, y-satir_arasi);
-        ctx.drawImage(d_y_canvas, 0, 0); 
+        ctx.drawImage(d_y_canvas, 0, 0); // ---------------------------------------------   "GÜNÜN KELİMESİ"
+    }else if (mesaj_turu == 'puzzle'){
+        footer              = "GÜNÜN BİLMECESİ"
+        ctx.font            = font_footer;
+        ctx.fillText(footer, x, y); 
+        ctx.font            = font_desc; 
+        y +=satir_arasi
+        y *=1.5
+        let descs = satirlaraBol(ctx, mesaj.desc, msg_canvas.width );
+        descs.forEach(desc => { 
+            y +=satir_arasi
+            ctx.fillText(desc, x, y); 
+        }); 
+
+        y               *=1.5
+        ctx.font        = font_answer 
+        ctx.translate(x,y)
+        ctx.rotate(Math.PI)
+        ctx.textAlign   = "center"
+        ctx.globalAlpha = 0.5;
+        ctx.fillStyle = 'white';
+        ctx.fillText(mesaj.answer, 0,-msg_canvas.height+y+(3*satir_arasi))
+        ctx.rotate(Math.PI)
+        ctx.translate(-x,-y)
     }else{
         console.log(mesaj_turu)
     }
