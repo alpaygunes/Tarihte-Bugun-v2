@@ -2,11 +2,11 @@ const { promisify } = require('node:util');
 const childProcess  = require('node:child_process');
 const execFile      = promisify(childProcess.execFile);
 const process       = require('process')
-const path = require('path');
+const path          = require('path');
 
 
 module.exports.setWallpeaper = async function setWallpeaper(target_path) {
-    console.log("PLATFORM : " , process.platform)
+    console.log("PLATFORM : ----- " , process.platform)
     if (process.platform === 'win32') {
         const binary = path.join(__dirname, '/assets/windows-wallpaper-x86-64.exe');
         let scale = 'fill'
@@ -17,7 +17,7 @@ module.exports.setWallpeaper = async function setWallpeaper(target_path) {
             scale,
         ];
         await execFile(binary, arguments_);
-        console.log(" await execFile(binary, arguments_); satırı çalıştırıldı")
+        console.log(" WINDOWS - await execFile(binary, arguments_); satırı çalıştırıldı")
     }else{
         gnome(target_path)
         kde(target_path) 
@@ -38,7 +38,7 @@ async function gnome(target_path) {
             ]);
         }
     } catch (err) {
-        console.log("GNOME HATA ",err)
+        console.log("kde çalıştı yada WİNDOWS ")
         return
     }
 }
@@ -64,7 +64,7 @@ async function kde(target_path) {
 		`,
         ]);
     } catch (err) {
-        console.log("KDE HATA ",err)
+        console.log("GNOME çalıştı yada WİNDOWS ")
         return
     }
 }
