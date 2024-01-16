@@ -17,9 +17,11 @@ module.exports.setWallpeaper = async function setWallpeaper(target_path) {
             scale,
         ];
         await execFile(binary, arguments_);
+        console.log(" await execFile(binary, arguments_); satırı çalıştırıldı")
+    }else{
+        gnome(target_path)
+        kde(target_path) 
     }
-    gnome(target_path)
-    kde(target_path) 
 }
 
 
