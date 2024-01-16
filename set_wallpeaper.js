@@ -6,6 +6,7 @@ const path = require('path');
 
 
 module.exports.setWallpeaper = async function setWallpeaper(target_path) {
+    console.log("PLATFORM : " , process.platform)
     if (process.platform === 'win32') {
         const binary = path.join(__dirname, '/assets/windows-wallpaper-x86-64.exe');
         let scale = 'fill'
@@ -35,6 +36,7 @@ async function gnome(target_path) {
             ]);
         }
     } catch (err) {
+        console.log("GNOME HATA ",err)
         return
     }
 }
@@ -60,6 +62,7 @@ async function kde(target_path) {
 		`,
         ]);
     } catch (err) {
+        console.log("KDE HATA ",err)
         return
     }
 }
