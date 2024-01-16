@@ -54,12 +54,12 @@ module.exports.TarihteBugun = class TarihteBugun {
     }
 
     okulTurunuGetir() {
-        const ID = process.env.MAIN_WINDOW_ID * 1;
-        const mainWindow = BrowserWindow.fromId(ID)
-        const storage_path = app.getPath("userData")
-        let ayarlar = fs.existsSync(path.join(storage_path, '/user-data.json'))
-        if (ayarlar) {
-            ayarlar = fs.readFileSync(path.join(storage_path, '/user-data.json'))
+        const ID            = process.env.MAIN_WINDOW_ID * 1;
+        const mainWindow    = BrowserWindow.fromId(ID)
+        const storage_path  = app.getPath("userData")
+        let ayarlar         = fs.existsSync(path.join(storage_path, '/user-data.json'))
+        if (ayarlar){
+            ayarlar         = fs.readFileSync(path.join(storage_path, '/user-data.json'))
             return JSON.parse(ayarlar).okul_turu
         } else {
             mainWindow.webContents.on('did-finish-load', function () {

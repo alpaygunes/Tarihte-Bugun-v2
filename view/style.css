@@ -1,11 +1,12 @@
 html, body{
     font-family: monospace;
-    background-color: rgba(2, 64, 99, 0.75); 
+    background-color: rgba(2, 64, 99, 0.75);  
+    font-size: 1em 
     
 }
 
 #message-of-day-box{
-    font-size: 32px;
+    font-size: 16px;
     font-weight: bold;
     border: 5px solid;
     border-color: rgb(4, 48, 91);
@@ -20,8 +21,8 @@ html, body{
 
 }
 
-.btn{
-    font-size: 16px;
+.btn{ 
+    font-size: 1em; 
     color: rgba(255, 255, 255, 0.692);
     text-align: center;
     line-height:2em;
@@ -79,8 +80,6 @@ html, body{
 }
 
 #settings-menu{
-    font-size: 32px;
-    font-weight: bold;
     border: 1px solid;
     border-color: rgb(163, 180, 155); 
     position: absolute;
@@ -88,8 +87,8 @@ html, body{
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 10px;
-    width: 300px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     background-color: rgba(255, 255, 255, 0.719); 
     box-shadow: -2px 2px 4px 0px rgb(0 0 0 / 49%);
 }
@@ -102,7 +101,7 @@ html, body{
 #settings-menu #menu-header{
     line-height: 1em;
     margin-left: -50px;
-    width: 108%;
+    width: 114%;
     border-bottom: 1px solid #636363;
     padding: 20px;
     margin-top: -34px;
@@ -126,3 +125,8 @@ html, body{
     cursor: pointer;
     
 }
+
+#settings-menu #timeout-label{
+    font-size: .7em;
+}
+

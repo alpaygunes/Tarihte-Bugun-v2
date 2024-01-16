@@ -1,4 +1,4 @@
-const { app, BrowserWindow, ipcMain, Tray, Menu } = require('electron')
+const { app, BrowserWindow, ipcMain, ipcRenderer, Tray, Menu } = require('electron')
 const process = require("process");
 const url = require("url")
 const path = require("path")
@@ -6,11 +6,14 @@ const fs = require('fs');
 const { TarihteBugun } = require('./tarihte_bugun')
 const os = require("os")
 var schedule = require('node-schedule');
+let ayarlar
 
 let anaPencere
 let tray = null
 let tarihteBugun
-const gotTheLock = app.requestSingleInstanceLock() 
+const gotTheLock = app.requestSingleInstanceLock()
+
+
 
 // yalnızca bir defa
 if (!gotTheLock) {
@@ -26,12 +29,12 @@ if (!gotTheLock) {
     })
 
     app.setLoginItemSettings({
-        openAtLogin: true    
+        openAtLogin: true
     })
 
     // Create anaPencere, load the rest of the app, etc...
     // app yüklendikten sonra pencereyi oluşturalım 
-    app.whenReady().then(() => { 
+    app.whenReady().then(() => {
         pencereOlustur()
         // Sistem tepsisi ayarları
         tray = new Tray(path.join(__dirname, 'assets/icon.png'))
@@ -45,12 +48,21 @@ if (!gotTheLock) {
         if (process.platform === 'linux') {
             baslangicaEkle()
         }
-        //tarihteBugun = new TarihteBugun()
         tarihteBugun.start()
     })
 }
 
+function ayarlariGetir() {
+    const storage_path = app.getPath("userData")
+    let ayar_dosyasi = fs.existsSync(path.join(storage_path, '/user-data.json'))
+    if (ayar_dosyasi) {
+        ayarlar = fs.readFileSync(path.join(storage_path, '/user-data.json'))
+        ayarlar = JSON.parse(ayarlar)
+    } else {
+        ayarlar = { "timeout": 1 }
+    }
 
+}
 
 // Pencere oluşturma metodu
 const pencereOlustur = () => {
@@ -65,6 +77,7 @@ const pencereOlustur = () => {
         frame: false,
         transparent: true,
     })
+
     anaPencere.loadURL(
         url.format({
             pathname: path.join(__dirname, "/view/index.html"),
@@ -72,18 +85,29 @@ const pencereOlustur = () => {
             slashes: true,
         })
     )
+
     process.env.MAIN_WINDOW_ID = anaPencere.id;
     var isDev = process.env.APP_DEV ? (process.env.APP_DEV.trim() == "true") : false;
-    if (!isDev){
+    if (!isDev) {
         anaPencere.hide();
     }
-}
+    ayarlariGetir()
+    
 
-// her saat başı çalış
-var j = schedule.scheduleJob('*/1 * * * *', function () {
-    tarihteBugun.start()
-    console.log('schedule.scheduleJob ÇALIŞTI');
-});
+    // her saat başı çalış
+    let pattern = '*/' + ayarlar.timeout + ' * * * *'
+    var j       = schedule.scheduleJob(pattern, function () {
+        tarihteBugun.start()
+        console.log('schedule.schedule job ÇALIŞTI');
+    });
+
+    anaPencere.webContents.on('did-finish-load', function () {
+        anaPencere.webContents.send("ayarlar", ayarlar)
+    });
+}
+// Pencere oluşturma metodu SONU
+
+
 
 
 
@@ -105,6 +129,9 @@ Type=Application\
     }
 }
 
+
+
+
 // Gizle
 ipcMain.on("hide", (err, data) => {
     anaPencere.hide();
@@ -115,9 +142,18 @@ ipcMain.on("hide", (err, data) => {
 ipcMain.on("change:type", async (err, type) => {
     okul_turu = type
     const storage_path = app.getPath("userData")
-    const user_data = JSON.stringify({ "okul_turu": okul_turu })
+    ayarlar.okul_turu = okul_turu 
+    const user_data = JSON.stringify(ayarlar)
     fs.writeFileSync(path.join(storage_path, '/user-data.json'), user_data)
     tarihteBugun.start()
+})
+
+// zaman aşımını değiştir
+ipcMain.on("timeout", async (err, timeout) => {
+    const storage_path = app.getPath("userData")
+    ayarlar.timeout = timeout
+    const user_data = JSON.stringify(ayarlar)
+    fs.writeFileSync(path.join(storage_path, '/user-data.json'), user_data)
 })
 
 

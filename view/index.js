@@ -7,7 +7,7 @@ let messsageBox = document.querySelector("#message-of-day-box");
 let settingMenu = document.querySelector("#settings-menu");
 let settingMenuItem = document.getElementsByClassName("menu-item");
 let Aylar = new Array("Ocak", "Şubat", "Mart", "Nisan", "Mayıs", "Haziran", "Temmuz", "Ağustos", "Eylül", "Ekim", "Kasım", "Aralık");
-
+let timeout = document.querySelector("#timeout");
 document.addEventListener("DOMContentLoaded", () => {
     // menü itemlerine olaydinleyici ekleyelim
     for (var i = 0; i < settingMenuItem.length; i++) {
@@ -45,6 +45,15 @@ exitAppBtn.addEventListener("click", () => {
 })
 
 
+timeout.addEventListener("input", (event) => {
+    document.querySelector("#timeout-label").innerHTML = "Zaman Aşımı " + event.target.value + " dk"
+})
+timeout.addEventListener("change", (event) => {
+    ipcRenderer.send("timeout", event.target.value)
+})
+
+
+
 ipcRenderer.on("okultipi_sec", () => {
     settingMenu.style.display = "block";
     messsageBox.style.backgroundColor = "rgba(93, 93, 93, 0.719)";
@@ -52,5 +61,13 @@ ipcRenderer.on("okultipi_sec", () => {
 
 ipcRenderer.on("gunun_dosyalari_yok", () => { 
     alert("Bu güne ait data bulunamadı.")
+})
+
+ipcRenderer.on("ayarlar",(event,ayarlar)=>{
+    console.log(ayarlar)
+    timeout.value = ayarlar.timeout
+    document.querySelector("#timeout-label").innerHTML = "Zaman Aşımı " + ayarlar.timeout + " dk"
+    // BURADA AKLDIM. 
+    // AYARLAR GELİYOR
 })
 
