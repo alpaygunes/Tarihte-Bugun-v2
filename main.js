@@ -53,15 +53,17 @@ if (!gotTheLock) {
 }
 
 function ayarlariGetir() {
-    const storage_path = app.getPath("userData")
-    let ayar_dosyasi = fs.existsSync(path.join(storage_path, '/user-data.json'))
+    const storage_path  = app.getPath("userData")
+    let ayar_dosyasi    = fs.existsSync(path.join(storage_path, '/user-data.json'))
     if (ayar_dosyasi) {
         ayarlar = fs.readFileSync(path.join(storage_path, '/user-data.json'))
         ayarlar = JSON.parse(ayarlar)
     } else {
         ayarlar = { "timeout": 1 }
     }
-
+    anaPencere.webContents.on('did-finish-load', function () {
+        anaPencere.webContents.send("ayarlar", ayarlar)
+    });
 }
 
 // Pencere oluşturma metodu
@@ -92,22 +94,21 @@ const pencereOlustur = () => {
         anaPencere.hide();
     }
     ayarlariGetir()
-    
-
-    // her saat başı çalış
-    let pattern = '*/' + ayarlar.timeout + ' * * * *'
-    var j       = schedule.scheduleJob(pattern, function () {
-        tarihteBugun.start()
-        console.log('schedule.schedule job ÇALIŞTI');
-    });
-
-    anaPencere.webContents.on('did-finish-load', function () {
-        anaPencere.webContents.send("ayarlar", ayarlar)
-    });
+    tekrarCalismayiKur() 
 }
 // Pencere oluşturma metodu SONU
 
-
+function tekrarCalismayiKur() {
+    // her saat başı çalış
+    let pattern = '*/' + ayarlar.timeout + ' * * * *'
+    if(schedule.scheduledJobs["tetiklenme"]){
+        schedule.scheduledJobs["tetiklenme"].cancel()
+    }
+    schedule.scheduleJob("tetiklenme",pattern, function () {
+        tarihteBugun.start()
+        console.log('schedule.schedule job ÇALIŞTI')
+    });
+}
 
 
 
@@ -142,7 +143,7 @@ ipcMain.on("hide", (err, data) => {
 ipcMain.on("change:type", async (err, type) => {
     okul_turu = type
     const storage_path = app.getPath("userData")
-    ayarlar.okul_turu = okul_turu 
+    ayarlar.okul_turu = okul_turu
     const user_data = JSON.stringify(ayarlar)
     fs.writeFileSync(path.join(storage_path, '/user-data.json'), user_data)
     tarihteBugun.start()
@@ -154,6 +155,7 @@ ipcMain.on("timeout", async (err, timeout) => {
     ayarlar.timeout = timeout
     const user_data = JSON.stringify(ayarlar)
     fs.writeFileSync(path.join(storage_path, '/user-data.json'), user_data)
+    tekrarCalismayiKur()
 })
 
 

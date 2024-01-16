@@ -14,16 +14,22 @@ document.addEventListener("DOMContentLoaded", () => {
         settingMenuItem[i].addEventListener("click", (event) => {
             let id = event.target.id
             settingMenu.style.display = "none";
-            messsageBox.style.backgroundColor = "rgba(255, 255, 255, 0.719)";
+            messsageBox.style.backgroundColor = "rgba(255, 255, 255, 0.719)"; 
+            for (var a = 0; a < settingMenuItem.length; a++){
+                settingMenuItem[a].style.backgroundColor = "rgba(255, 255, 255, 1)"; 
+            }
             switch (id) {
                 case "menu-item-ilkokul":
                     ipcRenderer.send("change:type", "ilkokul")
+                    event.target.style.backgroundColor = "rgba(190, 245, 154, 1)";
                     break;
                 case "menu-item-ortaokul":
                     ipcRenderer.send("change:type", "ortaokul")
+                    event.target.style.backgroundColor = "rgba(190, 245, 154, 1)";
                     break;
                 case "menu-item-lise":
                     ipcRenderer.send("change:type", "lise")
+                    event.target.style.backgroundColor = "rgba(190, 245, 154, 1)";
                     break;
             }
         })
@@ -63,11 +69,9 @@ ipcRenderer.on("gunun_dosyalari_yok", () => {
     alert("Bu güne ait data bulunamadı.")
 })
 
-ipcRenderer.on("ayarlar",(event,ayarlar)=>{
-    console.log(ayarlar)
+ipcRenderer.on("ayarlar",(event,ayarlar)=>{ 
     timeout.value = ayarlar.timeout
     document.querySelector("#timeout-label").innerHTML = "Zaman Aşımı " + ayarlar.timeout + " dk"
-    // BURADA AKLDIM. 
-    // AYARLAR GELİYOR
+    document.querySelector("#menu-item-"+ayarlar.okul_turu).style.backgroundColor = "rgba(190, 245, 154, 1)";
 })
 
