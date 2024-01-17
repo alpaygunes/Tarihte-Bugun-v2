@@ -101,7 +101,8 @@ ipcRenderer.on("ayarlar",(event,ayarlar)=>{
     timeout.value = ayarlar.timeout
     document.querySelector("#timeout-label").innerHTML = "Zaman Aşımı " + ayarlar.timeout + " dk"
     document.querySelector("#menu-item-"+ayarlar.okul_turu).style.backgroundColor = "rgba(190, 245, 154, 1)";
-    
+    document.querySelector("#boyut-label").innerHTML = "Boyut %" + ayarlar.boyut
+
     // konumun değerini işaretle
     for (var j = 0; j < konumListesi.length; j++) {
         if (konumListesi[j].getAttribute('value')==ayarlar.konum){
