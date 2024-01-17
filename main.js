@@ -6,7 +6,7 @@ const fs = require('fs');
 const { TarihteBugun } = require('./tarihte_bugun')
 const os = require("os")
 var schedule = require('node-schedule');
-let ayarlar
+let ayarlar = {"timeout":5,"konum":1,"okul_turu":"lise","boyut":25}
 
 let anaPencere
 let tray = null
@@ -71,8 +71,8 @@ function ayarlariGetir() {
 const pencereOlustur = () => {
     anaPencere = new BrowserWindow({
         backgroundColor: '#00FFFFFF',
-        width: 800,
-        height: 400,
+        width: 400,
+        height: 800,
         webPreferences: {
             nodeIntegration: true,
             contextIsolation: false,
@@ -142,10 +142,10 @@ ipcMain.on("hide", (err, data) => {
 
 // okul türünü değiştir
 ipcMain.on("change:type", async (err, type) => {
-    okul_turu = type
-    const storage_path = app.getPath("userData")
-    ayarlar.okul_turu = okul_turu
-    const user_data = JSON.stringify(ayarlar)
+    okul_turu           = type
+    const storage_path  = app.getPath("userData")
+    ayarlar.okul_turu   = okul_turu
+    const user_data     = JSON.stringify(ayarlar)
     fs.writeFileSync(path.join(storage_path, '/user-data.json'), user_data)
     tarihteBugun.start()
 })
@@ -165,6 +165,7 @@ ipcMain.on("konum", async (err, konum) => {
     ayarlar.konum = konum
     const user_data = JSON.stringify(ayarlar)
     fs.writeFileSync(path.join(storage_path, '/user-data.json'), user_data) 
+    tarihteBugun.start()
 })
 
 // boyut değiştir
@@ -174,6 +175,7 @@ ipcMain.on("boyut", async (err, boyut) => {
     const user_data = JSON.stringify(ayarlar)
     fs.writeFileSync(path.join(storage_path, '/user-data.json'), user_data)
     tekrarCalismayiKur()
+    tarihteBugun.start()
 })
 
 
