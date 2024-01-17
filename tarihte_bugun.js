@@ -6,20 +6,21 @@ const fs = require('fs');
 const { makeWallpeaperImage } = require('./make_wallpeaper_image.js')
 const { setWallpeaper } = require('./set_wallpeaper.js');
 const { rejects } = require('assert'); 
-let zatenViewYuklendi = false
+let zatenViewYuklendi = false 
 
 
 module.exports.TarihteBugun = class TarihteBugun {
     gunun_dosyalari = {}
-    gunun_mesajlari = {}
-    okul_turu
+    gunun_mesajlari = {} 
+    ayarlar
 
     async start() {
+        this.okulTurunuGetir()
         const ID = process.env.MAIN_WINDOW_ID * 1;
         const mainWindow = BrowserWindow.fromId(ID)
         //okul türü kayıtlı değilse işlemi kes. view de ayar penceresini aç
-        this.okul_turu = this.okulTurunuGetir()
-        if (!this.okul_turu) return;
+        let okul_turu = this.ayarlar.okul_turu 
+        if (!okul_turu) return;
 
         // -------------------------------------- Resimleri getir
         this.gunun_dosyalari = await this.gununResimDosyalari()
@@ -49,7 +50,7 @@ module.exports.TarihteBugun = class TarihteBugun {
  
         //let prefix = Math.floor(Math.random() * 99999); 
         this.target_path = path.join(app.getPath("temp"), "bilgi_penceresi.jpg");
-        await makeWallpeaperImage(random_resim, mesaj_json, this.target_path, this.okul_turu)
+        await makeWallpeaperImage(random_resim, mesaj_json, this.target_path, this.ayarlar)
         setWallpeaper(this.target_path)
     }
 
@@ -57,16 +58,15 @@ module.exports.TarihteBugun = class TarihteBugun {
         const ID            = process.env.MAIN_WINDOW_ID * 1;
         const mainWindow    = BrowserWindow.fromId(ID)
         const storage_path  = app.getPath("userData")
-        let ayarlar         = fs.existsSync(path.join(storage_path, '/user-data.json'))
-        if (ayarlar){
-            ayarlar         = fs.readFileSync(path.join(storage_path, '/user-data.json'))
-            return JSON.parse(ayarlar).okul_turu
+        let ayar_dosyasi         = fs.existsSync(path.join(storage_path, '/user-data.json'))
+        if (ayar_dosyasi){
+            let _ayarlar         = fs.readFileSync(path.join(storage_path, '/user-data.json'))
+            this.ayarlar = JSON.parse(_ayarlar)
         } else {
             mainWindow.webContents.on('did-finish-load', function () {
                 mainWindow.show()
                 mainWindow.webContents.send("okultipi_sec", true)
-            });
-            return false
+            }); 
         }
     }
 
@@ -82,7 +82,7 @@ module.exports.TarihteBugun = class TarihteBugun {
 
     async gununResimDosyalari() {
         let srcDir = this.pathOfDay()
-        let okul_turu = this.okulTurunuGetir()
+        let okul_turu = this.ayarlar.okul_turu 
         let varolan_dosyalar = {}
         let dizinler
 
@@ -119,7 +119,7 @@ module.exports.TarihteBugun = class TarihteBugun {
 
     gununMesajlari() {
         let srcDir = this.pathOfDay()
-        let okul_turu = this.okulTurunuGetir()  
+        let okul_turu = this.ayarlar.okul_turu  
         let json
         // güne ait dosyalar VARSA oradan seçilsin
         if (fs.existsSync(path.join(srcDir, okul_turu))) {

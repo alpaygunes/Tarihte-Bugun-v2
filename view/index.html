@@ -12,15 +12,50 @@
     <div id="message-of-day-box">   
         <div id="settings"></div>
         <div id="settings-menu" style="display: none;">
-            <ul >
-                <li id="menu-header">Okul Türü Seçin</li>
+            <ul id="okul_duru_listesi">
+                <li class="menu-header">Okul Türü Seçin</li>
                 <li id="menu-item-ilkokul" class="menu-item">İlkokul</li>
                 <li id="menu-item-ortaokul" class="menu-item">Ortaokul</li>
                 <li id="menu-item-lise" class="menu-item">Lise</li>
             </ul>
             
-            <label style="font-size: .5em;"  id="timeout-label" >Zaman Aşımı</label><br>
-            <input type="range" name="timeout" id="timeout" min="1" max="120"> 
+            <ul id="zaman_asimi_listesi">
+                <li class="menu-header">
+                    <label id="timeout-label" >Zaman Aşımı</label>
+                </li>
+                <li class="setting-item">
+                    <input type="range" name="timeout" id="timeout" min="1" max="120"> 
+                </li>
+            </ul>
+            
+            <ul id="konum_listesi">
+                <li class="menu-header">
+                    Mesaj konumu
+                </li>
+                <li class="setting-item" value="1">
+                    Üst sol köşe
+                </li>
+                <li class="setting-item" value="2">
+                    Üst sağ köşe
+                </li>
+                <li class="setting-item" value="3">
+                    Alt sol köşe
+                </li>
+                <li class="setting-item" value="4">
+                    Alt sağ köşe
+                </li>
+                <li class="setting-item" value="5">
+                    Merkez
+                </li>
+            </ul>
+            <ul id="boyut_listesi">
+                <li class="menu-header">
+                    <label id="boyut-label" >Boyut</label>
+                </li>
+                <li class="setting-item">
+                    <input type="range" name="boyut" id="boyut" min="25" max="125" step="25"> 
+                </li>
+            </ul>
         </div>
     </div> 
 </body>

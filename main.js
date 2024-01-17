@@ -59,7 +59,8 @@ function ayarlariGetir() {
         ayarlar = fs.readFileSync(path.join(storage_path, '/user-data.json'))
         ayarlar = JSON.parse(ayarlar)
     } else {
-        ayarlar = { "timeout": 1 }
+        ayarlar.timeout = 1
+        ayarlar.konum = 2
     }
     anaPencere.webContents.on('did-finish-load', function () {
         anaPencere.webContents.send("ayarlar", ayarlar)
@@ -76,7 +77,7 @@ const pencereOlustur = () => {
             nodeIntegration: true,
             contextIsolation: false,
         },
-        frame: false,
+        //frame: false,
         transparent: true,
     })
 
@@ -153,6 +154,23 @@ ipcMain.on("change:type", async (err, type) => {
 ipcMain.on("timeout", async (err, timeout) => {
     const storage_path = app.getPath("userData")
     ayarlar.timeout = timeout
+    const user_data = JSON.stringify(ayarlar)
+    fs.writeFileSync(path.join(storage_path, '/user-data.json'), user_data)
+    tekrarCalismayiKur()
+})
+
+// konum değiştir
+ipcMain.on("konum", async (err, konum) => {
+    const storage_path = app.getPath("userData")
+    ayarlar.konum = konum
+    const user_data = JSON.stringify(ayarlar)
+    fs.writeFileSync(path.join(storage_path, '/user-data.json'), user_data) 
+})
+
+// boyut değiştir
+ipcMain.on("boyut", async (err, boyut) => {
+    const storage_path = app.getPath("userData")
+    ayarlar.boyut = boyut
     const user_data = JSON.stringify(ayarlar)
     fs.writeFileSync(path.join(storage_path, '/user-data.json'), user_data)
     tekrarCalismayiKur()
