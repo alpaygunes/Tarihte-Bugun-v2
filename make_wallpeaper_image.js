@@ -144,8 +144,8 @@ async function mesajKutusunuOlustusu(scrn_width, scrn_height, mesaj, mesaj_turu,
             y += satir_arasi
             ctx.fillText(desc, x, y);
         });
-        // ---------------------------------------------   "GÜNÜN ATASÖZÜ"
     } else if (mesaj_turu == 'proverb') {
+        // ---------------------------------------------   "GÜNÜN ATASÖZÜ"
         footer = "GÜNÜN ATASÖZÜ"
         ctx.font = font_footer;
         ctx.fillText(footer, x, y);
@@ -190,8 +190,8 @@ async function mesajKutusunuOlustusu(scrn_width, scrn_height, mesaj, mesaj_turu,
             y += satir_arasi
             ctx.fillText(desc, x, y);
         });
-        // ---------------------------------------------   "GÜNÜN ÇÖZÜMÜ"
     } else if (mesaj_turu == 'solution') {
+        // ---------------------------------------------   "GÜNÜN ÇÖZÜMÜ"
         footer = "GÜNÜN ÇÖZÜMÜ"
         ctx.font = font_footer;
         ctx.fillText(footer, x, y);
@@ -213,55 +213,8 @@ async function mesajKutusunuOlustusu(scrn_width, scrn_height, mesaj, mesaj_turu,
             y += satir_arasi
             ctx.fillText(desc, x, y);
         });
-        // ---------------------------------------------   "GÜNÜN TERCİHİ"
-    } else if (mesaj_turu == 'preference') {
-        // dogru yanlış işaretleri
-        const d_y_canvas = createCanvas(64, 64)
-        const d_y_ctx = msg_canvas.getContext('2d')
-        let icon_dogru_path = path.join(__dirname, '/assets/dogru.png')
-        let icon_yanlis_path = path.join(__dirname, '/assets/yanlis.png')
-        const dogru_bg = await loadImage(icon_dogru_path);
-        const yanlis_bg = await loadImage(icon_yanlis_path);
-
-        footer = "GÜNÜN TERCİHİ"
-        ctx.font = font_footer;
-        ctx.fillText(footer, x, y);
-        y += 3 * satir_arasi
-        ctx.font = font_title;
-        ctx.fillText(mesaj.correct, x, y);
-        let doguru_uzunlugu = ctx.measureText(mesaj.correct)
-        d_y_ctx.drawImage(dogru_bg, x - doguru_uzunlugu.width, y - satir_arasi);
-        ctx.drawImage(d_y_canvas, 0, 0);
-
-
-        y += 2 * satir_arasi
-        ctx.fillText(mesaj.wrong, x, y);
-        d_y_ctx.clearRect(0, 0, d_y_canvas.width, d_y_canvas.height);
-        let yanlis_uzunlugu = ctx.measureText(mesaj.wrong)
-        d_y_ctx.drawImage(yanlis_bg, x - yanlis_uzunlugu.width, y - satir_arasi);
-        ctx.drawImage(d_y_canvas, 0, 0);
-        // ---------------------------------------------   "GÜNÜN SÖZÜ"
-    } else if (mesaj_turu == 'specialSay') {
-        footer = "GÜNÜN SÖZÜ"
-        ctx.font = font_footer;
-        ctx.fillText(footer, x, y);
-        y *= 1.2
-        ctx.font = font_desc;
-        y += satir_arasi
-        let says = satirlaraBol(ctx, mesaj.say, msg_canvas.width);
-        says.forEach(say => {
-            y += satir_arasi
-            ctx.fillText(say, x, y);
-        });
-
-        ctx.font = font_title;
-        let titles = satirlaraBol(ctx, mesaj.whoSaid, msg_canvas.width);
-        titles.forEach(title => {
-            y += satir_arasi
-            ctx.fillText(title, x, y);
-        });
-        // ---------------------------------------------   "GÜNÜN ÖNERİSİ"
-    } else if (mesaj_turu == 'suggestion') {
+        // ----------------------- GÜNÜN ÖNERİSİ
+    }else if (mesaj_turu == 'suggestion') {
         footer = "GÜNÜN ÖNERİSİ"
         ctx.font = font_footer;
         ctx.fillText(footer, x, y);
@@ -281,8 +234,8 @@ async function mesajKutusunuOlustusu(scrn_width, scrn_height, mesaj, mesaj_turu,
             y += satir_arasi
             ctx.fillText(desc, x, y);
         });
-        // ---------------------------------------------   "GÜNÜN BİLGİSİ"
     } else if (mesaj_turu == 'value') {
+        // ---------------------------------------------   "GÜNÜN BİLGİSİ"
         footer = "GÜNÜN BİLGİSİ"
         ctx.font = font_footer;
         ctx.fillText(footer, x, y);
@@ -301,8 +254,8 @@ async function mesajKutusunuOlustusu(scrn_width, scrn_height, mesaj, mesaj_turu,
             y += satir_arasi
             ctx.fillText(desc, x, y);
         });
-        // ---------------------------------------------   "GÜNÜN KELİMESİ"
     } else if (mesaj_turu == 'word') {
+        // ---------------------------------------------   "GÜNÜN KELİMESİ"
         footer = "GÜNÜN KELİMESİ"
         ctx.font = font_footer;
         ctx.fillText(footer, x, y);
@@ -321,8 +274,8 @@ async function mesajKutusunuOlustusu(scrn_width, scrn_height, mesaj, mesaj_turu,
             y += satir_arasi
             ctx.fillText(desc, x, y);
         });
-        // ---------------------------------------------   "GÜNÜN DOĞRUSU"
     } else if (mesaj_turu == 'spelling') {
+        // ---------------------------------------------   "GÜNÜN DOĞRUSU"
         // dogru yanlış işaretleri
         const d_y_canvas = createCanvas(64, 64)
         const d_y_ctx = msg_canvas.getContext('2d')
@@ -347,8 +300,9 @@ async function mesajKutusunuOlustusu(scrn_width, scrn_height, mesaj, mesaj_turu,
         d_y_ctx.clearRect(0, 0, d_y_canvas.width, d_y_canvas.height);
         let yanlis_uzunlugu = ctx.measureText(mesaj.wrong)
         d_y_ctx.drawImage(yanlis_bg, x - yanlis_uzunlugu.width, y - satir_arasi);
-        ctx.drawImage(d_y_canvas, 0, 0); // ---------------------------------------------   "GÜNÜN KELİMESİ"
+        ctx.drawImage(d_y_canvas, 0, 0); 
     } else if (mesaj_turu == 'puzzle') {
+        // ---------------------------------------------   "GÜNÜN BİLMECESİ"
         footer = "GÜNÜN BİLMECESİ"
         ctx.font = font_footer;
         ctx.fillText(footer, x, y);
@@ -374,13 +328,65 @@ async function mesajKutusunuOlustusu(scrn_width, scrn_height, mesaj, mesaj_turu,
         ctx.strokeStyle = gradient
         ctx.lineWidth = 2
         ctx.strokeText(mesaj.answer, 0, -msg_canvas.height + y + (3 * satir_arasi) )
-
          
         ctx.fillStyle = 'black';
         ctx.fillText(mesaj.answer, 0, -msg_canvas.height + y + (3 * satir_arasi))
         ctx.rotate(Math.PI)
         ctx.translate(-x, -y)
-    } else {
+    } else if (mesaj_turu == 'ayet') {
+        // ---------------------------------------------   "GÜNÜN AYETİ"
+        footer = "GÜNÜN AYETİ"
+        ctx.font = font_footer;
+        ctx.fillText(footer, x, y);
+        y *= 1.5
+        ctx.font = font_title;
+        let titles = satirlaraBol(ctx, mesaj.title, msg_canvas.width);
+        titles.forEach(title => {
+            y += satir_arasi
+            ctx.fillText(title, x, y);
+        });
+
+        ctx.font = font_desc;
+        y += satir_arasi
+        let descs = satirlaraBol(ctx, mesaj.desc, msg_canvas.width);
+        descs.forEach(desc => {
+            y += satir_arasi
+            ctx.fillText(desc, x, y);
+        });  
+    }else if (mesaj_turu == 'hadis') {
+        // ---------------------------------------------   "GÜNÜN HADİSİ"
+        footer      = "GÜNÜN HADİSİ"
+        ctx.font    = font_footer;
+        ctx.fillText(footer, x, y);
+
+        ctx.font = font_desc;
+        y += satir_arasi
+        let descs = satirlaraBol(ctx, mesaj.desc, msg_canvas.width);
+        descs.forEach(desc => {
+            y += satir_arasi
+            ctx.fillText(desc, x, y);
+        }); 
+    }else if (mesaj_turu == 'yemek') {
+        // ---------------------------------------------   "GÜNÜN YEMEĞİ"
+        footer = "GÜNÜN YEMEĞİ"
+        ctx.font = font_footer;
+        ctx.fillText(footer, x, y);
+        y *= 1.5
+        ctx.font = font_title;
+        let titles = satirlaraBol(ctx, mesaj.title, msg_canvas.width);
+        titles.forEach(title => {
+            y += satir_arasi
+            ctx.fillText(title, x, y);
+        });
+
+        ctx.font = font_desc;
+        y += satir_arasi
+        let descs = satirlaraBol(ctx, mesaj.desc, msg_canvas.width);
+        descs.forEach(desc => {
+            y += satir_arasi
+            ctx.fillText(desc, x, y);
+        });   
+    }else {
         console.log(mesaj_turu)
     }
 
