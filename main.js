@@ -38,12 +38,13 @@ if (!gotTheLock) {
         pencereOlustur()
         // Sistem tepsisi ayarları
         tray = new Tray(path.join(__dirname, 'assets/icon.png'))
-        tray.setToolTip('Bilgi Ekranı.')
+        tray.setToolTip('Bilgi Ekranı')
         const contextMenu = Menu.buildFromTemplate([
             { label: 'Göster', type: 'normal', click: () => anaPencere.show() },
             { label: 'Çıkış', type: 'normal', click: () => app.quit() },
         ])
         tray.setContextMenu(contextMenu)
+        tray.addListener('click',()=> anaPencere.show())
 
         if (process.platform === 'linux') {
             baslangicaEkle()
