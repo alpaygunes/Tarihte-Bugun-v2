@@ -17,8 +17,8 @@ document.addEventListener("DOMContentLoaded", () => {
     for (var i = 0; i < settingMenuItem.length; i++) {
         settingMenuItem[i].addEventListener("click", (event) => {
             let id = event.target.id
-            settingMenu.style.display = "none";
-            messsageBox.style.backgroundColor = "rgba(255, 255, 255, 0.719)"; 
+            //settingMenu.style.display = "none";
+            //messsageBox.style.backgroundColor = "rgba(255, 255, 255, 0.719)"; 
             for (var a = 0; a < settingMenuItem.length; a++){
                 settingMenuItem[a].style.backgroundColor = "rgba(255, 255, 255, 1)"; 
             }
@@ -101,6 +101,7 @@ ipcRenderer.on("ayarlar",(event,ayarlar)=>{
     timeout.value = ayarlar.timeout
     document.querySelector("#timeout-label").innerHTML = "Zaman Aşımı " + ayarlar.timeout + " dk"
     document.querySelector("#menu-item-"+ayarlar.okul_turu).style.backgroundColor = "rgba(190, 245, 154, 1)";
+    boyut.value = ayarlar.boyut
     document.querySelector("#boyut-label").innerHTML = "Boyut %" + ayarlar.boyut
 
     // konumun değerini işaretle
@@ -110,4 +111,3 @@ ipcRenderer.on("ayarlar",(event,ayarlar)=>{
         }
     }
 })
-

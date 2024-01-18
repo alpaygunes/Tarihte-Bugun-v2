@@ -27,14 +27,14 @@ module.exports.makeWallpeaperImage = async function makeWallpeaperImage(image_pa
     const background = await loadImage(image_path);
     ctx.drawImage(background, 0, 0, canvas.width, canvas.height);
 
-    if (Math.random() > 0) {
+    if (Math.random() > 0) { // şuan 100% gösteriliyor istenirse mesaj kutusu gösterme oranı ayarlana bilir
         // mesaj kutusunu allıp resmin ortasına yerleştirelim
         let msg_box = await mesajKutusunuOlustusu(canvas.width, canvas.height, mesaj, mesaj_turu, okul_turu)
-        let olcek = ayarlar.boyut/100 
+        let olcek   = ayarlar.boyut/100 
         let kutu_dx = 0
         let kutu_dy = 0
-        let kutu_w = canvas.width * olcek
-        let kutu_h = canvas.height * olcek
+        let kutu_w  = canvas.width * olcek
+        let kutu_h  = canvas.height * olcek
 
         if (ayarlar.konum == '1'){
             ctx.translate(0,0)
