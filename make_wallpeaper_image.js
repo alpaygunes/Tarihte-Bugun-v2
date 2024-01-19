@@ -69,7 +69,7 @@ module.exports.makeWallpeaperImage = async function makeWallpeaperImage(image_pa
     }
 
 
-    const jpgData = canvas.encodeSync('jpeg', { quality: 0.95 })
+    const jpgData = canvas.encodeSync('jpeg', { quality: 0.80 })
     fs.writeFileSync(path.join(target_path), jpgData)
 }
 

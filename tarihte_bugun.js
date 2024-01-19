@@ -14,8 +14,9 @@ module.exports.TarihteBugun = class TarihteBugun {
     gunun_mesajlari = {} 
     ayarlar
 
-    async start() {
-        this.okulTurunuGetir()
+    async start(_ayarlar) {
+        //this.okulTurunuGetir()
+        this.ayarlar = _ayarlar
         const ID = process.env.MAIN_WINDOW_ID * 1;
         const mainWindow = BrowserWindow.fromId(ID)
         //okul türü kayıtlı değilse işlemi kes. view de ayar penceresini aç
@@ -49,26 +50,11 @@ module.exports.TarihteBugun = class TarihteBugun {
 
  
         //let prefix = Math.floor(Math.random() * 99999); 
-        this.target_path = path.join(app.getPath("temp"), "bilgi_penceresi.jpg");
+        this.target_path = path.join(app.getPath("pictures"), "bilgi_penceresi"+Math.floor(Math.random()*100)+".jpg");
         await makeWallpeaperImage(random_resim, mesaj_json, this.target_path, this.ayarlar)
         setWallpeaper(this.target_path)
     }
 
-    okulTurunuGetir() {
-        const ID            = process.env.MAIN_WINDOW_ID * 1;
-        const mainWindow    = BrowserWindow.fromId(ID)
-        const storage_path  = app.getPath("userData")
-        let ayar_dosyasi         = fs.existsSync(path.join(storage_path, '/user-data.json'))
-        if (ayar_dosyasi){
-            let _ayarlar         = fs.readFileSync(path.join(storage_path, '/user-data.json'))
-            this.ayarlar = JSON.parse(_ayarlar)
-        } else {
-            mainWindow.webContents.on('did-finish-load', function () {
-                mainWindow.show()
-                mainWindow.webContents.send("okultipi_sec", true)
-            }); 
-        }
-    }
 
     // tarih değerine göre dizinin yolu belirlyelim
     pathOfDay() {

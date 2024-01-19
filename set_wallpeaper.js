@@ -1,12 +1,12 @@
 const { promisify } = require('node:util');
-const childProcess  = require('node:child_process');
-const execFile      = promisify(childProcess.execFile);
-const process       = require('process')
-const path          = require('path');
+const childProcess = require('node:child_process');
+const execFile = promisify(childProcess.execFile);
+const process = require('process')
+const path = require('path');
 
 
 module.exports.setWallpeaper = async function setWallpeaper(target_path) {
-    console.log("PLATFORM : ----- " , process.platform)
+    console.log("PLATFORM : ----- ", process.platform)
     if (process.platform === 'win32') {
         const binary = path.join(__dirname, '/assets/windows-wallpaper-x86-64.exe');
         let scale = 'fill'
@@ -18,9 +18,9 @@ module.exports.setWallpeaper = async function setWallpeaper(target_path) {
         ];
         await execFile(binary, arguments_);
         console.log(" WINDOWS - await execFile(binary, arguments_); satırı çalıştırıldı")
-    }else{
+    } else {
         gnome(target_path)
-        kde(target_path) 
+        kde(target_path)
     }
 }
 
@@ -29,7 +29,9 @@ async function gnome(target_path) {
     try {
         let command = 'gsettings'
         let { stdout } = await execFile('which', ['-a', command]);
-        stdout = stdout.trim(); if (stdout) {
+        console.log("gnome() stdout ", stdout)
+        if (stdout) {
+            stdout = stdout.trim();
             await execFile('gsettings', [
                 'set',
                 'org.gnome.desktop.background',
@@ -38,7 +40,7 @@ async function gnome(target_path) {
             ]);
         }
     } catch (err) {
-        console.log("kde çalıştı yada WİNDOWS ")
+        console.log("gnome() Çalışırken hata verdi")
         return
     }
 }
@@ -49,11 +51,13 @@ async function kde(target_path) {
         command = 'qdbus'
         let { stdout } = await execFile('which', ['-a', command]);
         stdout = stdout.trim();
-        await execFile('qdbus', [
-            'org.kde.plasmashell',
-            '/PlasmaShell',
-            'org.kde.PlasmaShell.evaluateScript',
-            `
+        if (stdout) {
+            console.log("kde() stdout ", stdout)
+            await execFile('qdbus', [
+                'org.kde.plasmashell',
+                '/PlasmaShell',
+                'org.kde.PlasmaShell.evaluateScript',
+                `
 		var allDesktops = desktops();
 		for (var i = 0; i < allDesktops.length; i++) {
 			var desktop = allDesktops[i];
@@ -62,9 +66,10 @@ async function kde(target_path) {
 			desktop.writeConfig('Image', 'file://${target_path}');
 		}
 		`,
-        ]);
+            ]);
+        }
     } catch (err) {
-        console.log("GNOME çalıştı yada WİNDOWS ")
+        console.log("kde() Çalışırken hata verdi")
         return
     }
 }

@@ -1,4 +1,4 @@
-const { app, BrowserWindow, ipcMain, ipcRenderer, Tray, Menu } = require('electron')
+const { app, BrowserWindow, ipcMain, Tray, Menu } = require('electron')
 const process = require("process");
 const url = require("url")
 const path = require("path")
@@ -6,7 +6,7 @@ const fs = require('fs');
 const { TarihteBugun } = require('./tarihte_bugun')
 const os = require("os")
 var schedule = require('node-schedule');
-let ayarlar = {"timeout":5,"konum":1,"okul_turu":"lise","boyut":25}
+let ayarlar = {"timeout":5,"konum":2,"okul_turu":"lise","boyut":50}
 
 let anaPencere
 let tray = null
@@ -44,12 +44,18 @@ if (!gotTheLock) {
             { label: 'Çıkış', type: 'normal', click: () => app.quit() },
         ])
         tray.setContextMenu(contextMenu)
-        tray.addListener('click',()=> anaPencere.show())
+        tray.on('click', function(e){
+            if (anaPencere.isVisible()) {
+              anaPencere.hide()
+            } else {
+              anaPencere.show()
+            }
+          });
 
         if (process.platform === 'linux') {
             baslangicaEkle()
         }
-        tarihteBugun.start()
+        tarihteBugun.start(ayarlar) 
     })
 }
 
@@ -59,9 +65,6 @@ function ayarlariGetir() {
     if (ayar_dosyasi) {
         ayarlar = fs.readFileSync(path.join(storage_path, '/user-data.json'))
         ayarlar = JSON.parse(ayarlar)
-    } else {
-        ayarlar.timeout = 1
-        ayarlar.konum = 2
     }
     anaPencere.webContents.on('did-finish-load', function () {
         anaPencere.webContents.send("ayarlar", ayarlar)
@@ -107,7 +110,7 @@ function tekrarCalismayiKur() {
         schedule.scheduledJobs["tetiklenme"].cancel()
     }
     schedule.scheduleJob("tetiklenme",pattern, function () {
-        tarihteBugun.start()
+        tarihteBugun.start(ayarlar)
         console.log('schedule.schedule job ÇALIŞTI')
     });
 }
@@ -148,7 +151,7 @@ ipcMain.on("change:type", async (err, type) => {
     ayarlar.okul_turu   = okul_turu
     const user_data     = JSON.stringify(ayarlar)
     fs.writeFileSync(path.join(storage_path, '/user-data.json'), user_data)
-    tarihteBugun.start()
+    tarihteBugun.start(ayarlar)
 })
 
 // zaman aşımını değiştir
@@ -166,7 +169,7 @@ ipcMain.on("konum", async (err, konum) => {
     ayarlar.konum = konum
     const user_data = JSON.stringify(ayarlar)
     fs.writeFileSync(path.join(storage_path, '/user-data.json'), user_data) 
-    tarihteBugun.start()
+    tarihteBugun.start(ayarlar)
 })
 
 // boyut değiştir
@@ -176,9 +179,5 @@ ipcMain.on("boyut", async (err, boyut) => {
     const user_data = JSON.stringify(ayarlar)
     fs.writeFileSync(path.join(storage_path, '/user-data.json'), user_data)
     tekrarCalismayiKur()
-    tarihteBugun.start()
+    tarihteBugun.start(ayarlar)
 })
-
-
-
-
