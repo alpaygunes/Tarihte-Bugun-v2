@@ -6,7 +6,9 @@ const fs = require('fs');
 const { makeWallpeaperImage } = require('./make_wallpeaper_image.js')
 const { setWallpeaper } = require('./set_wallpeaper.js');
 const { rejects } = require('assert'); 
+const {parseExcel} = require('./parse_excel.js');
 let zatenViewYuklendi = false 
+
 
 
 module.exports.TarihteBugun = class TarihteBugun {
@@ -103,16 +105,18 @@ module.exports.TarihteBugun = class TarihteBugun {
         return varolan_dosyalar 
     }
 
-    gununMesajlari() {
+    async gununMesajlari() {
         let srcDir = this.pathOfDay()
         let okul_turu = this.ayarlar.okul_turu  
         let json
         // güne ait dosyalar VARSA oradan seçilsin
         if (fs.existsSync(path.join(srcDir, okul_turu))) {
-            json = fs.readFileSync(path.join(srcDir,okul_turu,"data.json"))
+            //json = fs.readFileSync(path.join(srcDir,okul_turu,"data.json"))
+            json    = await parseExcel(path.join(srcDir,okul_turu,"data.xlsx"))
         }else{
-            json = fs.readFileSync(path.join(__dirname, 'data/data.json'))
-        }
-        return json
+            //json = fs.readFileSync(path.join(__dirname, 'data/data.json'))
+            json    = await parseExcel(path.join(__dirname,'data/data.xlsx'))
+        } 
+        return JSON.stringify(json)
     }
 }

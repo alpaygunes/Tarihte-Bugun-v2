@@ -1,7 +1,7 @@
 const { app, screen } = require('electron')
-const { createCanvas, GlobalFonts, loadImage } = require('@napi-rs/canvas')
-const fs = require('fs')
-const path = require('path');
+const { createCanvas,  loadImage } = require('@napi-rs/canvas')
+const fs            = require('fs')
+const path          = require('path');
 
 
 module.exports.makeWallpeaperImage = async function makeWallpeaperImage(image_path, mesaj_json, target_path, ayarlar) {
@@ -12,8 +12,14 @@ module.exports.makeWallpeaperImage = async function makeWallpeaperImage(image_pa
     const ctx = canvas.getContext('2d')
     let okul_turu = ayarlar.okul_turu
 
+    
+
     const mesaj = mesaj_json.mesaj[Math.floor(Math.random() * mesaj_json.mesaj.length)]
     const mesaj_turu = mesaj_json.mesaj_turu
+
+    if (mesaj==undefined){
+        console.log(mesaj)
+    }
     // eğer mesaj_json içinde images varsa ozaman rasgele seçilen image_path i değiştirelim
     if (mesaj.hasOwnProperty("images")) {
         const mesaj_image = mesaj.images[Math.floor(mesaj.images.length * Math.random())]
@@ -241,7 +247,7 @@ async function mesajKutusunuOlustusu(scrn_width, scrn_height, mesaj, mesaj_turu,
         ctx.fillText(footer, x, y);
         y *= 1.2
         ctx.font = font_title;
-        let names = satirlaraBol(ctx, mesaj.name, msg_canvas.width);
+        let names = satirlaraBol(ctx, mesaj.title, msg_canvas.width);
         names.forEach(name => {
             y += satir_arasi
             ctx.fillText(name, x, y);
@@ -402,6 +408,9 @@ function satirlaraBol(context, text, fitWidth) {
     if (fitWidth <= 0) {
         context.fillText(text, x, y);
         return;
+    }
+    if (text==undefined){
+        console.log(text)
     }
     var words = text.split(' ');
     var currentLine = 0;
