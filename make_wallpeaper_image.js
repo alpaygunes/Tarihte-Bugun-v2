@@ -91,20 +91,19 @@ async function mesajKutusunuOlustusu(scrn_width, scrn_height, mesaj, mesaj_turu,
     const background = await loadImage(image_path);
     ctx.drawImage(background, 0, 0, msg_canvas.width, msg_canvas.height);
     let x = 0
-    let y = kutu_width * .13
+    let y = kutu_width * .14
     let satir_arasi = kutu_width * .03
     let font_footer = "bold 60px Comic Sans MS"
     let font_title = "bold 50px Comic Sans MS"
-    let font_answer = "bold 40px Comic Sans MS"
+    let font_answer = "bold 20px Comic Sans MS"
     let font_desc = "40px Comic Sans MS"
 
 
-    ctx.textAlign = "start";
+ 
     ctx.textAlign = "center";
     x = msg_canvas.width / 2
 
-    // ---------------------------------------------   "GÜNÜN DEYİMİ"
-
+    // ---------------------------------------------   "GÜNÜN DEYİMİ" 
     if (mesaj_turu == 'expression') {
         footer = "GÜNÜN DEYİMİ"
         ctx.font = font_footer;
@@ -403,7 +402,7 @@ async function mesajKutusunuOlustusu(scrn_width, scrn_height, mesaj, mesaj_turu,
 // uzun metinleri satılara ayırarark dizi döndürür
 function satirlaraBol(context, text, fitWidth) {
     fitWidth = fitWidth || 0;
-    fitWidth *= .7 // geniliğin 0.8 ine sığdır 
+    fitWidth *= .74 // geniliğin 0.8 ine sığdır 
     lines = []
     if (fitWidth <= 0) {
         context.fillText(text, x, y);
