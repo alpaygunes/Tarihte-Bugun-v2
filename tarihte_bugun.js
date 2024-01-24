@@ -111,10 +111,8 @@ module.exports.TarihteBugun = class TarihteBugun {
         let json
         // güne ait dosyalar VARSA oradan seçilsin
         if (fs.existsSync(path.join(srcDir, okul_turu))) {
-            //json = fs.readFileSync(path.join(srcDir,okul_turu,"data.json"))
             json    = await parseExcel(path.join(srcDir,okul_turu,"data.xlsx"))
-        }else{
-            //json = fs.readFileSync(path.join(__dirname, 'data/data.json'))
+        }else{ 
             json    = await parseExcel(path.join(__dirname,'data/data.xlsx'))
         } 
         return JSON.stringify(json)
