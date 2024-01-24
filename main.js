@@ -36,6 +36,8 @@ if (!gotTheLock) {
     // app yüklendikten sonra pencereyi oluşturalım 
     app.whenReady().then(() => {
         pencereOlustur()
+        ayarlariGetir()
+        tekrarCalismayiKur() 
         // Sistem tepsisi ayarları
         tray = new Tray(path.join(__dirname, 'assets/icon.png'))
         tray.setToolTip('Bilgi Ekranı')
@@ -98,8 +100,6 @@ const pencereOlustur = () => {
     if (!isDev) {
         anaPencere.hide();
     }
-    ayarlariGetir()
-    tekrarCalismayiKur() 
 }
 // Pencere oluşturma metodu SONU
 
