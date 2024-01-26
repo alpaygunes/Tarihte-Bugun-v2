@@ -172,12 +172,12 @@ ipcMain.on("konum", async (err, konum) => {
     tarihteBugun.start(ayarlar)
 })
 
-// boyut değiştir
+// tetikleme süresi değiştir
 ipcMain.on("boyut", async (err, boyut) => {
     const storage_path = app.getPath("userData")
     ayarlar.boyut = boyut
     const user_data = JSON.stringify(ayarlar)
     fs.writeFileSync(path.join(storage_path, '/user-data.json'), user_data)
-    tekrarCalismayiKur()
     tarihteBugun.start(ayarlar)
+    tekrarCalismayiKur()
 })
