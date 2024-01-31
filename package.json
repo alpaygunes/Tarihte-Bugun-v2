@@ -1,7 +1,7 @@
 {
-  "name": "tr.gov.meb.kayseri",
+  "name": "Bilgi Penceresi",
   "version": "1.0.0",
-  "description": "Bu uygulama belli aralıklarla duvakağıdını değiştirir aynı zamanda genel bilgiler ekrana gelir.",
+  "description": "Bu uygulama belli aralıklarla duvakağıdını değiştirir aynı zamanda genel bilgileri masaüstü resmine ekler.",
   "main": "main.js",
   "scripts": {
     "start": "electron . start",
@@ -14,7 +14,7 @@
     "url": "git+https://github.com/alpaygunes/Tarihte-Bugun-v2.git"
   },
   "keywords": [
-    "Bilgi",
+    "Bilgi Penceresi",
     "Ekranı"
   ],
   "author": "alpaygunes@gmail.com",

@@ -25,7 +25,28 @@ module.exports.setWallpeaper = async function setWallpeaper(target_path) {
 }
 
 
-async function gnome(target_path) {
+async function gnome(target_path) {  
+    try{ 
+        // sheme ya bak dark mı ?
+        let { stdout } = await execFile('gsettings', [
+            'get',
+            'org.gnome.desktop.interface',
+            'color-scheme'
+        ]);
+        console.log("color-scheme ",stdout)
+        if (stdout.search('prefer-dark')!=-1){
+            await execFile('gsettings', [
+                'set',
+                'org.gnome.desktop.interface',
+                'color-scheme',
+                'prefer-light'
+            ])
+            console.log("color-scheme light olarak ayarlandı")
+        }
+    }catch (err) {
+        console.log("color-scheme hata verdi") 
+    }
+    // resmi değiştir
     try {
         let command = 'gsettings'
         let { stdout } = await execFile('which', ['-a', command]);
@@ -40,8 +61,7 @@ async function gnome(target_path) {
             ]);
         }
     } catch (err) {
-        console.log("gnome() Çalışırken hata verdi")
-        return
+        console.log("gnome() Çalışırken hata verdi") 
     }
 }
 
