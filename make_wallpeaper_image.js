@@ -26,7 +26,6 @@ module.exports.makeWallpeaperImage = async function makeWallpeaperImage(image_pa
         const mesaj_image_path  = path.join(__dirname, 'data',ayarlar.okul_turu, mesaj_image)
         if (fs.existsSync(mesaj_image_path)) {
             image_path          = mesaj_image_path 
-            console.log(" -----------------------------  Belirtilmiş Resim Mevcut : " , mesaj_image)
         }else{
             console.log(" !!!!!!!!!!!!!!!!!!!!!!!!!!!!!! BU RESİM YOK : " , mesaj_image)
         }
