@@ -14,19 +14,19 @@ module.exports.makeWallpeaperImage = async function makeWallpeaperImage(image_pa
 
     
 
-    const mesaj = mesaj_json.mesaj[Math.floor(Math.random() * mesaj_json.mesaj.length)]
-    const mesaj_turu = mesaj_json.mesaj_turu
+    const mesaj         = mesaj_json.mesaj[Math.floor(Math.random() * mesaj_json.mesaj.length)]
+    const mesaj_turu    = mesaj_json.mesaj_turu
 
     if (mesaj==undefined){
         console.log(mesaj)
     }
     // eğer mesaj_json içinde images varsa ozaman rasgele seçilen image_path i değiştirelim
     if (mesaj.hasOwnProperty("images")) {
-        const mesaj_image = mesaj.images[Math.floor(mesaj.images.length * Math.random())]
-        const mesaj_image_path = path.join(__dirname, 'data/genel/resimler', mesaj_image)
+        const mesaj_image       = mesaj.images[Math.floor(mesaj.images.length * Math.random())]
+        const mesaj_image_path  = path.join(__dirname, 'data',ayarlar.okul_turu, mesaj_image)
         if (fs.existsSync(mesaj_image_path)) {
-            image_path = mesaj_image_path 
-            console.log(" ------------------------------------Belirtilmiş Resim Mevcut : " , mesaj_image)
+            image_path          = mesaj_image_path 
+            console.log(" -----------------------------  Belirtilmiş Resim Mevcut : " , mesaj_image)
         }else{
             console.log(" !!!!!!!!!!!!!!!!!!!!!!!!!!!!!! BU RESİM YOK : " , mesaj_image)
         }
