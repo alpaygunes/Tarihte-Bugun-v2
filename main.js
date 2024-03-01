@@ -5,10 +5,12 @@ const path = require("path")
 const fs = require('fs');
 const { TarihteBugun } = require('./tarihte_bugun')
 const os = require("os")
+var schedule = require('node-schedule');
 
 let anaPencere
 let tray = null
 let tarihteBugun
+
 // app yüklendikten sonra pencereyi oluşturalım 
 app.whenReady().then(() => {
     // Sistem tepsisi ayarları
@@ -29,13 +31,15 @@ app.whenReady().then(() => {
 // Pencere oluşturma metodu
 const pencereOlustur = () => {
     anaPencere = new BrowserWindow({
+        backgroundColor: '#00FFFFFF',
         width: 800,
         height: 400,
         webPreferences: {
             nodeIntegration: true,
             contextIsolation: false,
         },
-        frame: false
+        frame: false,
+        transparent: true,
     })
     anaPencere.loadURL(
         url.format({
@@ -46,6 +50,12 @@ const pencereOlustur = () => {
     )
     process.env.MAIN_WINDOW_ID = anaPencere.id;  
 }
+
+// her saat başı çalış
+var j = schedule.scheduleJob('* */20 * * *', function(){  
+    tarihteBugun.start()
+    console.log('The world is going to end today.');
+});
 
 function baslangicaEkle() {
     let string = ("[Desktop Entry]\n\
@@ -76,3 +86,7 @@ ipcMain.on("change:type", async (err, type) => {
     fs.writeFileSync(path.join(storage_path, '/user-data.json'), user_data)
     tarihteBugun.start()
 })
+
+
+
+

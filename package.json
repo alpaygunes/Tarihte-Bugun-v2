@@ -25,7 +25,8 @@
   "homepage": "https://github.com/alpaygunes/Tarihte-Bugun-v2#readme",
   "dependencies": {
     "@napi-rs/canvas": "^0.1.44",
-    "electron-squirrel-startup": "^1.0.0"
+    "electron-squirrel-startup": "^1.0.0",
+    "node-schedule": "^2.1.1"
   },
   "devDependencies": {
     "@electron-forge/cli": "^7.2.0",

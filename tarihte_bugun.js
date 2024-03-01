@@ -9,9 +9,11 @@ const {setWallpeaper} = require('./set_wallpeaper.js')
 
 module.exports.TarihteBugun = class TarihteBugun {  
     gunun_dosyalari = {} 
+    okul_turu
     async start() {
         //okul türü kayıtlı değilse işlemi kes. view de ayar penceresini aç
-        if (!this.okulTurunuGetir()) return; 
+        this.okul_turu = this.okulTurunuGetir()
+        if (!this.okul_turu) return; 
         
         this.gunun_dosyalari = await this.gununDosyalariniAyikla()
         let resimler = this.gunun_dosyalari.resimler
@@ -23,8 +25,8 @@ module.exports.TarihteBugun = class TarihteBugun {
         let random_json_data   = json_data[Math.floor(Math.random() * json_data.length)];
 
         let prefix = Math.floor(Math.random() * 99999);
-        this.target_path = path.join("/var/tmp/",prefix+"_bilgi_penceresi.png");
-        await makeWallpeaperImage(random_resim, random_json_data, this.target_path)
+        this.target_path = path.join("/var/tmp/",prefix+"_bilgi_penceresi.jpg");
+        await makeWallpeaperImage(random_resim, random_json_data, this.target_path,this.okul_turu)
         setWallpeaper(this.target_path)
     }
 
